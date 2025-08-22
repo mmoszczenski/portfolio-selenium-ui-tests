@@ -1,2 +1,11 @@
 venv/
 .venv/
+.vscode
+._pychache_
+.pytest_cache
+*.pyc
+*.pyo
+.vscode/
+.idea/
+htmlcov/
+.coverage
