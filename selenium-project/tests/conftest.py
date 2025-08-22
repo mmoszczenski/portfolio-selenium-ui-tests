@@ -1,4 +1,3 @@
-# conftest.py (pytest will auto-load fixtures from here)
 
 import pytest
 from selenium import webdriver
@@ -34,10 +33,8 @@ def driver(request):
 
     driver.implicitly_wait(10)
 
-    # yield control to test
     yield driver
-
-    # cleanup happens after test finishes
+    
     driver.quit()
 
 
