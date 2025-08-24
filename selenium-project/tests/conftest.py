@@ -7,3 +7,9 @@ def driver():
     driver = create_driver()
     yield driver
     driver.quit()
+    
+@pytest.fixture
+def pages(driver):
+    return {
+        "home": HomePage(driver)
+    }

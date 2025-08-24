@@ -10,4 +10,5 @@ class HomePage(BasePage):
     def is_on_homepage(self):
         return self.driver.current_url == self.URL
     
-    
+    def go_to_login_page(self):
+        self.click(self._LOGIN_BUTTON)
