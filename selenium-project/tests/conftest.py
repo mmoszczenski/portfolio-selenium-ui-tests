@@ -1,6 +1,7 @@
 import pytest
 from utils.driver_factory import create_driver
 from pages.home_page import HomePage
+from pages.login_page import LoginPage
 
 @pytest.fixture
 def driver():
@@ -11,5 +12,6 @@ def driver():
 @pytest.fixture
 def pages(driver):
     return {
-        "home": HomePage(driver)
+        "home": HomePage(driver),
+        "login": LoginPage(driver)
     }
