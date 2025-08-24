@@ -4,4 +4,8 @@ import pytest
 
 class TestRegister():
     
-    def register_valid_user(self)
+    def test_register_valid_user(self, pages):
+        home = pages["home_page"]
+        home.
+        
+    
