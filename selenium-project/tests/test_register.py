@@ -20,6 +20,7 @@ class TestRegister():
         
         assert login_page.is_on_login_page()
     
-    
+        login_page.fill_sign_up_form()
         
+        time.sleep(2)
     
