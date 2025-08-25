@@ -5,10 +5,15 @@ class HomePage(BasePage):
     
     URL = "https://automationexercise.com/"
     
-    _LOGIN_BUTTON = (By.XPATH, "a[@href='/login']" )
+    _ACCCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Zgadzam się']")
+    _LOGIN_BUTTON = (By.CSS_SELECTOR, "a[href='/login']" )
+    
             
     def is_on_homepage(self):
         return self.driver.current_url == self.URL
     
     def go_to_login_page(self):
         self.click(self._LOGIN_BUTTON)
+        
+    def accept_cookies(self):
+        self.click(self._ACCCEPT_COOKIES_BUTTON)

@@ -11,9 +11,18 @@ class TestRegister():
         login_page: LoginPage = pages["login"]
         
         home_page.open(home_page.URL)
-        home_page.is_on_homepage()
-
-        login_page.is_on_login_page()
+       
+        time.sleep(2)
+         
+        home_page.accept_cookies()
+        
+        time.sleep(2)
+        
+        assert home_page.is_on_homepage()
+        
+        home_page.go_to_login_page()
+        
+        assert login_page.is_on_login_page()
     
     
         
