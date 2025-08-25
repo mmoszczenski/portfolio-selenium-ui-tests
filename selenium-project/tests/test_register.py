@@ -12,11 +12,7 @@ class TestRegister():
         
         home_page.open(home_page.URL)
        
-        time.sleep(2)
-         
         home_page.accept_cookies()
-        
-        time.sleep(2)
         
         assert home_page.is_on_homepage()
         
