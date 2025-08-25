@@ -1,6 +1,7 @@
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 import pytest
+import time
 
 class TestRegister():
     
@@ -10,9 +11,10 @@ class TestRegister():
         login_page: LoginPage = pages["login"]
         
         home_page.open(home_page.URL)
-        home_page.is_on_homepage
-        
-        login_page.is_on_login_page
+        home_page.is_on_homepage()
+
+        login_page.is_on_login_page()
+    
     
         
     
