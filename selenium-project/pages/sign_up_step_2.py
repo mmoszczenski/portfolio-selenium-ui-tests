@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 class SignUpStep2(BasePage):
     
     _PAGE_HEADER = (By.XPATH, "//div[contains(@class,'login-form')]//h2[b[text()='Enter Account Information']]")
+    _PASSWORD_FIELD = (By.CSS_SELECTOR, "input[data-qa='password']")
     _title = {
         "Mr": (By.ID, "id_gender1"),
         "Mrs": (By.ID, "id_gender2")
@@ -14,3 +15,6 @@ class SignUpStep2(BasePage):
     
     def select_title(self, title):
         self.click(self._title[title])
+        
+    def fill_account_information_form(self, password):
+        self.type(self._PASSWORD_FIELD, password)
