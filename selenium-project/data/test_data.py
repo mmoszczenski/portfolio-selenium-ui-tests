@@ -1,8 +1,10 @@
+from utils.helpers import generate_random_email
+
 
 SIGNUP_DATA = {
 "valid_user": {
     "username": "test_user", 
-     "email": "example@email.com",
+     "email": generate_random_email(),
      "password": "passwordtest"
      },
 
