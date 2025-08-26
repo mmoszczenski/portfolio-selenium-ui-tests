@@ -6,4 +6,4 @@ class SignUpStep2(BasePage):
     _PAGE_HEADER = (By.XPATH, "//div[contains(@class,'login-form')]//h2[b[text()='Enter Account Information']]")
     
     def is_on_sign_up_step2_page(self):
-        self.is_visible(self._PAGE_HEADER)
+        return self.is_visible(self._PAGE_HEADER)
