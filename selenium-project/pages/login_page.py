@@ -7,7 +7,7 @@ class LoginPage(BasePage):
     _HEADER = (By.XPATH, "//h2[text()='New User Signup!']")
     _SIGN_UP_USERNAME_INPUT_FIELD = (By.CSS_SELECTOR, "input[data-qa='signup-name']")
     _SIGN_UP_EMAIL_INPUT_FIELD = (By.CSS_SELECTOR, "input[data-qa='signup-email']")
-    _SIGN_UP_BUTTON = (By.CSS_SELECTOR, "input[data-qa='signup-button']")
+    _SIGN_UP_BUTTON = (By.CSS_SELECTOR, "button[data-qa='signup-button']")
     
     def is_on_login_page(self):
         return self.is_visible(self._HEADER)

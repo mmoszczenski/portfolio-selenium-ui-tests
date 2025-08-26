@@ -1,12 +1,14 @@
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.sign_up_step_2 import SignUpStep2
-import pytest
+from data.test_data import SIGNUP_DATA
 import time
 
 class TestRegister():
     
     def test_register_valid_user(self, pages):
+        
+        user_data = SIGNUP_DATA["valid_user"]
         
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
@@ -18,6 +20,6 @@ class TestRegister():
         home_page.go_to_login_page()
         
         assert login_page.is_on_login_page()
-        login_page.sign_up()
+        login_page.sign_up(user_data["username"], user_data["email"])
         
         assert sign_up_step2_page.is_on_sign_up_step2_page()
