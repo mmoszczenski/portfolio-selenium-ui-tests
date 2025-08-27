@@ -5,7 +5,8 @@ SIGNUP_DATA = {
 "valid_user": {
     "username": "test_user", 
      "email": generate_random_email(),
-     "password": "passwordtest"
+     "password": "passwordtest",
+     
      },
 
 "invalid_email_user": {

@@ -1,5 +1,6 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import Select
 
 class SignUpStep2(BasePage):
     
@@ -16,5 +17,6 @@ class SignUpStep2(BasePage):
     def select_title(self, title):
         self.click(self._title[title])
         
-    def fill_account_information_form(self, password):
+    def fill_account_information_form(self, title, password):
+        self.select_title(title)
         self.type(self._PASSWORD_FIELD, password)
