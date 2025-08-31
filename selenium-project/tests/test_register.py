@@ -24,7 +24,7 @@ class TestRegister():
         
         assert sign_up_step2_page.is_on_sign_up_step2_page()
 
-        sign_up_step2_page.fill_account_information_form("Mr", valid_user["password"], valid_user["day"], valid_user["month"])
+        sign_up_step2_page.fill_account_information_form("Mr", valid_user["password"], valid_user["day"], valid_user["month"], valid_user["year"])
 
         time.sleep(2)
 

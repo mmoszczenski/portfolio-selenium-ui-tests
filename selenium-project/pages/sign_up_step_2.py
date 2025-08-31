@@ -9,6 +9,9 @@ class SignUpStep2(BasePage):
     _DAYS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='days']")
     _MONTHS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='months']")
     _YEARS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='years']")
+    _COUNTRY_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='country']")
+    _NEWSLETTER_CHECKBOX = (By.ID, "newsletter")
+
     _title = {
         "Mr": (By.ID, "id_gender1"),
         "Mrs": (By.ID, "id_gender2")
@@ -31,9 +34,17 @@ class SignUpStep2(BasePage):
         select.select_by_visible_text(month)
 
     def select_year(self, year: str):
-        dropdown = self.find(self._MONTHS_DROPDOWN)
+        dropdown = self.find(self._YEARS_DROPDOWN)
         select = Select(dropdown)
         select.select_by_visible_text(year)
+
+    def select_country(self, country: str):
+        dropdown = self.find(self._COUNTRY_DROPDOWN)
+        select = Select(dropdown)
+        select.select_by_visible_text(country)
+
+    def mark_newsletter_checkbox(self):
+        self.click(self._NEWSLETTER_CHECKBOX)
         
     def fill_account_information_form(self, title, password, day, month, year):
         self.select_title(title)
@@ -41,3 +52,4 @@ class SignUpStep2(BasePage):
         self.select_days(day)
         self.select_month(month)
         self.select_year(year)
+        self.mark_newsletter_checkbox()
