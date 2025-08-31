@@ -11,6 +11,14 @@ class SignUpStep2(BasePage):
     _YEARS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='years']")
     _COUNTRY_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='country']")
     _NEWSLETTER_CHECKBOX = (By.ID, "newsletter")
+    _FIRST_NAME_INPUT = (By.CSS_SELECTOR, "input[data-qa='first_name']")
+    _LAST_NAME_INPUT = ''
+    _ADDRESS_INPUT = ''
+    _STATE_INPUT = ''
+    _CITY_INPUT = ''
+    _ZIPCODE_INPUT = ''
+    MOBILE_NUMBER_INPUT = ''
+
 
     _title = {
         "Mr": (By.ID, "id_gender1"),
