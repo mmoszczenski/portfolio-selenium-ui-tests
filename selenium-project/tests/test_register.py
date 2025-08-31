@@ -24,7 +24,7 @@ class TestRegister():
         
         assert sign_up_step2_page.is_on_sign_up_step2_page()
 
-        sign_up_step2_page.select_title("Mr")
-        sign_up_step2_page.fill_account_information_form("passwordtest")
+        sign_up_step2_page.fill_account_information_form("Mr","passwordtest")
+
         
     
