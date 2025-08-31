@@ -8,6 +8,7 @@ class SignUpStep2(BasePage):
     _PASSWORD_FIELD = (By.CSS_SELECTOR, "input[data-qa='password']")
     _DAYS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='days']")
     _MONTHS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='months']")
+    _YEARS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='years']")
     _title = {
         "Mr": (By.ID, "id_gender1"),
         "Mrs": (By.ID, "id_gender2")
@@ -28,9 +29,15 @@ class SignUpStep2(BasePage):
         dropdown = self.find(self._MONTHS_DROPDOWN)
         select = Select(dropdown)
         select.select_by_visible_text(month)
+
+    def select_year(self, year: str):
+        dropdown = self.find(self._MONTHS_DROPDOWN)
+        select = Select(dropdown)
+        select.select_by_visible_text(year)
         
-    def fill_account_information_form(self, title, password, day, month):
+    def fill_account_information_form(self, title, password, day, month, year):
         self.select_title(title)
         self.type(self._PASSWORD_FIELD, password)
         self.select_days(day)
         self.select_month(month)
+        self.select_year(year)
