@@ -8,7 +8,7 @@ class TestRegister():
     
     def test_register_valid_user(self, pages):
         
-        user_data = SIGNUP_DATA["valid_user"]
+        valid_user= SIGNUP_DATA["valid_user"]
         
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
@@ -20,11 +20,15 @@ class TestRegister():
         home_page.go_to_login_page()
         
         assert login_page.is_on_login_page()
-        login_page.sign_up(user_data["username"], user_data["email"])
+        login_page.sign_up(valid_user["username"], valid_user["email"])
         
         assert sign_up_step2_page.is_on_sign_up_step2_page()
 
-        sign_up_step2_page.fill_account_information_form("Mr","passwordtest")
+        sign_up_step2_page.fill_account_information_form("Mr", valid_user["password"], valid_user["day"], valid_user["month"])
+
+        time.sleep(2)
+
+       
 
         
     

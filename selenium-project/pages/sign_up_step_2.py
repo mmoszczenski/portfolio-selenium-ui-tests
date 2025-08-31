@@ -6,6 +6,8 @@ class SignUpStep2(BasePage):
     
     _PAGE_HEADER = (By.XPATH, "//div[contains(@class,'login-form')]//h2[b[text()='Enter Account Information']]")
     _PASSWORD_FIELD = (By.CSS_SELECTOR, "input[data-qa='password']")
+    _DAYS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='days']")
+    _MONTHS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='months']")
     _title = {
         "Mr": (By.ID, "id_gender1"),
         "Mrs": (By.ID, "id_gender2")
@@ -16,7 +18,19 @@ class SignUpStep2(BasePage):
     
     def select_title(self, title):
         self.click(self._title[title])
+
+    def select_days(self, day: str):
+        dropdown = self.find(self._DAYS_DROPDOWN)
+        select = Select(dropdown)
+        select.select_by_visible_text(day)
+
+    def select_month(self, month: str):
+        dropdown = self.find(self._MONTHS_DROPDOWN)
+        select = Select(dropdown)
+        select.select_by_visible_text(month)
         
-    def fill_account_information_form(self, title, password):
+    def fill_account_information_form(self, title, password, day, month):
         self.select_title(title)
         self.type(self._PASSWORD_FIELD, password)
+        self.select_days(day)
+        self.select_month(month)

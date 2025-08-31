@@ -6,7 +6,9 @@ SIGNUP_DATA = {
     "username": "test_user", 
      "email": generate_random_email(),
      "password": "passwordtest",
-     
+     "day": "18",
+     "month": "May",
+     "year": "1990"
      },
 
 "invalid_email_user": {
