@@ -12,12 +12,12 @@ class SignUpStep2(BasePage):
     _COUNTRY_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='country']")
     _NEWSLETTER_CHECKBOX = (By.ID, "newsletter")
     _FIRST_NAME_INPUT = (By.CSS_SELECTOR, "input[data-qa='first_name']")
-    _LAST_NAME_INPUT = ''
-    _ADDRESS_INPUT = ''
-    _STATE_INPUT = ''
-    _CITY_INPUT = ''
-    _ZIPCODE_INPUT = ''
-    MOBILE_NUMBER_INPUT = ''
+    _LAST_NAME_INPUT = (By.CSS_SELECTOR, "input[data-qa='last_name']")
+    _ADDRESS_INPUT = (By.CSS_SELECTOR, "input[data-qa='address']")
+    _STATE_INPUT = (By.CSS_SELECTOR, "input[data-qa='state']")
+    _CITY_INPUT = (By.CSS_SELECTOR, "input[data-qa='city']")
+    _ZIPCODE_INPUT = (By.CSS_SELECTOR, "input[data-qa='zipcode']")
+    _MOBILE_NUMBER_INPUT = (By.CSS_SELECTOR, "input[data-qa='mobile_number']")
 
 
     _title = {
