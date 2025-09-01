@@ -40,9 +40,9 @@ class TestRegister():
             valid_user["mobile_numer"],
         )
 
-        sign_up_step2_page.is_account_created()
+        assert sign_up_step2_page.is_account_created()
 
-        
+
        
 
         
