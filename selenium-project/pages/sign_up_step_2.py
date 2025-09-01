@@ -18,6 +18,7 @@ class SignUpStep2(BasePage):
     _CITY_INPUT = (By.CSS_SELECTOR, "input[data-qa='city']")
     _ZIPCODE_INPUT = (By.CSS_SELECTOR, "input[data-qa='zipcode']")
     _MOBILE_NUMBER_INPUT = (By.CSS_SELECTOR, "input[data-qa='mobile_number']")
+    _CREATE_ACCOUNT_BUTTON = (By.CSS_SELECTOR, "button[data-qa='create-account']")
 
 
     _title = {
