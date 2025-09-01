@@ -40,8 +40,9 @@ class TestRegister():
             valid_user["mobile_numer"],
         )
 
-        time.sleep(2)
+        sign_up_step2_page.is_account_created()
 
+        
        
 
         

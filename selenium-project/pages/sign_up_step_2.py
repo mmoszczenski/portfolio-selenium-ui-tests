@@ -19,6 +19,7 @@ class SignUpStep2(BasePage):
     _ZIPCODE_INPUT = (By.CSS_SELECTOR, "input[data-qa='zipcode']")
     _MOBILE_NUMBER_INPUT = (By.CSS_SELECTOR, "input[data-qa='mobile_number']")
     _CREATE_ACCOUNT_BUTTON = (By.CSS_SELECTOR, "button[data-qa='create-account']")
+    _ACCOUNT_CREATED_HEADER = (By.CSS_SELECTOR, "h2[data-qa='account-created']")
 
 
     _title = {
@@ -98,3 +99,6 @@ class SignUpStep2(BasePage):
         self.fill_mobile_number_input(mobile_numer)
         self.click_create_account_button()
 
+
+    def is_account_created(self):
+        return self.is_visible(self._ACCOUNT_CREATED_HEADER)
