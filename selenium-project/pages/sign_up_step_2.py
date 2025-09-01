@@ -54,6 +54,31 @@ class SignUpStep2(BasePage):
 
     def mark_newsletter_checkbox(self):
         self.click(self._NEWSLETTER_CHECKBOX)
+
+    def fill_first_name_input(self, text):
+        self.type(self._FIRST_NAME_INPUT, text)
+
+    def fill_last_name_input(self, text):
+        self.type(self._LAST_NAME_INPUT, text)
+
+    def fill_address_field_input(self, text):
+        self.type(self._ADDRESS_INPUT, text)
+
+    def fill_state_field_input(self, text):
+        self.type(self._STATE_INPUT, text)
+
+    def fill_city_field_input(self, text):
+        self.type(self._CITY_INPUT, text)
+
+    def fill_zipcode_field_input(self, text):
+        self.type(self._ZIPCODE_INPUT, text)
+
+    def fill_mobile_number_input(self, text):
+        self.type(self._MOBILE_NUMBER_INPUT, text)
+
+    def click_create_account_button(self):
+        self.click(self._CREATE_ACCOUNT_BUTTON)
+
         
     def fill_account_information_form(self, title, password, day, month, year):
         self.select_title(title)
@@ -62,3 +87,11 @@ class SignUpStep2(BasePage):
         self.select_month(month)
         self.select_year(year)
         self.mark_newsletter_checkbox()
+        self.fill_first_name_input()
+        self.fill_last_name_input()
+        self.fill_address_field_input()
+        self.fill_state_field_input()
+        self.fill_city_field_input()
+        self.fill_zipcode_field_input()
+        self.fill_mobile_number_input()
+        self.click_create_account_button()
