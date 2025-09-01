@@ -13,6 +13,7 @@ SIGNUP_DATA = {
      "first_name": "John",
      "last_name": "Doe",
      "address": "Magazynowa 5",
+     "country": "",
      "state": "Texas",
      "city": "Arizona",
      "zipcode": "81-377",

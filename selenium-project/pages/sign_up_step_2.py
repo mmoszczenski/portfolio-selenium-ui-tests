@@ -79,15 +79,15 @@ class SignUpStep2(BasePage):
     def click_create_account_button(self):
         self.click(self._CREATE_ACCOUNT_BUTTON)
 
-        
     def fill_account_information_form(
-        self, title, password, day, month, year, first_name, last_name, address, state, city, zipcode, mobile_numer 
+        self, title, password, day, month, year, country, first_name, last_name, address, state, city, zipcode, mobile_numer 
         ):
         self.select_title(title)
         self.type(self._PASSWORD_FIELD, password)
         self.select_days(day)
         self.select_month(month)
         self.select_year(year)
+        self.select_country(country)
         self.mark_newsletter_checkbox()
         self.fill_first_name_input(first_name)
         self.fill_last_name_input(last_name)
@@ -97,3 +97,4 @@ class SignUpStep2(BasePage):
         self.fill_zipcode_field_input(zipcode)
         self.fill_mobile_number_input(mobile_numer)
         self.click_create_account_button()
+
