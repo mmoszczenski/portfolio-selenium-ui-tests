@@ -9,7 +9,14 @@ SIGNUP_DATA = {
      "password": "passwordtest",
      "day": "18",
      "month": "May",
-     "year": "1990"
+     "year": "1990",
+     "first_name": "John",
+     "last_name": "Doe",
+     "address": "",
+     "state": "",
+     "city": "",
+     "zipcode": "",
+     "mobile_numer": ""
      },
 
 "invalid_email_user": {

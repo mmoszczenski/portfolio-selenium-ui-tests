@@ -80,7 +80,9 @@ class SignUpStep2(BasePage):
         self.click(self._CREATE_ACCOUNT_BUTTON)
 
         
-    def fill_account_information_form(self, title, password, day, month, year, first_name, last_name, address, state, city, zipcode, mobile_numer ):
+    def fill_account_information_form(
+        self, title, password, day, month, year, first_name, last_name, address, state, city, zipcode, mobile_numer 
+        ):
         self.select_title(title)
         self.type(self._PASSWORD_FIELD, password)
         self.select_days(day)
