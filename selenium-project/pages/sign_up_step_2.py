@@ -21,7 +21,6 @@ class SignUpStep2(BasePage):
     _CREATE_ACCOUNT_BUTTON = (By.CSS_SELECTOR, "button[data-qa='create-account']")
     _ACCOUNT_CREATED_HEADER = (By.CSS_SELECTOR, "h2[data-qa='account-created']")
 
-
     _title = {
         "Mr": (By.ID, "id_gender1"),
         "Mrs": (By.ID, "id_gender2")
@@ -81,7 +80,7 @@ class SignUpStep2(BasePage):
         self.click(self._CREATE_ACCOUNT_BUTTON)
 
     def fill_account_information_form(
-        self, title, password, day, month, year, country, first_name, last_name, address, state, city, zipcode, mobile_numer 
+        self, title, password, day, month, year, country, first_name, last_name, address, state, city, zipcode, mobile_number 
         ):
         self.select_title(title)
         self.type(self._PASSWORD_FIELD, password)
@@ -96,9 +95,8 @@ class SignUpStep2(BasePage):
         self.fill_state_field_input(state)
         self.fill_city_field_input(city)
         self.fill_zipcode_field_input(zipcode)
-        self.fill_mobile_number_input(mobile_numer)
+        self.fill_mobile_number_input(mobile_number)
         self.click_create_account_button()
-
 
     def is_account_created(self):
         return self.is_visible(self._ACCOUNT_CREATED_HEADER)

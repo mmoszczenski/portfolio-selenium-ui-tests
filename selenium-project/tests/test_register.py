@@ -37,7 +37,7 @@ class TestRegister():
             valid_user["state"],
             valid_user["city"],
             valid_user["zipcode"],
-            valid_user["mobile_numer"],
+            valid_user["mobile_number"],
         )
 
         assert sign_up_step2_page.is_account_created()

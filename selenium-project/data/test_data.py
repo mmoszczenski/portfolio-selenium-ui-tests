@@ -17,7 +17,7 @@ SIGNUP_DATA = {
      "state": "Texas",
      "city": "Arizona",
      "zipcode": "81-377",
-     "mobile_numer": "512530800"
+     "mobile_number": "512530800"
      },
 
 "invalid_email_user": {
