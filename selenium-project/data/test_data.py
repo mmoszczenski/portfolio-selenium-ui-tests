@@ -12,11 +12,11 @@ SIGNUP_DATA = {
      "year": "1990",
      "first_name": "John",
      "last_name": "Doe",
-     "address": "",
-     "state": "",
-     "city": "",
-     "zipcode": "",
-     "mobile_numer": ""
+     "address": "Magazynowa 5",
+     "state": "Texas",
+     "city": "Arizona",
+     "zipcode": "81-377",
+     "mobile_numer": "512530800"
      },
 
 "invalid_email_user": {

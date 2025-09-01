@@ -29,7 +29,14 @@ class TestRegister():
             valid_user["password"], 
             valid_user["day"], 
             valid_user["month"], 
-            valid_user["year"]
+            valid_user["year"],
+            valid_user["first_name"],
+            valid_user["last_name"],
+            valid_user["addesss"],
+            valid_user["state"],
+            valid_user["city"],
+            valid_user["zipcode"],
+            valid_user["mobile_numer"],
         )
 
         time.sleep(2)
