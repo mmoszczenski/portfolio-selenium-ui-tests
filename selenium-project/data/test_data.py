@@ -2,6 +2,7 @@ from utils.helpers import generate_random_email
 
 
 SIGNUP_DATA = {
+
 "valid_user": {
     "username": "test_user", 
      "email": generate_random_email(),
@@ -52,6 +53,23 @@ SIGNUP_DATA = {
     "city": "Arizona",
     "zipcode": "81-377",
     "mobile_number": "512530800"
+}, 
+
+"invalid_user_empty_fields": {
+    "username": "",
+    "email": "",
+    "password": "",
+    "day": "",
+    "month": "",
+    "year": "",
+    "first_name": "",
+    "last_name": "",
+    "address": "",
+    "country": "",
+    "state": "",
+    "city": "",
+    "zipcode": "",
+    "mobile_number": ""
 }
 
 }
