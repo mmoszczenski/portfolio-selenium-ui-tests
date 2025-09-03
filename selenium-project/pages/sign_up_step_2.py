@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import Select
 class SignUpStep2(BasePage):
     
     _PAGE_HEADER = (By.XPATH, "//div[contains(@class,'login-form')]//h2[b[text()='Enter Account Information']]")
-    _PASSWORD_FIELD = (By.CSS_SELECTOR, "input[data-qa='password']")
+    _PASSWORD_FIELD_INPUT = (By.CSS_SELECTOR, "input[data-qa='password']")
     _DAYS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='days']")
     _MONTHS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='months']")
     _YEARS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='years']")
@@ -55,28 +55,28 @@ class SignUpStep2(BasePage):
     def mark_newsletter_checkbox(self):
         self.click(self._NEWSLETTER_CHECKBOX)
 
-    def fill_password_field(self, text):
-        self.type(self._PASSWORD_FIELD, text)
+    def fill_password(self, text):
+        self.type(self._PASSWORD_FIELD_INPUT, text)
 
-    def fill_first_name_input(self, text):
+    def fill_first_name(self, text):
         self.type(self._FIRST_NAME_INPUT, text)
 
-    def fill_last_name_input(self, text):
+    def fill_last_name(self, text):
         self.type(self._LAST_NAME_INPUT, text)
 
-    def fill_address_field_input(self, text):
+    def fill_address(self, text):
         self.type(self._ADDRESS_INPUT, text)
 
-    def fill_state_field_input(self, text):
+    def fill_state(self, text):
         self.type(self._STATE_INPUT, text)
 
-    def fill_city_field_input(self, text):
+    def fill_city(self, text):
         self.type(self._CITY_INPUT, text)
 
-    def fill_zipcode_field_input(self, text):
+    def fill_zipcode(self, text):
         self.type(self._ZIPCODE_INPUT, text)
 
-    def fill_mobile_number_input(self, text):
+    def fill_mobile_number(self, text):
         self.type(self._MOBILE_NUMBER_INPUT, text)
 
     def click_create_account_button(self):
@@ -92,13 +92,13 @@ class SignUpStep2(BasePage):
         self.select_year(year)
         self.select_country(country)
         self.mark_newsletter_checkbox()
-        self.fill_first_name_input(first_name)
-        self.fill_last_name_input(last_name)
-        self.fill_address_field_input(address)
-        self.fill_state_field_input(state)
-        self.fill_city_field_input(city)
-        self.fill_zipcode_field_input(zipcode)
-        self.fill_mobile_number_input(mobile_number)
+        self.fill_first_name(first_name)
+        self.fill_last_name(last_name)
+        self.fill_address(address)
+        self.fill_state(state)
+        self.fill_city(city)
+        self.fill_zipcode(zipcode)
+        self.fill_mobile_number(mobile_number)
         self.click_create_account_button()
 
     def is_account_created(self):
