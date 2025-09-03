@@ -4,9 +4,9 @@ from pages.sign_up_step_2 import SignUpStep2
 from data.test_data import SIGNUP_DATA
 import time
 
-class TestRegister():
+class TestRegisterPositive():
     
-    def test_register_valid_user(self, pages):
+    def test_register_with_valid_data(self, pages):
         
         valid_user= SIGNUP_DATA["valid_user"]
         
@@ -41,6 +41,12 @@ class TestRegister():
         )
         
         assert sign_up_step2_page.is_account_created()
+
+
+    class TestRegisterNegative():
+            
+        def test_register_with_invalid_email():
+                pass
 
 
        
