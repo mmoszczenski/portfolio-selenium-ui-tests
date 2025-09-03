@@ -6,7 +6,7 @@ import time
 
 class TestRegisterPositive():
     
-    def test_register_with_valid_data(self, pages):
+    def test_register_with_valid_data_minimal(self, pages):
         
         valid_user= SIGNUP_DATA["valid_user"]
         
@@ -43,11 +43,26 @@ class TestRegisterPositive():
         assert sign_up_step2_page.is_account_created()
 
 
-    class TestRegisterNegative():
-            
-        def test_register_with_invalid_email():
-                pass
+    def test_register_with_valid_data_all_fields():
+        pass
 
+
+class TestRegisterNegative():
+            
+    def test_register_with_invalid_email():
+        pass
+        
+    def test_register_with_empty_password():
+        pass
+
+    def test_register_with_empty_fields():
+        pass
+
+    def test_register_with_taken_email():
+        pass
+
+    def test_register_with_special_characters():
+        pass
 
        
 
