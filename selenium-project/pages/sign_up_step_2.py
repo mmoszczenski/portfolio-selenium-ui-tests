@@ -30,7 +30,7 @@ class SignUpStep2(BasePage):
     #Action buttons
     _CREATE_ACCOUNT_BUTTON = (By.CSS_SELECTOR, "button[data-qa='create-account']")
 
-    #Multiple choices fields
+    #Multiple choices
     _title = {
         "Mr": (By.ID, "id_gender1"),
         "Mrs": (By.ID, "id_gender2")
@@ -96,7 +96,7 @@ class SignUpStep2(BasePage):
         self, title, password, day, month, year, country, first_name, last_name, address, state, city, zipcode, mobile_number 
         ):
         self.select_title(title)
-        self.fill_password_field(password)
+        self.fill_password(password)
         self.select_days(day)
         self.select_month(month)
         self.select_year(year)
