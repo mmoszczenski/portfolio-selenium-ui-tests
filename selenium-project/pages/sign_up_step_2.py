@@ -55,6 +55,9 @@ class SignUpStep2(BasePage):
     def mark_newsletter_checkbox(self):
         self.click(self._NEWSLETTER_CHECKBOX)
 
+    def fill_password_field(self, text):
+        self.type(self._PASSWORD_FIELD, text)
+
     def fill_first_name_input(self, text):
         self.type(self._FIRST_NAME_INPUT, text)
 
@@ -83,7 +86,7 @@ class SignUpStep2(BasePage):
         self, title, password, day, month, year, country, first_name, last_name, address, state, city, zipcode, mobile_number 
         ):
         self.select_title(title)
-        self.type(self._PASSWORD_FIELD, password)
+        self.fill_password_field(password)
         self.select_days(day)
         self.select_month(month)
         self.select_year(year)
