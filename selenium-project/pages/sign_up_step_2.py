@@ -4,13 +4,12 @@ from selenium.webdriver.support.ui import Select
 
 class SignUpStep2(BasePage):
     
+    #Headers
     _PAGE_HEADER = (By.XPATH, "//div[contains(@class,'login-form')]//h2[b[text()='Enter Account Information']]")
+    _ACCOUNT_CREATED_HEADER = (By.CSS_SELECTOR, "h2[data-qa='account-created']")
+
+    #Input Fields
     _PASSWORD_FIELD_INPUT = (By.CSS_SELECTOR, "input[data-qa='password']")
-    _DAYS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='days']")
-    _MONTHS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='months']")
-    _YEARS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='years']")
-    _COUNTRY_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='country']")
-    _NEWSLETTER_CHECKBOX = (By.ID, "newsletter")
     _FIRST_NAME_INPUT = (By.CSS_SELECTOR, "input[data-qa='first_name']")
     _LAST_NAME_INPUT = (By.CSS_SELECTOR, "input[data-qa='last_name']")
     _ADDRESS_INPUT = (By.CSS_SELECTOR, "input[data-qa='address']")
@@ -18,9 +17,20 @@ class SignUpStep2(BasePage):
     _CITY_INPUT = (By.CSS_SELECTOR, "input[data-qa='city']")
     _ZIPCODE_INPUT = (By.CSS_SELECTOR, "input[data-qa='zipcode']")
     _MOBILE_NUMBER_INPUT = (By.CSS_SELECTOR, "input[data-qa='mobile_number']")
-    _CREATE_ACCOUNT_BUTTON = (By.CSS_SELECTOR, "button[data-qa='create-account']")
-    _ACCOUNT_CREATED_HEADER = (By.CSS_SELECTOR, "h2[data-qa='account-created']")
 
+    #Dropdowns
+    _DAYS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='days']")
+    _MONTHS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='months']")
+    _YEARS_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='years']")
+    _COUNTRY_DROPDOWN = (By.CSS_SELECTOR, "select[data-qa='country']")
+
+    #Checkobxes
+    _NEWSLETTER_CHECKBOX = (By.ID, "newsletter")
+
+    #Action buttons
+    _CREATE_ACCOUNT_BUTTON = (By.CSS_SELECTOR, "button[data-qa='create-account']")
+
+    #Multiple choices fields
     _title = {
         "Mr": (By.ID, "id_gender1"),
         "Mrs": (By.ID, "id_gender2")
