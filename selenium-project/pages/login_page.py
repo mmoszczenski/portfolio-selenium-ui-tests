@@ -26,3 +26,7 @@ class LoginPage(BasePage):
     def get_email_validation_error(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
         return email_input.get_attribute("validationMessage")
+
+    def is_email_validation_error_displayed(self, expected_message):
+        message = self.get_email_validation_error()
+        return expected_message in message
