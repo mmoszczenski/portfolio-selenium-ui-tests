@@ -25,8 +25,8 @@ class LoginPage(BasePage):
 
     def is_email_valid(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
-        return self.driver.execute_script("return arguments[0].validity.valid", email_input)
-
+        return self.is_valid(email_input)
+    
     def is_email_type_mismatch(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
-        return self.driver.execute_script("return arguments[0].validity.typeMismatch;", email_input)
+        return self.get_validity_propert(email_input, "typeMismatch")

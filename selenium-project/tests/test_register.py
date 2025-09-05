@@ -62,8 +62,11 @@ class TestRegisterNegative():
 
         login_page.sign_up(invalid_user["username"], invalid_user["email"])
 
-  
+        time.sleep(2)
 
+        assert login_page.is_email_valid() is False
+        assert login_page.is_email_type_mismatch() is True
+ 
     def test_register_with_empty_password():
         pass
 

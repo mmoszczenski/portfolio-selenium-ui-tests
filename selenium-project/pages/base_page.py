@@ -35,3 +35,10 @@ class BasePage():
         
     def execute_js(self, script: str, *args):
         return self.driver.execute_script(script, *args)
+    
+    def get_validity_propert(self, element, property_name: str):
+        script = f"return arguments[0].validity.{property_name};"
+        return self.execute_js(script, element)
+
+    def is_valid(self, element):
+        return self.get_validity_propert(element, "valid")
