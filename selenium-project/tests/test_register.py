@@ -54,15 +54,12 @@ class TestRegisterNegative():
 
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
-        #sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
 
         home_page.open(home_page.URL)
         home_page.accept_cookies()
         home_page.go_to_login_page()
 
         login_page.sign_up(invalid_user["username"], invalid_user["email"])
-
-        time.sleep(2)
 
         assert login_page.is_email_valid() is False
         assert login_page.is_email_type_mismatch() is True
