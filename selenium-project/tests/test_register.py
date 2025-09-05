@@ -62,8 +62,7 @@ class TestRegisterNegative():
 
         login_page.sign_up(invalid_user["username"], invalid_user["email"])
 
-        #TODO dodać tutaj asercję na sprawdzenie errora
-
+  
 
     def test_register_with_empty_password():
         pass

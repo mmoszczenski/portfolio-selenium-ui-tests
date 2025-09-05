@@ -32,3 +32,6 @@ class BasePage():
             return element
         except TimeoutError:
             return None
+        
+    def execute_js(self, script: str, *args):
+        return self.driver.execute_script(script, *args)

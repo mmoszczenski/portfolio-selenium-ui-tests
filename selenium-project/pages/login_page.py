@@ -23,10 +23,10 @@ class LoginPage(BasePage):
         self.fill_sign_up_form(username, email)
         self.click_sign_up_button()
 
-    def get_email_validation_error(self):
+    def is_email_valid(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
-        return email_input.get_attribute("validationMessage")
+        return self.driver.execute_script("return arguments[0].validity.valid", email_input)
 
-    def is_email_validation_error_displayed(self, expected_message):
-        message = self.get_email_validation_error()
-        return expected_message in message
+    def is_email_type_mismatch(self):
+        email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
+        return self.driver.execute_script("return arguments[0].validity.typeMismatch;", email_input)
