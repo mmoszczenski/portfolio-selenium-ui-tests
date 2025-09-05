@@ -22,3 +22,7 @@ class LoginPage(BasePage):
     def sign_up(self, username, email):
         self.fill_sign_up_form(username, email)
         self.click_sign_up_button()
+
+    def get_email_validation_error(self):
+        email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
+        return email_input.get_attribute("validationMessage")
