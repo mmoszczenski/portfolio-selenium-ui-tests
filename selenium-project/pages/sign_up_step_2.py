@@ -12,7 +12,9 @@ class SignUpStep2(BasePage):
     _PASSWORD_FIELD_INPUT = (By.CSS_SELECTOR, "input[data-qa='password']")
     _FIRST_NAME_INPUT = (By.CSS_SELECTOR, "input[data-qa='first_name']")
     _LAST_NAME_INPUT = (By.CSS_SELECTOR, "input[data-qa='last_name']")
+    _COMPANY_INPUT = (By.CSS_SELECTOR, "")
     _ADDRESS_INPUT = (By.CSS_SELECTOR, "input[data-qa='address']")
+    _ADDRESS2_INPUT = (By.CSS_SELECTOR, "")
     _STATE_INPUT = (By.CSS_SELECTOR, "input[data-qa='state']")
     _CITY_INPUT = (By.CSS_SELECTOR, "input[data-qa='city']")
     _ZIPCODE_INPUT = (By.CSS_SELECTOR, "input[data-qa='zipcode']")
@@ -77,9 +79,15 @@ class SignUpStep2(BasePage):
 
     def fill_last_name(self, text):
         self.type(self._LAST_NAME_INPUT, text)
+        
+    def fill_company(self, text):
+        self.type(self._COMPANY_INPUT, text)
 
     def fill_address(self, text):
         self.type(self._ADDRESS_INPUT, text)
+        
+    def fill_address2(self, text):
+        self.type(self._ADDRESS2_INPUT, text)
 
     def fill_state(self, text):
         self.type(self._STATE_INPUT, text)
@@ -115,8 +123,12 @@ class SignUpStep2(BasePage):
             self.fill_first_name(first_name)
         if last_name:
             self.fill_last_name(last_name)
+        if "company" in kwargs:
+            self.fill_company(kwargs["company"])
         if address:    
             self.fill_address(address)
+        if "address2" in kwargs:
+            self.fill_address2(kwargs["address2"])
         if state:    
             self.fill_state(state)
         if city:
