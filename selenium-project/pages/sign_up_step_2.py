@@ -26,6 +26,7 @@ class SignUpStep2(BasePage):
 
     #Checkobxes
     _NEWSLETTER_CHECKBOX = (By.ID, "newsletter")
+    _SPECIAL_OFFERS_CHECKBOX = (By.ID, "optin")
 
     #Action buttons
     _CREATE_ACCOUNT_BUTTON = (By.CSS_SELECTOR, "button[data-qa='create-account']")
@@ -64,6 +65,9 @@ class SignUpStep2(BasePage):
 
     def mark_newsletter_checkbox(self):
         self.click(self._NEWSLETTER_CHECKBOX)
+        
+    def mark_special_offers_checkbox(self):
+        self.click(self._SPECIAL_OFFERS_CHECKBOX)
 
     def fill_password(self, text):
         self.type(self._PASSWORD_FIELD_INPUT, text)
@@ -93,22 +97,39 @@ class SignUpStep2(BasePage):
         self.click(self._CREATE_ACCOUNT_BUTTON)
 
     def fill_account_information_form(
-        self, title, password, day, month, year, country, first_name, last_name, address, state, city, zipcode, mobile_number 
+        self, title, password, day, month, year, country, first_name, last_name, address, state, city, zipcode, mobile_number, newsletter = False, special_offers = False
         ):
-        self.select_title(title)
-        self.fill_password(password)
-        self.select_days(day)
-        self.select_month(month)
-        self.select_year(year)
-        self.select_country(country)
-        self.mark_newsletter_checkbox()
-        self.fill_first_name(first_name)
-        self.fill_last_name(last_name)
-        self.fill_address(address)
-        self.fill_state(state)
-        self.fill_city(city)
-        self.fill_zipcode(zipcode)
-        self.fill_mobile_number(mobile_number)
+        if title:
+            self.select_title(title)
+        if password:
+            self.fill_password(password)
+        if day:    
+            self.select_days(day)
+        if month:
+            self.select_month(month)
+        if year:
+            self.select_year(year)
+        if country:
+            self.select_country(country)
+        if first_name:
+            self.fill_first_name(first_name)
+        if last_name:
+            self.fill_last_name(last_name)
+        if address:    
+            self.fill_address(address)
+        if state:    
+            self.fill_state(state)
+        if city:
+            self.fill_city(city)
+        if zipcode:    
+            self.fill_zipcode(zipcode)
+        if mobile_number:
+            self.fill_mobile_number(mobile_number)
+        if newsletter:
+            self.mark_newsletter_checkbox()
+        if special_offers:
+            self.mark_special_offers_checkbox()
+        
         self.click_create_account_button()
 
     def is_account_created(self):
