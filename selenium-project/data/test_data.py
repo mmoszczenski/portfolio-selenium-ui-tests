@@ -3,7 +3,22 @@ from utils.helpers import generate_random_email
 
 SIGNUP_DATA = {
 
-"valid_user": {
+"valid_user_minimal": {
+    "username": "test_user", 
+     "email": generate_random_email(),
+     "password": "passwordtest",
+     "first_name": "John",
+     "last_name": "Doe",
+     "company": "Apple Inc",
+     "address": "Magazynowa 5",
+     "country": "United States",
+     "state": "Texas",
+     "city": "Arizona",
+     "zipcode": "81-377",
+     "mobile_number": "512530800"
+     },
+
+"valid_user_full": {
     "username": "test_user", 
      "email": generate_random_email(),
      "title": "Mr",

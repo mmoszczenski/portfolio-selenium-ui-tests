@@ -9,7 +9,6 @@ class TestRegisterPositive():
     def test_register_with_valid_data_minimal(self, pages):
         
         valid_user= SIGNUP_DATA["valid_user"]
-        
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
@@ -33,7 +32,7 @@ class TestRegisterPositive():
             state = valid_user["state"],
             city = valid_user["city"],
             zipcode = valid_user["zipcode"],
-            mobile_number = valid_user["mobile_number"],
+            mobile_number = valid_user["mobile_number"]
         )
         
         assert sign_up_step2_page.is_account_created()
@@ -41,7 +40,7 @@ class TestRegisterPositive():
 
     def test_register_with_valid_data_all_fields(self, pages):
         
-        valid_user= SIGNUP_DATA["valid_user"]
+        user= SIGNUP_DATA["valid_user_full"]
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
@@ -52,26 +51,27 @@ class TestRegisterPositive():
         home_page.go_to_login_page()
         
         assert login_page.is_on_login_page()
-        login_page.sign_up(valid_user["username"], valid_user["email"])
+        login_page.sign_up(user["username"], user["email"])
         
         assert sign_up_step2_page.is_on_sign_up_step2_page()
 
         sign_up_step2_page.fill_account_information_form(
-            valid_user["title"],
-            valid_user["password"], 
-            valid_user["day"], 
-            valid_user["month"], 
-            valid_user["year"],
-            valid_user["country"],
-            valid_user["first_name"],
-            valid_user["last_name"],
-            valid_user["address"],
-            valid_user["state"],
-            valid_user["city"],
-            valid_user["zipcode"],
-            valid_user["mobile_number"],
-            newsletter= True,
-            special_offers=True
+            
+        title = user["title"],
+        password = user["password"], 
+        day = user["day"], 
+        month = user["month"], 
+        year = user["year"],
+        country = user["country"],
+        first_name = user["first_name"],
+        last_name = user["last_name"],
+        address = user["address"],
+        state = user["state"],
+        city = user["city"],
+        zipcode = user["zipcode"],
+        mobile_number = user["mobile_number"],
+        newsletter= True,
+         special_offers=True
         )
         
         assert sign_up_step2_page.is_account_created()

@@ -105,12 +105,16 @@ class SignUpStep2(BasePage):
         self.click(self._CREATE_ACCOUNT_BUTTON)
 
     def fill_account_information_form(
-        self, country, first_name, last_name, address, state, city, zipcode, mobile_number, password = None, **kwargs
+        self, country, first_name, last_name, address, state, city, zipcode, mobile_number, password=None, **kwargs
         ):
         if "title" in kwargs:
             self.select_title(kwargs["title"])
         if password is not None:
             self.fill_password(password)
+        if kwargs.get("newsletter", False):
+            self.mark_newsletter_checkbox()
+        if kwargs.get("special_offers", False):
+            self.mark_special_offers_checkbox()
         if "day" in kwargs:    
             self.select_days(kwargs["day"])
         if "month" in kwargs:
@@ -137,11 +141,7 @@ class SignUpStep2(BasePage):
             self.fill_zipcode(zipcode)
         if mobile_number:
             self.fill_mobile_number(mobile_number)
-        if kwargs.get("newsletter", False):
-            self.mark_newsletter_checkbox()
-        if kwargs.get("special_offers", False):
-            self.mark_special_offers_checkbox()
-        
+
         self.click_create_account_button()
 
     def is_account_created(self):
