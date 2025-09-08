@@ -8,7 +8,7 @@ class TestRegisterPositive():
     
     def test_register_with_valid_data_minimal(self, pages):
         
-        valid_user= SIGNUP_DATA["valid_user"]
+        user= SIGNUP_DATA["valid_user"]
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
@@ -19,20 +19,20 @@ class TestRegisterPositive():
         home_page.go_to_login_page()
         
         assert login_page.is_on_login_page()
-        login_page.sign_up(valid_user["username"], valid_user["email"])
+        login_page.sign_up(user["username"], user["email"])
         
         assert sign_up_step2_page.is_on_sign_up_step2_page()
 
         sign_up_step2_page.fill_account_information_form(
-            password = valid_user["password"], 
-            country = valid_user["country"],
-            first_name = valid_user["first_name"],
-            last_name = valid_user["last_name"],
-            address = valid_user["address"],
-            state = valid_user["state"],
-            city = valid_user["city"],
-            zipcode = valid_user["zipcode"],
-            mobile_number = valid_user["mobile_number"]
+            password = user["password"], 
+            country = user["country"],
+            first_name = user["first_name"],
+            last_name = user["last_name"],
+            address = user["address"],
+            state = user["state"],
+            city = user["city"],
+            zipcode = user["zipcode"],
+            mobile_number = user["mobile_number"]
         )
         
         assert sign_up_step2_page.is_account_created()
@@ -71,12 +71,11 @@ class TestRegisterPositive():
         zipcode = user["zipcode"],
         mobile_number = user["mobile_number"],
         newsletter= True,
-         special_offers=True
+        special_offers=True
         )
         
         assert sign_up_step2_page.is_account_created()
         
-
 
 class TestRegisterNegative():
             
