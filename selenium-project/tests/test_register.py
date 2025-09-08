@@ -40,7 +40,7 @@ class TestRegisterPositive():
 
     def test_register_with_valid_data_all_fields(self, pages):
         
-        user= SIGNUP_DATA["valid_user_full"]
+        user= SIGNUP_DATA["valid_user"]
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
@@ -56,32 +56,30 @@ class TestRegisterPositive():
         assert sign_up_step2_page.is_on_sign_up_step2_page()
 
         sign_up_step2_page.fill_account_information_form(
-            
-        title = user["title"],
-        password = user["password"], 
-        day = user["day"], 
-        month = user["month"], 
-        year = user["year"],
-        country = user["country"],
-        first_name = user["first_name"],
-        last_name = user["last_name"],
-        address = user["address"],
-        state = user["state"],
-        city = user["city"],
-        zipcode = user["zipcode"],
-        mobile_number = user["mobile_number"],
-        newsletter= True,
-        special_offers=True
+            title = user["title"],
+            password = user["password"], 
+            day = user["day"], 
+            month = user["month"], 
+            year = user["year"],
+            country = user["country"],
+            first_name = user["first_name"],
+            last_name = user["last_name"],
+            address = user["address"],
+            state = user["state"],
+            city = user["city"],
+            zipcode = user["zipcode"],
+            mobile_number = user["mobile_number"],
+            newsletter= True,
+            special_offers=True
         )
         
         assert sign_up_step2_page.is_account_created()
         
-
 class TestRegisterNegative():
             
     def test_register_with_invalid_email(self, pages):
         
-        invalid_user = SIGNUP_DATA["invalid_user_bad_email"]
+        user = SIGNUP_DATA["valid_user"]
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
 
@@ -89,22 +87,46 @@ class TestRegisterNegative():
         home_page.accept_cookies()
         home_page.go_to_login_page()
 
-        login_page.sign_up(invalid_user["username"], invalid_user["email"])
+        login_page.sign_up(user["username"], "invalidemail.com")
 
         assert login_page.is_email_valid() is False
         assert login_page.is_email_type_mismatch() is True
  
-    def test_register_with_empty_password():
-        pass
-
-    def test_register_with_empty_fields():
-        pass
-
-    def test_register_with_taken_email():
-        pass
-
-    def test_register_with_special_characters():
-        pass
+    def test_register_with_empty_password(self, pages):
+        
+        user = SIGNUP_DATA["valid_user"]
+        home_page: HomePage = pages["home"]
+        login_page: LoginPage = pages["login"]
+        sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
+        
+        home_page.open(home_page.URL)
+        home_page.accept_cookies()
+        home_page.go_to_login_page()
+        
+        login_page.sign_up(user["username"], user["email"])
+        
+        sign_up_step2_page.fill_account_information_form(
+            country = user["country"],
+            first_name = user["first_name"],
+            last_name = user["last_name"],
+            address = user["address"],
+            state = user["state"],
+            city = user["city"],
+            zipcode = user["zipcode"],
+            mobile_number = user["mobile_number"]            
+        )
+        
+        assert sign_up_step2_page.is_password_valid() is False
+        assert sign_up_step2_page.is_password_type_valueMissing() is True
+        
+        time.sleep(2)
+       
+    #def test_register_with_empty_fields():
+       
+    #def test_register_with_special_characters():
+    
+    #def test_register_with_taken_email():
+      
 
        
 
