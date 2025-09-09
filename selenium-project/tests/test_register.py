@@ -189,8 +189,6 @@ class TestRegisterNegative():
 
         assert login_page.is_email_taken_error_displayed()
 
-        time.sleep(4)
-
 
        
 
