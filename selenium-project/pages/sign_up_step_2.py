@@ -151,6 +151,6 @@ class SignUpStep2(BasePage):
         password_input = self.find(self._PASSWORD_FIELD_INPUT)
         return self.is_valid(password_input)
     
-    def is_password_type_valueMissing(self):
+    def is_password_error_type_valueMissing(self):
         password_input = self.find(self._PASSWORD_FIELD_INPUT)
         return self.get_validity_propert(password_input, "valueMissing")    

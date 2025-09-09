@@ -27,6 +27,6 @@ class LoginPage(BasePage):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
         return self.is_valid(email_input)
     
-    def is_email_type_mismatch(self):
+    def is_email_error_type_mismatch(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
         return self.get_validity_propert(email_input, "typeMismatch")
