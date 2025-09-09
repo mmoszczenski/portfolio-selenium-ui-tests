@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 class MainPageLoggedIn(BasePage):
 
-    _LOGOUT_BUTTON = (By.LINK_TEXT, " Logout")
+    _LOGOUT_BUTTON = (By.CSS_SELECTOR, " a[href='/logout']")
 
     def click_logout_button(self):
         self.find(self._LOGOUT_BUTTON).click()
