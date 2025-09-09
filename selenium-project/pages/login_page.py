@@ -9,6 +9,8 @@ class LoginPage(BasePage):
     _SIGN_UP_EMAIL_INPUT_FIELD = (By.CSS_SELECTOR, "input[data-qa='signup-email']")
     _SIGN_UP_BUTTON = (By.CSS_SELECTOR, "button[data-qa='signup-button']")
     
+    _EMAIL_TAKEN_ERROR_MESSAGE = (By.XPATH, "//form[@action='/signup']//p")
+
     def is_on_login_page(self):
         return self.is_visible(self._HEADER)
     
@@ -30,3 +32,6 @@ class LoginPage(BasePage):
     def is_email_error_type_mismatch(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
         return self.get_validity_propert(email_input, "typeMismatch")
+    
+    def is_email_taken_error_displayed(self):
+        self.is_visible(self._EMAIL_TAKEN_ERROR_MESSAGE)
