@@ -185,7 +185,7 @@ class TestRegisterNegative():
 
         login_page.sign_up(user["username"], user["email"])    
 
-        login_page.is_email_taken_error_displayed()
+        assert login_page.is_email_taken_error_displayed()
 
         time.sleep(4)
 

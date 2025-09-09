@@ -7,4 +7,4 @@ class MainPageLoggedIn(BasePage):
     _LOGOUT_BUTTON = (By.CSS_SELECTOR, " a[href='/logout']")
 
     def click_logout_button(self):
-        self.find(self._LOGOUT_BUTTON).click()
+        self.click(self._LOGOUT_BUTTON)

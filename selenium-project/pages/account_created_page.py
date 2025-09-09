@@ -7,4 +7,4 @@ class AccountCreatedPage(BasePage):
     _CONTINUE_BUTTON = (By.CSS_SELECTOR, "a[data-qa='continue-button']")
 
     def click_continue_button(self):
-        self.find(self._CONTINUE_BUTTON).click()
+        self.click(self._CONTINUE_BUTTON)
