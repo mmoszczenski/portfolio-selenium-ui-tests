@@ -31,7 +31,7 @@ class LoginPage(BasePage):
     
     def is_email_error_type_mismatch(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
-        return self.get_validity_propert(email_input, "typeMismatch")
+        return self.get_validity_property(email_input, "typeMismatch")
     
     def is_email_taken_error_displayed(self):
         return self.is_visible(self._EMAIL_TAKEN_ERROR_MESSAGE)
