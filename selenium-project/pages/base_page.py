@@ -1,6 +1,7 @@
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.common.exceptions import TimeoutException
 
 class BasePage():
     
@@ -30,7 +31,7 @@ class BasePage():
         try:
             element = WebDriverWait(self.driver, self.timeout).until(EC.visibility_of_element_located(locator))
             return element
-        except TimeoutError:
+        except TimeoutException:
             return None
         
     def execute_js(self, script: str, *args):

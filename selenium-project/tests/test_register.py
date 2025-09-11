@@ -78,7 +78,7 @@ class TestRegisterPositive():
             special_offers=True
         )
         
-        assert login_page.is_email_taken_error_displayed()
+        assert sign_up_step2_page.is_account_created()
         
 class TestRegisterNegative():
             
