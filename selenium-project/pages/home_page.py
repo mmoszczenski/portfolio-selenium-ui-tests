@@ -5,7 +5,7 @@ class HomePage(BasePage):
     
     URL = "https://automationexercise.com/"
     
-    _ACCCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Zgadzam się']")
+    _ACCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Zgadzam się']")
     _LOGIN_BUTTON = (By.CSS_SELECTOR, "a[href='/login']" )
     
             
@@ -16,4 +16,4 @@ class HomePage(BasePage):
         self.click(self._LOGIN_BUTTON)
         
     def accept_cookies(self):
-        self.click(self._ACCCEPT_COOKIES_BUTTON)
+        self.click(self._ACCEPT_COOKIES_BUTTON)
