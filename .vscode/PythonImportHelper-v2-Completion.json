@@ -1,0 +1,394 @@
+[
+    {
+        "label": "generate_random_email",
+        "importPath": "utils.helpers",
+        "description": "utils.helpers",
+        "isExtraImport": true,
+        "detail": "utils.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_email",
+        "importPath": "utils.helpers",
+        "description": "utils.helpers",
+        "isExtraImport": true,
+        "detail": "utils.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriver",
+        "importPath": "selenium.webdriver.chrome.webdriver",
+        "description": "selenium.webdriver.chrome.webdriver",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.webdriver",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "create_driver",
+        "importPath": "utils.driver_factory",
+        "description": "utils.driver_factory",
+        "isExtraImport": true,
+        "detail": "utils.driver_factory",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "importPath": "pages.sign_up_step_2",
+        "description": "pages.sign_up_step_2",
+        "isExtraImport": true,
+        "detail": "pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "importPath": "pages.sign_up_step_2",
+        "description": "pages.sign_up_step_2",
+        "isExtraImport": true,
+        "detail": "pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "MainPageLoggedIn",
+        "importPath": "pages.main_page_logged_in",
+        "description": "pages.main_page_logged_in",
+        "isExtraImport": true,
+        "detail": "pages.main_page_logged_in",
+        "documentation": {}
+    },
+    {
+        "label": "MainPageLoggedIn",
+        "importPath": "pages.main_page_logged_in",
+        "description": "pages.main_page_logged_in",
+        "isExtraImport": true,
+        "detail": "pages.main_page_logged_in",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "importPath": "pages.account_created_page",
+        "description": "pages.account_created_page",
+        "isExtraImport": true,
+        "detail": "pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "importPath": "pages.account_created_page",
+        "description": "pages.account_created_page",
+        "isExtraImport": true,
+        "detail": "pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "SIGNUP_DATA",
+        "importPath": "data.test_data",
+        "description": "data.test_data",
+        "isExtraImport": true,
+        "detail": "data.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "selenium.webdriver.chrome.service",
+        "description": "selenium.webdriver.chrome.service",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.service",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "importPath": "selenium.webdriver.chrome.options",
+        "description": "selenium.webdriver.chrome.options",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.options",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "SIGNUP_DATA",
+        "kind": 5,
+        "importPath": "selenium-project.data.test_data",
+        "description": "selenium-project.data.test_data",
+        "peekOfCode": "SIGNUP_DATA = {\n\"valid_user\": {\n    \"username\": \"test_user\", \n     \"email\": generate_random_email(),\n     \"title\": \"Mr\",\n     \"password\": \"passwordtest\",\n     \"day\": \"18\",\n     \"month\": \"May\",\n     \"year\": \"1990\",\n     \"first_name\": \"John\",",
+        "detail": "selenium-project.data.test_data",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.account_created_page",
+        "description": "selenium-project.pages.account_created_page",
+        "peekOfCode": "class AccountCreatedPage(BasePage):\n    _CONTINUE_BUTTON = (By.CSS_SELECTOR, \"a[data-qa='continue-button']\")\n    def click_continue_button(self):\n        self.click(self._CONTINUE_BUTTON)",
+        "detail": "selenium-project.pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.base_page",
+        "description": "selenium-project.pages.base_page",
+        "peekOfCode": "class BasePage():\n    def __init__(self, driver: WebDriver, timeout = 10):\n        self.driver = driver\n        self.timeout = timeout\n    def open(self, url):\n        self.driver.get(url)    \n    def find(self, locator):\n        return WebDriverWait(self.driver, self.timeout).until(EC.presence_of_element_located(locator))\n    def type(self, locator, text):\n        element = self.find(locator)",
+        "detail": "selenium-project.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.home_page",
+        "description": "selenium-project.pages.home_page",
+        "peekOfCode": "class HomePage(BasePage):\n    URL = \"https://automationexercise.com/\"\n    _ACCCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, \"button[aria-label='Zgadzam się']\")\n    _LOGIN_BUTTON = (By.CSS_SELECTOR, \"a[href='/login']\" )\n    def is_on_homepage(self):\n        return self.driver.current_url == self.URL\n    def go_to_login_page(self):\n        self.click(self._LOGIN_BUTTON)\n    def accept_cookies(self):\n        self.click(self._ACCCEPT_COOKIES_BUTTON)",
+        "detail": "selenium-project.pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.login_page",
+        "description": "selenium-project.pages.login_page",
+        "peekOfCode": "class LoginPage(BasePage):\n    _HEADER = (By.XPATH, \"//h2[text()='New User Signup!']\")\n    _SIGN_UP_USERNAME_INPUT_FIELD = (By.CSS_SELECTOR, \"input[data-qa='signup-name']\")\n    _SIGN_UP_EMAIL_INPUT_FIELD = (By.CSS_SELECTOR, \"input[data-qa='signup-email']\")\n    _SIGN_UP_BUTTON = (By.CSS_SELECTOR, \"button[data-qa='signup-button']\")\n    _EMAIL_TAKEN_ERROR_MESSAGE = (By.XPATH, \"//form[@action='/signup']//p\")\n    def is_on_login_page(self):\n        return self.is_visible(self._HEADER)\n    def fill_sign_up_form(self, username, email):\n        self.type(self._SIGN_UP_USERNAME_INPUT_FIELD, username)",
+        "detail": "selenium-project.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "MainPageLoggedIn",
+        "kind": 6,
+        "importPath": "selenium-project.pages.main_page_logged_in",
+        "description": "selenium-project.pages.main_page_logged_in",
+        "peekOfCode": "class MainPageLoggedIn(BasePage):\n    _LOGOUT_BUTTON = (By.CSS_SELECTOR, \" a[href='/logout']\")\n    def click_logout_button(self):\n        self.click(self._LOGOUT_BUTTON)",
+        "detail": "selenium-project.pages.main_page_logged_in",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "kind": 6,
+        "importPath": "selenium-project.pages.sign_up_step_2",
+        "description": "selenium-project.pages.sign_up_step_2",
+        "peekOfCode": "class SignUpStep2(BasePage):\n    #Headers\n    _PAGE_HEADER = (By.XPATH, \"//div[contains(@class,'login-form')]//h2[b[text()='Enter Account Information']]\")\n    _ACCOUNT_CREATED_HEADER = (By.CSS_SELECTOR, \"h2[data-qa='account-created']\")\n    #Input Fields\n    _PASSWORD_FIELD_INPUT = (By.CSS_SELECTOR, \"input[data-qa='password']\")\n    _FIRST_NAME_INPUT = (By.CSS_SELECTOR, \"input[data-qa='first_name']\")\n    _LAST_NAME_INPUT = (By.CSS_SELECTOR, \"input[data-qa='last_name']\")\n    _COMPANY_INPUT = (By.CSS_SELECTOR, \"input[data-qa='company']\")\n    _ADDRESS_INPUT = (By.CSS_SELECTOR, \"input[data-qa='address']\")",
+        "detail": "selenium-project.pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 2,
+        "importPath": "selenium-project.tests.conftest",
+        "description": "selenium-project.tests.conftest",
+        "peekOfCode": "def driver():\n    driver = create_driver()\n    yield driver\n    driver.quit()\n@pytest.fixture\ndef pages(driver):\n    return {\n        \"home\": HomePage(driver),\n        \"login\": LoginPage(driver),\n        \"sign_up_step2\": SignUpStep2(driver),",
+        "detail": "selenium-project.tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "pages",
+        "kind": 2,
+        "importPath": "selenium-project.tests.conftest",
+        "description": "selenium-project.tests.conftest",
+        "peekOfCode": "def pages(driver):\n    return {\n        \"home\": HomePage(driver),\n        \"login\": LoginPage(driver),\n        \"sign_up_step2\": SignUpStep2(driver),\n        \"main_page_logged_in\": MainPageLoggedIn(driver),\n        \"account_created_page\": AccountCreatedPage(driver)\n    }",
+        "detail": "selenium-project.tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "TestRegisterPositive",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_register",
+        "description": "selenium-project.tests.test_register",
+        "peekOfCode": "class TestRegisterPositive():\n    def test_register_with_valid_data_minimal(self, pages):\n        user= SIGNUP_DATA[\"valid_user\"]\n        home_page: HomePage = pages[\"home\"]\n        login_page: LoginPage = pages[\"login\"]\n        sign_up_step2_page: SignUpStep2 = pages[\"sign_up_step2\"]\n        home_page.open(home_page.URL)\n        home_page.accept_cookies()\n        assert home_page.is_on_homepage()\n        home_page.go_to_login_page()",
+        "detail": "selenium-project.tests.test_register",
+        "documentation": {}
+    },
+    {
+        "label": "TestRegisterNegative",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_register",
+        "description": "selenium-project.tests.test_register",
+        "peekOfCode": "class TestRegisterNegative():\n    def test_register_with_invalid_email(self, pages):\n        user = SIGNUP_DATA[\"valid_user\"]\n        home_page: HomePage = pages[\"home\"]\n        login_page: LoginPage = pages[\"login\"]\n        home_page.open(home_page.URL)\n        home_page.accept_cookies()\n        home_page.go_to_login_page()\n        login_page.sign_up(user[\"username\"], \"invalidemail.com\")\n        assert login_page.is_email_valid() is False",
+        "detail": "selenium-project.tests.test_register",
+        "documentation": {}
+    },
+    {
+        "label": "create_driver",
+        "kind": 2,
+        "importPath": "selenium-project.utils.driver_factory",
+        "description": "selenium-project.utils.driver_factory",
+        "peekOfCode": "def create_driver():\n    options = Options()\n    options.add_argument(\"--start-maximized\")\n    #options.add_argument(\"--headless\")\n    service = ChromeService()\n    driver = webdriver.Chrome(service=service, options=options)\n    return driver",
+        "detail": "selenium-project.utils.driver_factory",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_email",
+        "kind": 2,
+        "importPath": "selenium-project.utils.helpers",
+        "description": "selenium-project.utils.helpers",
+        "peekOfCode": "def generate_random_email(domain=\"example.com\"):\n    return f\"user_{uuid.uuid4().hex[:8]}@{domain}\"",
+        "detail": "selenium-project.utils.helpers",
+        "documentation": {}
+    }
+]
