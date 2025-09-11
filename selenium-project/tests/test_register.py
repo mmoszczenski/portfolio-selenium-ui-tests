@@ -122,7 +122,7 @@ class TestRegisterNegative():
         )
         
         assert sign_up_step2_page.is_password_valid() is False
-        assert sign_up_step2_page.is_password_error_type_valueMissing() is True
+        assert sign_up_step2_page.is_password_error_type_value_missing() is True
          
     def test_register_with_empty_fields(self, pages):
         
@@ -149,7 +149,7 @@ class TestRegisterNegative():
         )                 
     
         assert sign_up_step2_page.is_password_valid() is False
-        assert sign_up_step2_page.is_password_error_type_valueMissing() is True
+        assert sign_up_step2_page.is_password_error_type_value_missing() is True
     
     def test_register_with_taken_email(self, pages):
 
