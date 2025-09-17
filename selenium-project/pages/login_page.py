@@ -28,6 +28,13 @@ class LoginPage(BasePage):
         self.fill_sign_up_form(username, email)
         self.click_sign_up_button()
 
+    def fill_login_form(self, email, password):
+        self.type(self._LOGIN_EMAIL_INPUT, email)
+        self.type(self._LOGIN_PASSWORD_INPUT, password)
+
+    def click_login_button(self):
+        self.click(self._LOGIN_BUTTON)
+
     def is_email_valid(self):
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
         return self.is_valid(email_input)
