@@ -36,7 +36,9 @@ class TestLoginPositive():
         )        
         account_created_page.click_continue_button()
 
+        home_page.click_logout_button()
 
+        
 
 
 

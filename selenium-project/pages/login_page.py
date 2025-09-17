@@ -8,6 +8,9 @@ class LoginPage(BasePage):
     _SIGN_UP_USERNAME_INPUT_FIELD = (By.CSS_SELECTOR, "input[data-qa='signup-name']")
     _SIGN_UP_EMAIL_INPUT_FIELD = (By.CSS_SELECTOR, "input[data-qa='signup-email']")
     _SIGN_UP_BUTTON = (By.CSS_SELECTOR, "button[data-qa='signup-button']")
+    _LOGIN_EMAIL_INPUT = (By.CSS_SELECTOR, "input[data-qa='login-email']")
+    _LOGIN_PASSWORD_INPUT = (By.CSS_SELECTOR, "input[data-qa='login-password']")
+    _LOGIN_BUTTON = (By.CSS_SELECTOR, "button[data-qa='login-button']")
     
     _EMAIL_TAKEN_ERROR_MESSAGE = (By.XPATH, "//form[@action='/signup']//p")
 
