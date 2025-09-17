@@ -160,7 +160,6 @@ class TestRegisterNegative():
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
-        main_page_logged_in: MainPageLoggedIn = pages["main_page_logged_in"]
         account_created_page: AccountCreatedPage = pages["account_created_page"]
 
         home_page.open(home_page.URL)
@@ -183,7 +182,7 @@ class TestRegisterNegative():
 
         account_created_page.click_continue_button()
 
-        main_page_logged_in.click_logout_button()
+        home_page.click_logout_button()
 
         login_page.sign_up(user["username"], user["email"])    
 

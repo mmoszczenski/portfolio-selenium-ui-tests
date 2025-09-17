@@ -1,7 +1,6 @@
 from pages.home_page import HomePage
 from pages.login_page import LoginPage
 from pages.sign_up_step_2 import SignUpStep2
-from pages.main_page_logged_in import MainPageLoggedIn
 from pages.account_created_page import AccountCreatedPage
 from data.test_data import SIGNUP_DATA
 from utils.helpers import generate_random_email

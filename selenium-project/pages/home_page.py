@@ -7,6 +7,8 @@ class HomePage(BasePage):
     
     _ACCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Zgadzam się']")
     _LOGIN_BUTTON = (By.CSS_SELECTOR, "a[href='/login']" )
+
+    _LOGOUT_BUTTON = (By.CSS_SELECTOR, " a[href='/logout']")
     
             
     def is_on_homepage(self):
@@ -17,3 +19,6 @@ class HomePage(BasePage):
         
     def accept_cookies(self):
         self.click(self._ACCEPT_COOKIES_BUTTON)
+
+    def click_logout_button(self):
+        self.click(self._LOGOUT_BUTTON)
