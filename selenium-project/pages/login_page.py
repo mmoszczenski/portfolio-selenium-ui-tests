@@ -53,3 +53,11 @@ class LoginPage(BasePage):
 
     def is_login_validation_error_message_displayed(self):
         return self.is_visible(self._INCORRECT_EMAIL_OR_PASSWORD_MESSAGE)
+    
+    def is_password_error_type_value_missing(self):
+        password_input = self.find(self._LOGIN_PASSWORD_INPUT)
+        return self.get_validity_property(password_input, "valueMissing")    
+    
+    def is_email_error_type_value_missing(self):
+        email_input = self.find(self._LOGIN_EMAIL_INPUT)
+        return self.get_validity_property(email_input, "valueMissing")    
