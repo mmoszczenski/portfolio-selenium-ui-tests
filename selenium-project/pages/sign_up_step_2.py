@@ -142,6 +142,8 @@ class SignUpStep2(BasePage):
         if mobile_number:
             self.fill_mobile_number(mobile_number)
 
+        self.remove_ads_banner_if_visible()
+
         self.click_create_account_button()
 
     def is_account_created(self):

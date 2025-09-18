@@ -13,6 +13,7 @@ class LoginPage(BasePage):
     _LOGIN_BUTTON = (By.CSS_SELECTOR, "button[data-qa='login-button']")
     
     _EMAIL_TAKEN_ERROR_MESSAGE = (By.XPATH, "//form[@action='/signup']//p")
+    _INCORRECT_EMAIL_OR_PASSWORD_MESSAGE = (By.XPATH, "//form[@action='/login']//p")
 
     def is_on_login_page(self):
         return self.is_visible(self._HEADER)
@@ -49,3 +50,6 @@ class LoginPage(BasePage):
     
     def is_email_taken_error_displayed(self):
         return self.is_visible(self._EMAIL_TAKEN_ERROR_MESSAGE)
+
+    def is_login_validation_error_message_displayed(self):
+        return self.is_visible(self._INCORRECT_EMAIL_OR_PASSWORD_MESSAGE)

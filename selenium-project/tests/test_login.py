@@ -34,7 +34,6 @@ class TestLoginPositive():
         )        
         account_created_page.click_continue_button()
         home_page.click_logout_button()
-
         login_page.login(user["email"], user["password"])
 
         assert home_page.is_logged_in()
@@ -74,14 +73,23 @@ class TestLoginNegative():
         )        
         account_created_page.click_continue_button()
         home_page.click_logout_button()
-
         login_page.login(user["email"], "invalidpassword")
 
+        assert login_page.is_login_validation_error_message_displayed()
 
-#Test Case 1 - User provides valid login and invalid password. There is proper error message
+#Test Case 3 - User provides non-existing login and tries to submit the form. There is proper error message
 
-#Test Case 3 - User provides non-existing login and tries to submit the form. There is porper error message
+    def test_login_with_non_existing_email(self, pages):
+
+        home_page: HomePage = pages["home"]
+        login_page: LoginPage = pages["login"]
+
+        #TODO - Refactor so I can use just a helper/fixture instead of copying the whole code from registration test
+        home_page.open(home_page.URL)
+        home_page.accept_cookies()
+        home_page.go_to_login_page()
+        login_page.login("random_non_existing_email_1191919191@example.com", "random_password")
+
+        assert login_page.is_login_validation_error_message_displayed()
 
 #Test Case 4 - User doesn't provide any data what so ever and submits the form
-
-#Test Case 5 - dsafs
