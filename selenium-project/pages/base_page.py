@@ -46,4 +46,7 @@ class BasePage():
         return self.get_validity_property(element, "valid")
     
     def remove_ads_banner_if_visible(self):
-        script = f"document.querySelectorAll('ins.adsbygoogle').forEach(ad => ad.remove());"
+        try:
+            self.execute_js(f"document.querySelectorAll('ins.adsbygoogle').forEach(ad => ad.remove());")
+        except Exception as e:
+            print(f"Failed to remove banners: {e}")
