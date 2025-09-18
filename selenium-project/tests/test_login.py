@@ -3,8 +3,7 @@ from pages.login_page import LoginPage
 from pages.sign_up_step_2 import SignUpStep2
 from pages.account_created_page import AccountCreatedPage
 from data.test_data import SIGNUP_DATA
-from utils.helpers import generate_random_email
-
+import time
 
 class TestLoginPositive():
 
@@ -35,10 +34,13 @@ class TestLoginPositive():
             mobile_number = user["mobile_number"]
         )        
         account_created_page.click_continue_button()
-
         home_page.click_logout_button()
 
-        
+        login_page.login(user["username"], user["email"])
+
+        time.sleep(2)
+
+
 
 
 
