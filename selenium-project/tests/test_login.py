@@ -10,7 +10,6 @@ class TestLoginPositive():
 #Test Case 1 - User provides valid login and password and then user is redirected to the proper page
 
     def test_login_with_valid_credentials(self, pages):
-
         user= SIGNUP_DATA["valid_user"]
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
@@ -60,7 +59,7 @@ class TestLoginPositive():
 
 
 
-class TestLoginPositive():
+class TestLoginNegative():
     pass
 
 
