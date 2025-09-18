@@ -22,3 +22,6 @@ class HomePage(BasePage):
 
     def click_logout_button(self):
         self.click(self._LOGOUT_BUTTON)
+
+    def is_logged_in(self) -> bool:
+        return self.is_visible(self._LOGOUT_BUTTON)

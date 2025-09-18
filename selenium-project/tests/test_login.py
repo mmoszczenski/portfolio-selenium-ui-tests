@@ -35,9 +35,10 @@ class TestLoginPositive():
         account_created_page.click_continue_button()
         home_page.click_logout_button()
 
-        login_page.login(user["username"], user["email"])
+        login_page.login(user["email"], user["password"])
 
-        time.sleep(2)
+        assert home_page.is_logged_in
+
 
 
 
