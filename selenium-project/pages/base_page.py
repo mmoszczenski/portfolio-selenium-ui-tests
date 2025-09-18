@@ -2,6 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.by import By
 
 class BasePage():
     
@@ -43,3 +44,6 @@ class BasePage():
 
     def is_valid(self, element):
         return self.get_validity_property(element, "valid")
+    
+    def remove_ads_banner_if_visible(self):
+        script = f"document.querySelectorAll('ins.adsbygoogle').forEach(ad => ad.remove());"
