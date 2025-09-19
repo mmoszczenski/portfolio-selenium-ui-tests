@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
+import time
 
 class SignUpStep2(BasePage):
     
@@ -111,10 +112,6 @@ class SignUpStep2(BasePage):
             self.select_title(kwargs["title"])
         if password is not None:
             self.fill_password(password)
-        if kwargs.get("newsletter", False):
-            self.mark_newsletter_checkbox()
-        if kwargs.get("special_offers", False):
-            self.mark_special_offers_checkbox()
         if "day" in kwargs:    
             self.select_days(kwargs["day"])
         if "month" in kwargs:
@@ -141,9 +138,13 @@ class SignUpStep2(BasePage):
             self.fill_zipcode(zipcode)
         if mobile_number:
             self.fill_mobile_number(mobile_number)
+        if kwargs.get("newsletter", False):
+            self.mark_newsletter_checkbox()
+        if kwargs.get("special_offers", False):
+            self.mark_special_offers_checkbox()
 
         self.remove_ads_banner_if_visible()
-
+        time.sleep(5)
         self.click_create_account_button()
 
     def is_account_created(self):
