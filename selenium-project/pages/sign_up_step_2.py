@@ -48,17 +48,17 @@ class SignUpStep2(BasePage):
     def select_days(self, day: str):
         dropdown = self.find(self._DAYS_DROPDOWN)
         select = Select(dropdown)
-        select.select_by_visible_text(day)
+        select.select_by_visible_text(str(day))
 
     def select_month(self, month: str):
         dropdown = self.find(self._MONTHS_DROPDOWN)
         select = Select(dropdown)
-        select.select_by_visible_text(month)
+        select.select_by_visible_text(str(month))
 
     def select_year(self, year: str):
         dropdown = self.find(self._YEARS_DROPDOWN)
         select = Select(dropdown)
-        select.select_by_visible_text(year)
+        select.select_by_visible_text(str(year))
 
     def select_country(self, country: str):
         dropdown = self.find(self._COUNTRY_DROPDOWN)
