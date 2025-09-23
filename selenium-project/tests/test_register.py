@@ -119,8 +119,6 @@ class TestRegisterNegative():
             mobile_number = user.mobile_number            
         )
 
-        time.sleep(5)
-
         assert sign_up_step2_page.is_password_valid() is False
         assert sign_up_step2_page.is_password_error_type_value_missing() is True
          
@@ -147,16 +145,15 @@ class TestRegisterNegative():
             zipcode = "",
             mobile_number = ""            
         )                 
-        time.sleep(5)
+        
         assert sign_up_step2_page.is_password_valid() is False
         assert sign_up_step2_page.is_password_error_type_value_missing() is True
     
     def test_register_with_taken_email(self, pages):
 
-        user = SIGNUP_DATA["valid_user"]
-        email = generate_random_email()
-        user["email"] = email
-
+        user = make_user()
+        email = user.email 
+       
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
@@ -166,25 +163,25 @@ class TestRegisterNegative():
         home_page.accept_cookies()
         home_page.go_to_login_page()
         
-        login_page.sign_up(user["username"], user["email"])        
+        login_page.sign_up(user.username, user.email)        
         
         sign_up_step2_page.fill_account_information_form(
-            password = user["password"], 
-            country = user["country"],
-            first_name = user["first_name"],
-            last_name = user["last_name"],
-            address = user["address"],
-            state = user["state"],
-            city = user["city"],
-            zipcode = user["zipcode"],
-            mobile_number = user["mobile_number"]
+            password = user.password, 
+            country = user.country,
+            first_name = user.first_name,
+            last_name = user.last_name,
+            address = user.address,
+            state = user.state,
+            city = user.city,
+            zipcode = user.zipcode,
+            mobile_number = user.mobile_number
         )
 
         account_created_page.click_continue_button()
 
         home_page.click_logout_button()
 
-        login_page.sign_up(user["username"], user["email"])    
+        login_page.sign_up(user.username, email)    
 
         assert login_page.is_email_taken_error_displayed()
 
