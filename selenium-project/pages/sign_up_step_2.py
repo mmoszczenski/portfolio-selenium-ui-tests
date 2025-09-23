@@ -108,6 +108,7 @@ class SignUpStep2(BasePage):
     def fill_account_information_form(
         self, country, first_name, last_name, address, state, city, zipcode, mobile_number, password=None, **kwargs
         ):
+        
         if "title" in kwargs:
             self.select_title(kwargs["title"])
         if password is not None:
@@ -144,7 +145,6 @@ class SignUpStep2(BasePage):
             self.mark_special_offers_checkbox()
 
         self.remove_ads_banner_if_visible()
-        time.sleep(5)
         self.click_create_account_button()
 
     def is_account_created(self):

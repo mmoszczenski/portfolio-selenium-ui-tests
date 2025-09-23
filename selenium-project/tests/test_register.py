@@ -94,33 +94,6 @@ class TestRegisterNegative():
 
         assert login_page.is_email_valid() is False
         assert login_page.is_email_error_type_mismatch() is True
- 
-    def test_register_with_empty_password(self, pages):
-        
-        user = make_user()
-        home_page: HomePage = pages["home"]
-        login_page: LoginPage = pages["login"]
-        sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
-        
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
-        home_page.go_to_login_page()
-        
-        login_page.sign_up(user.username, user.email)
-        
-        sign_up_step2_page.fill_account_information_form(
-            country = user.country,
-            first_name = user.first_name,
-            last_name = user.last_name,
-            address = user.address,
-            state = user.state,
-            city = user.city,
-            zipcode = user.zipcode,
-            mobile_number = user.mobile_number            
-        )
-
-        assert sign_up_step2_page.is_password_valid() is False
-        assert sign_up_step2_page.is_password_error_type_value_missing() is True
          
     def test_register_with_empty_fields(self, pages):
         
@@ -145,7 +118,6 @@ class TestRegisterNegative():
             zipcode = "",
             mobile_number = ""            
         )                 
-        
         assert sign_up_step2_page.is_password_valid() is False
         assert sign_up_step2_page.is_password_error_type_value_missing() is True
     
