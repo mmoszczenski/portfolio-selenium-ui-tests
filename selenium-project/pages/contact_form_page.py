@@ -11,7 +11,7 @@ class ContactFormPage(BasePage):
     _UPLOAD_BUTTON = (By.CSS_SELECTOR, "input[type='file']")
     
     _SUCCESS_MESSAGE = (By.CLASS_NAME, "status alert alert-success")
-    _CONFIRM_ALERT_WINDOW = (By.)
+    _CONFIRM_ALERT_WINDOW = ()
     
     def fill_name(self, text):
         self.type(self._NAME_INPUT_FIELD, text)
