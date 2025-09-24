@@ -13,9 +13,10 @@ class LoginPage(BasePage):
     _EMAIL_TAKEN_ERROR_MESSAGE = (By.XPATH, "//form[@action='/signup']//p")
     _INCORRECT_EMAIL_OR_PASSWORD_MESSAGE = (By.XPATH, "//form[@action='/login']//p")
 
-    def is_on_login_page(self):
+    def is_on_login_page(self) -> bool:
         return self.is_visible(self._HEADER)
-    
+
+   
     def fill_sign_up_form(self, username, email):
         self.type(self._SIGN_UP_USERNAME_INPUT_FIELD, username)
         self.type(self._SIGN_UP_EMAIL_INPUT_FIELD, email)

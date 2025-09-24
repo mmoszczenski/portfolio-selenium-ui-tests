@@ -38,7 +38,7 @@ def make_user(**overrides) -> User:
         first_name = fake.first_name(),
         last_name = fake.last_name(),
         company = fake.company(),
-        address = fake.address(),
+        address = fake.street_address(),
         address2 = fake.secondary_address(),
         country = fake.random_element(elements=("United States", "India", "Canada", "Australia", "Israel", "New Zealand", "Singapore")),
         state = fake.state(),

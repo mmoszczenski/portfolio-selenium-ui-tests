@@ -28,12 +28,12 @@ class BasePage():
         element = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable(locator))
         element.click()
         
-    def is_visible(self, locator):
+    def is_visible(self, locator) -> bool:
         try:
-            element = WebDriverWait(self.driver, self.timeout).until(EC.visibility_of_element_located(locator))
-            return element
+            WebDriverWait(self.driver, self.timeout).until(EC.visibility_of_element_located(locator))
+            return True
         except TimeoutException:
-            return None
+            return False
         
     def execute_js(self, script: str, *args):
         return self.driver.execute_script(script, *args)
