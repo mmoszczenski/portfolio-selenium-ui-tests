@@ -6,9 +6,10 @@ class HomePage(BasePage):
     URL = "https://automationexercise.com/"
     
     _ACCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Zgadzam się']")
+    _LOGOUT_BUTTON = (By.CSS_SELECTOR, "a[href='/logout']")
+    
     _LOGIN_BUTTON = (By.CSS_SELECTOR, "a[href='/login']" )
-
-    _LOGOUT_BUTTON = (By.CSS_SELECTOR, " a[href='/logout']")
+    _CONTACT_FORM_BUTTON = (By.CSS_SELECTOR, "a[href='/contact_us']")
     
             
     def is_on_homepage(self) -> bool:
@@ -16,6 +17,9 @@ class HomePage(BasePage):
        
     def go_to_login_page(self):
         self.click(self._LOGIN_BUTTON)
+        
+    def go_to_contact_form_page(self):
+        self.click(self._CONTACT_FORM_BUTTON)
         
     def accept_cookies(self):
         self.click(self._ACCEPT_COOKIES_BUTTON)
