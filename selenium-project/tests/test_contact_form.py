@@ -1,5 +1,6 @@
 from pages.home_page import HomePage
 from pages.contact_form_page import ContactFormPage
+import time
 
 
 class TestContactFormPositive():
@@ -9,13 +10,20 @@ class TestContactFormPositive():
         contact_form: ContactFormPage = pages["contact_form"]
           
         home_page.open(home_page.URL)
+        home_page.accept_cookies()
         home_page.go_to_contact_form_page()
         
-        contact_form.fill_name()
-        contact_form.fill_email()
-        contact_form.fill_subject()
-        contact_form.fill_message()
-        contact_form.upload_file()
+        contact_form.fill_name("ExampleName")
+        contact_form.fill_email("Example@Email.com")
+        contact_form.fill_subject("ExampleSubject")
+        contact_form.fill_message("ExampleMessage")
+        
+        contact_form.upload_file("C:\\Users\\Miłosz Work\\Portfolio\\my-portfolio\\selenium-project\\data\\samplefile.jpg")
+        
+        contact_form.click_submit_button()
+        
+        assert contact_form.is_contact_form_submitted()
+        
         
         
         
