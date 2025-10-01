@@ -17,14 +17,11 @@ class TestContactFormPositive():
         contact_form.fill_email("Example@Email.com")
         contact_form.fill_subject("ExampleSubject")
         contact_form.fill_message("ExampleMessage")
-        
-        contact_form.upload_file("C:\\Users\\Miłosz Work\\Portfolio\\my-portfolio\\selenium-project\\data\\samplefile.jpg")
-        
+        contact_form.upload_file("C:\\Users\\Miłosz Work\\Portfolio\\my-portfolio\\selenium-project\\assets\\samplefile.jpg")
         contact_form.click_submit_button()
-        
         contact_form.confirm_alert(accept=True)
         
-        assert contact_form.is_contact_form_submitted()
+        assert contact_form.is_contact_form_submitted(), "Success message not displayed"
         
         
         
