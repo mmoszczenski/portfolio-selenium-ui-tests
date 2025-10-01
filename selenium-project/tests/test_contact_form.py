@@ -22,6 +22,8 @@ class TestContactFormPositive():
         
         contact_form.click_submit_button()
         
+        contact_form.confirm_alert(accept=True)
+        
         assert contact_form.is_contact_form_submitted()
         
         

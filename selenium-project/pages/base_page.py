@@ -50,3 +50,10 @@ class BasePage():
             self.execute_js(f"document.querySelectorAll('ins.adsbygoogle').forEach(ad => ad.remove());")
         except Exception as e:
             print(f"Failed to remove banners: {e}")
+            
+    def confirm_alert(self, accept: bool = True):
+        alert = WebDriverWait(self.driver, self.timeout).until(EC.alert_is_present())
+        if accept:
+            alert.accept()
+        else:
+            alert.dismiss()

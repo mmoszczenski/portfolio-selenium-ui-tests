@@ -10,7 +10,7 @@ class ContactFormPage(BasePage):
     _SUBMIT_BUTTON = (By.CSS_SELECTOR, "input[data-qa='submit-button']")
     _UPLOAD_BUTTON = (By.CSS_SELECTOR, "input[type='file']")
     
-    _SUCCESS_MESSAGE = (By.CLASS_NAME, "status alert alert-success")
+    _SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".status.alert.alert-success")
     _CONFIRM_ALERT_WINDOW = ()
     
     def fill_name(self, text):
@@ -31,9 +31,6 @@ class ContactFormPage(BasePage):
 
     def click_submit_button(self):
         self.click(self._SUBMIT_BUTTON)
-    
-    def click_confirmation_alert(self):
-        pass
         
     def is_contact_form_submitted(self) -> bool:
         return self.is_visible(self._SUCCESS_MESSAGE)
