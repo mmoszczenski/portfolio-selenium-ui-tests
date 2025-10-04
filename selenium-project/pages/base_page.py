@@ -2,7 +2,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.by import By
+from selenium.webdriver.common.action_chains import ActionChains
 
 class BasePage():
     
@@ -57,3 +57,6 @@ class BasePage():
             alert.accept()
         else:
             alert.dismiss()
+            
+    def hover_over(self, element):
+        ActionChains(self.driver).move_to_element(element).perform()

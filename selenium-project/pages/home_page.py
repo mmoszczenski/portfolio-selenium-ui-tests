@@ -10,17 +10,12 @@ class HomePage(BasePage):
     
     _LOGIN_BUTTON = (By.CSS_SELECTOR, "a[href='/login']" )
     _CONTACT_FORM_BUTTON = (By.CSS_SELECTOR, "a[href='/contact_us']")
+    _PRODUCTS_PAGE_BUTTON = (By.CSS_SELECTOR, "a[href='/products']")
     
             
     def is_on_homepage(self) -> bool:
         return self.driver.current_url == self.URL
        
-    def go_to_login_page(self):
-        self.click(self._LOGIN_BUTTON)
-        
-    def go_to_contact_form_page(self):
-        self.click(self._CONTACT_FORM_BUTTON)
-        
     def accept_cookies(self):
         self.click(self._ACCEPT_COOKIES_BUTTON)
 
@@ -29,3 +24,13 @@ class HomePage(BasePage):
 
     def is_logged_in(self) -> bool:
         return self.is_visible(self._LOGOUT_BUTTON)
+    
+    def go_to_login_page(self):
+        self.click(self._LOGIN_BUTTON)
+        
+    def go_to_contact_form_page(self):
+        self.click(self._CONTACT_FORM_BUTTON)
+        
+    def go_to_products_page(self):
+        self.click(self._PRODUCTS_PAGE_BUTTON)
+        

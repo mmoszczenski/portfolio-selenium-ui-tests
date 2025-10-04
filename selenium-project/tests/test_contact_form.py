@@ -1,6 +1,5 @@
 from pages.home_page import HomePage
 from pages.contact_form_page import ContactFormPage
-import time
 from utils.contact_form_factory import make_contact_form_data
 
 
