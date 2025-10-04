@@ -10,7 +10,6 @@ class ProductsPage(BasePage):
 
 
     def add_to_cart_by_id(self, product_id: int):
-        
         selector = f"{self._ADD_TO_CART_BUTTON}[data-product-id='{product_id}']"
         add_button = self.find((By.CSS_SELECTOR, selector))
         add_button.click()
@@ -19,6 +18,6 @@ class ProductsPage(BasePage):
         self.click(self._CONTINUE_SHOPPING_BUTTON)
         
     def click_view_cart_btn(self):
-        modal = self.find(self._MODAL)
-        view_cart_btn = modal.find_element(By.CSS_SELECTOR, "a[href='/view_cart']")
-        view_cart_btn.click()
+        self.find(self._MODAL)
+        self.click(self._VIEW_CART_BUTTON)
+        self.reload_page()

@@ -3,6 +3,11 @@ from selenium.webdriver.common.by import By
 
 class CartPage(BasePage):
     
+    _PROCEED_TO_CHECKOUT_BUTTON = (By.CSS_SELECTOR, ".check_out")
+    
+    def is_cart_page_displayed(self) -> bool:
+        return self.is_visible(self._PROCEED_TO_CHECKOUT_BUTTON)
+    
     def product_row(self, product_id: int):
         selector = (By.ID, f"product-{product_id}")
         return self.find(selector)

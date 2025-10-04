@@ -66,3 +66,6 @@ class BasePage():
             "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
             element
         )
+        
+    def reload_page(self):
+        self.driver.refresh()
