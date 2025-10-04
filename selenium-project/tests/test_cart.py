@@ -59,12 +59,39 @@ class TestCartPositive:
         actual_total = cart_page.product_total(product_ids[0]) + cart_page.product_total(product_ids[1])
 
         assert cart_page.is_cart_page_displayed(), "Cart page not displayed"
-        assert expected_total == actual_total, "Expected total is differen than actual total"        
+        assert expected_total == actual_total, "Expected total is different than actual total"     
+        time.sleep(3)
+        assert cart_page.products_count() == 2, "Product quantity is invalid"   
         
+
+    def test_remove_item_from_cart(self, pages):
     
+        product_page: ProductsPage = pages["products_page"] 
+        home_page: HomePage = pages["home"]
+        cart_page: CartPage = pages["cart"]
     
-    def test_remove_item_from_cart(self):
-        pass
+        product_ids = [1, 6]
+        product_1 = PRODUCTS[product_ids[0]]
+        product_2 = PRODUCTS[product_ids[1]]
+        
+        expected_total = product_1["price"]
+        
+        home_page.open(home_page.URL)
+        home_page.accept_cookies()
+        home_page.go_to_products_page()
+        
+        product_page.remove_ads_banner_if_visible()
+        product_page.add_to_cart_by_id(product_ids[0])
+        product_page.click_continue_shopping_btn()
+        product_page.add_to_cart_by_id(product_ids[1])
+        product_page.click_view_cart_btn()
+        
+        cart_page.remove_product(product_ids[1])
+        
+        actual_total = cart_page.product_total(product_ids[0])
+        
+        assert expected_total == actual_total
+    
     
     def test_add_to_cart_from_various_pages(self):
         pass

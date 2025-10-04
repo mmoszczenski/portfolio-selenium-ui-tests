@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 class CartPage(BasePage):
     
     _PROCEED_TO_CHECKOUT_BUTTON = (By.CSS_SELECTOR, ".check_out")
+    _CART_ROWS = (By.CSS_SELECTOR, "#cart_info_table tbody tr")
     
     def is_cart_page_displayed(self) -> bool:
         return self.is_visible(self._PROCEED_TO_CHECKOUT_BUTTON)
@@ -36,3 +37,7 @@ class CartPage(BasePage):
         delete_btn = row.find_element(By.CSS_SELECTOR, f"a.cart_quantity_delete[data-product-id='{product_id}']")
         self.scroll_to(delete_btn)
         delete_btn.click()
+        
+    def products_count(self) -> int:
+        rows = self.find_all(self._CART_ROWS)
+        return len(rows)
