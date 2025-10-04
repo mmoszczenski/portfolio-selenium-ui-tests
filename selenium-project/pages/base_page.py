@@ -60,3 +60,9 @@ class BasePage():
             
     def hover_over(self, element):
         ActionChains(self.driver).move_to_element(element).perform()
+        
+    def scroll_to(self, element):
+        self.driver.execute_script(
+            "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
+            element
+        )

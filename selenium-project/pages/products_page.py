@@ -14,8 +14,12 @@ from selenium.webdriver.support import expected_conditions as EC
 class ProductsPage(BasePage):
 
     _ADD_TO_CART_BUTTON = "a.add-to-cart"  # selektor przycisku
+    _CONTINUE_SHOPPING_BUTTON = (By.CSS_SELECTOR, "button[data-dismiss='modal']")
+    _VIEW_CART_BUTTON = (By.CSS_SELECTOR, "a[href='/view_cart']")
+
 
     def add_to_cart_by_id(self, product_id: int):
         
         selector = f"{self._ADD_TO_CART_BUTTON}[data-product-id='{product_id}']"
-        self.find((By.CSS_SELECTOR, selector)).click()
+        add_button = self.find((By.CSS_SELECTOR, selector))
+        add_button.click()
