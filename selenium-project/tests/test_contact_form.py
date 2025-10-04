@@ -15,11 +15,14 @@ class TestContactFormPositive():
         home_page.accept_cookies()
         home_page.go_to_contact_form_page()
         
-        contact_form.fill_name(contact_form_data.name)
-        contact_form.fill_email(contact_form_data.email)
-        contact_form.fill_subject(contact_form_data.subject)
-        contact_form.fill_message(contact_form_data.message)
-        contact_form.upload_file(contact_form_data.attachment)
+        contact_form.fill_contact_form(
+            name = contact_form_data.name,
+            email = contact_form_data.email,
+            subject = contact_form_data.subject,
+            message = contact_form_data.message,
+            file = contact_form_data.attachment
+        )
+        
         contact_form.click_submit_button()
         contact_form.confirm_alert(accept=True)
         

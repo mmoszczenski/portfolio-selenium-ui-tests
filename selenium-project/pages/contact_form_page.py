@@ -34,3 +34,10 @@ class ContactFormPage(BasePage):
         
     def is_contact_form_submitted(self) -> bool:
         return self.is_visible(self._SUCCESS_MESSAGE)
+    
+    def fill_contact_form(self, name, email, subject, message, file):
+        self.fill_name(name)
+        self.fill_email(email)
+        self.fill_subject(subject)
+        self.fill_message(message)
+        self.upload_file(file)
