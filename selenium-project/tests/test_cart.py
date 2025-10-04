@@ -16,7 +16,7 @@ class TestCartPositive:
         time.sleep(2)
         product_page.remove_ads_banner_if_visible()
         product_page.add_to_cart_by_id(8)
-        
+        product_page.click_view_cart_btn()
         time.sleep(5)
         
     
