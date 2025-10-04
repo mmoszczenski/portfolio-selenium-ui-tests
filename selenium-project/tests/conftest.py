@@ -7,6 +7,7 @@ from pages.account_created_page import AccountCreatedPage
 from pages.contact_form_page import ContactFormPage
 from pages.products_page import ProductsPage
 from pages.cart_page import CartPage
+from pages.product_details_page import ProductDetailsPage
 
 @pytest.fixture
 def driver():
@@ -23,5 +24,6 @@ def pages(driver):
         "account_created_page": AccountCreatedPage(driver),
         "contact_form": ContactFormPage(driver),
         "products_page": ProductsPage(driver),
-        "cart": CartPage(driver)
+        "cart": CartPage(driver),
+        "product_details": ProductDetailsPage(driver)
     }

@@ -1,5 +1,5 @@
 
-CART_PRODUCTS = {
+PRODUCTS = {
     1: {"name": "Blue Top", "price": 500},
     2: {"name": "Men Tshirt", "price": 400}, 
     3: {"name": "Sleeveless Dress", "price": 1000}, 
