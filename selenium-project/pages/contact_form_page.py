@@ -27,7 +27,7 @@ class ContactFormPage(BasePage):
         
     def upload_file(self, file):
         file_input = self.find(self._UPLOAD_BUTTON)
-        file_input.send_keys(file)
+        file_input.send_keys(str(file))
 
     def click_submit_button(self):
         self.click(self._SUBMIT_BUTTON)
