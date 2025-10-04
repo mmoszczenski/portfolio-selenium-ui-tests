@@ -29,19 +29,17 @@ class TestContactFormPositive():
         assert contact_form.is_contact_form_submitted(), "Success message not displayed"
         
         
-        
-        
-        
-
-
-
-
-
-
-
-
-
-
 
 class TestContactFormNegative():
-    pass
+    
+    def test_submit_contact_form_with_empty_fields(self, pages):
+        home_page: HomePage = pages["home"]
+        contact_form: ContactFormPage = pages["contact_form"]
+        
+        home_page.open(home_page.URL)
+        home_page.accept_cookies()
+        home_page.go_to_contact_form_page()
+        
+        contact_form.click_submit_button()
+        assert contact_form.is_email_error_type_value_missing(), "Validation error not displayed"
+        
