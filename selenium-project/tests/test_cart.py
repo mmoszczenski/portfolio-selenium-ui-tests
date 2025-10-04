@@ -3,6 +3,7 @@ from pages.products_page import ProductsPage
 from pages.home_page import HomePage
 
 
+
 class TestCartPositive:
     
     def test_add_single_item_to_cart(self, pages):
@@ -18,6 +19,8 @@ class TestCartPositive:
         product_page.add_to_cart_by_id(8)
         product_page.click_view_cart_btn()
         time.sleep(5)
+        
+    
         
     
     def test_add_multiple_items_to_cart(self):
