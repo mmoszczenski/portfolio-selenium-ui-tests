@@ -13,6 +13,10 @@ class HomePage(BasePage):
     _PRODUCTS_PAGE_BUTTON = (By.CSS_SELECTOR, "a[href='/products']")
     
             
+    def open_homepage(self):
+        self.open(self.URL)
+        self.accept_cookies()
+    
     def is_on_homepage(self) -> bool:
         return self.driver.current_url == self.URL
        

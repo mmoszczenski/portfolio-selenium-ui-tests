@@ -19,8 +19,7 @@ class TestCartPositive:
         expected_name = product["name"]
         expected_total = product["price"]       
          
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_products_page()
         
         products_page.remove_ads_banner_if_visible()
@@ -48,8 +47,7 @@ class TestCartPositive:
         
         expected_total = product_1["price"] + product_2["price"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_products_page()
         
         products_page.remove_ads_banner_if_visible()
@@ -77,8 +75,7 @@ class TestCartPositive:
         
         expected_total = product_1["price"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_products_page()
         
         products_page.remove_ads_banner_if_visible()
@@ -115,8 +112,7 @@ class TestCartNegative:
         product_id = 1
         product = PRODUCTS[product_id]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_products_page()
         
         products_page.go_to_product_detail_page(product_id)
@@ -124,5 +120,5 @@ class TestCartNegative:
         product_details.change_quantity(-5)
         product_details.add_product_to_cart()
 
-        assert not product_details.is_success_modal_displayed(), "Success modal is displayed despite invalid product quantity"
+        assert not product_details.is_success_modal_displayed(), "Success modal is displayed despite negative product quantity"
 

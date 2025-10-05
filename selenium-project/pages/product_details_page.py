@@ -7,6 +7,7 @@ class ProductDetailsPage(BasePage):
     _ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, "button.btn.cart")
     
     _MODAL = (By.CLASS_NAME, "modal-content")
+    _VIEW_CART_BUTTON = (By.CSS_SELECTOR, "a[href='/view_cart']")
     
     def change_quantity(self, quantity: int):
         quantity_input= self.find(self._QUANTITY_FIELD)
@@ -18,3 +19,8 @@ class ProductDetailsPage(BasePage):
         
     def is_success_modal_displayed(self) -> bool:
         return self.is_visible(self._MODAL)
+    
+    def click_view_cart_button(self):
+        self.find(self._MODAL)
+        self.click(self._VIEW_CART_BUTTON)
+        self.reload_page()

@@ -14,8 +14,7 @@ class TestRegisterPositive():
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         assert home_page.is_on_homepage()
         home_page.go_to_login_page()
         
@@ -46,8 +45,7 @@ class TestRegisterPositive():
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         assert home_page.is_on_homepage()
         home_page.go_to_login_page()
         
@@ -86,8 +84,7 @@ class TestRegisterNegative():
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
 
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
 
         login_page.sign_up(user.username, user.email)
@@ -102,8 +99,7 @@ class TestRegisterNegative():
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
         
         login_page.sign_up(user.username, user.email)    
@@ -131,8 +127,7 @@ class TestRegisterNegative():
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         account_created_page: AccountCreatedPage = pages["account_created_page"]
 
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
         
         login_page.sign_up(user.username, user.email)        

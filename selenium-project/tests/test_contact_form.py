@@ -10,8 +10,7 @@ class TestContactFormPositive():
         contact_form: ContactFormPage = pages["contact_form"]
         contact_form_data = make_contact_form_data()
           
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_contact_form_page()
         
         contact_form.fill_contact_form(
@@ -35,8 +34,7 @@ class TestContactFormNegative():
         home_page: HomePage = pages["home"]
         contact_form: ContactFormPage = pages["contact_form"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_contact_form_page()
         
         contact_form.click_submit_button()

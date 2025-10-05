@@ -14,8 +14,7 @@ class TestLoginPositive():
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         account_created_page: AccountCreatedPage = pages["account_created_page"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
         login_page.sign_up(user.username, email)
         sign_up_step2_page.fill_account_information_form(
@@ -46,8 +45,7 @@ class TestLoginNegative():
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         account_created_page: AccountCreatedPage = pages["account_created_page"]
         
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
         login_page.sign_up(user.username, user.email)
         sign_up_step2_page.fill_account_information_form(
@@ -72,8 +70,7 @@ class TestLoginNegative():
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
 
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
         login_page.login("random_non_existing_email_1191919191@example.com", "random_password")
 
@@ -84,8 +81,7 @@ class TestLoginNegative():
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
 
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
         login_page.login("", "")
         
@@ -100,8 +96,7 @@ class TestLoginNegative():
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         account_created_page: AccountCreatedPage = pages["account_created_page"]
 
-        home_page.open(home_page.URL)
-        home_page.accept_cookies()
+        home_page.open_homepage()
         home_page.go_to_login_page()
         login_page.sign_up(user.username, user.email)
         sign_up_step2_page.fill_account_information_form(
