@@ -41,3 +41,6 @@ class CartPage(BasePage):
     def products_count(self) -> int:
         rows = self.find_all(self._CART_ROWS)
         return len(rows)
+    
+    def click_proceed_to_checkout_button(self):
+        self.click(self._PROCEED_TO_CHECKOUT_BUTTON)

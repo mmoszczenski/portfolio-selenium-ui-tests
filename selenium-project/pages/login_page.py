@@ -16,7 +16,6 @@ class LoginPage(BasePage):
     def is_on_login_page(self) -> bool:
         return self.is_visible(self._HEADER)
 
-   
     def fill_sign_up_form(self, username, email):
         self.type(self._SIGN_UP_USERNAME_INPUT_FIELD, username)
         self.type(self._SIGN_UP_EMAIL_INPUT_FIELD, email)
