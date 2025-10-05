@@ -6,6 +6,8 @@ class ProductDetailsPage(BasePage):
     _QUANTITY_FIELD = (By.ID, "quantity")
     _ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, "button.btn.cart")
     
+    _MODAL = (By.CLASS_NAME, "modal-content")
+    
     def change_quantity(self, quantity: int):
         quantity_input= self.find(self._QUANTITY_FIELD)
         quantity_input.clear()
@@ -13,3 +15,6 @@ class ProductDetailsPage(BasePage):
         
     def add_product_to_cart(self):
         self.click(self._ADD_TO_CART_BUTTON)
+        
+    def is_success_modal_displayed(self) -> bool:
+        return self.is_visible(self._MODAL)
