@@ -4,3 +4,9 @@ from selenium.webdriver.common.by import By
 class CheckoutPage(BasePage):
     _PLACE_ORDER_BUTTON = (By.CSS_SELECTOR, ".check_out")
     
+    
+    def is_checkout_page_displayd(self) -> bool:
+        return self.is_visible(self._PLACE_ORDER_BUTTON)
+    
+    def click_place_order_button(self):
+        self.click(self._PLACE_ORDER_BUTTON)

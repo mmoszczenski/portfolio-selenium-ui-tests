@@ -4,8 +4,11 @@ from pages.cart_page import CartPage
 from pages.sign_up_step_2 import SignUpStep2
 from pages.login_page import LoginPage
 from pages.account_created_page import AccountCreatedPage
+from pages.checkout_page import CheckoutPage
+from pages.payment_page import PaymentPage
 from test_data.product_data import PRODUCTS
 from utils.user_factory import make_user
+from utils.card_payment_factory import make_payment_card
 
 class TestCheckoutPositive:
     
@@ -18,8 +21,12 @@ class TestCheckoutPositive:
         login_page: LoginPage = pages["login"]
         sign_up_step2_page: SignUpStep2 = pages["sign_up_step2"]
         account_created_page: AccountCreatedPage = pages["account_created_page"]
+        checkout: CheckoutPage = pages["checkout"]
+        payment_page: PaymentPage = pages["payment_page"]
         
         user = make_user()
+        
+        payment_card = make_payment_card()
         
         product_id = 1
         product = PRODUCTS[product_id]
@@ -53,13 +60,27 @@ class TestCheckoutPositive:
         
         #assercja czy wyświetlił się checkout
         
+        assert checkout.is_checkout_page_displayd()
+        
         #assercja czy adresy zgadzają się z tym co podczas rejestracji
         
         #assercja czy zgadza się total oraz ilość produktów
         
         #kliknięcie na place order
         
+        checkout.click_place_order_button()
+        
         #wypełnienie danych karty i kliknięcie potwierdzenia
+        
+        payment_page.provide_payment_form_data(
+            
+            name = payment_card.name,
+            card_number = payment_card.card_number,
+            cvc_number = payment_card.cvc_number,
+            month = payment_card.expiration_month,
+            year = payment_card.expiration_year
+            
+        )
         
         #asercja czy wyświetlił się page z "you order was placed and confirmed"
         

@@ -1,11 +1,9 @@
 from dataclasses import dataclass, replace
 from faker import Faker
 from utils.helpers import generate_random_email
-from pathlib import Path
 
 fake = Faker()
 
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
 @dataclass(frozen=True)
 class User:

@@ -8,6 +8,8 @@ from pages.contact_form_page import ContactFormPage
 from pages.products_page import ProductsPage
 from pages.cart_page import CartPage
 from pages.product_details_page import ProductDetailsPage
+from pages.checkout_page import CheckoutPage
+from pages.payment_page import PaymentPage
 
 @pytest.fixture
 def driver():
@@ -25,5 +27,7 @@ def pages(driver):
         "contact_form": ContactFormPage(driver),
         "products_page": ProductsPage(driver),
         "cart": CartPage(driver),
-        "product_details": ProductDetailsPage(driver)
+        "product_details": ProductDetailsPage(driver),
+        "checkout": CheckoutPage(driver),
+        "payment_page": PaymentPage(driver)
     }
