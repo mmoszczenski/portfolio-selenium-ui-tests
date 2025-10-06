@@ -12,9 +12,9 @@ class PaymentCard:
     expiration_year: int
     
     
-def make_payment_card(*overrides) -> PaymentCard:
+def make_payment_card(**overrides) -> PaymentCard:
     base= PaymentCard(
-        name = fake.full_name(),
+        name = fake.first_name(),
         card_number = fake.credit_card_number(),
         cvc_number = fake.credit_card_security_code(),
         expiration_month = fake.credit_card_expire(date_format = '%m'),

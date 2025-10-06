@@ -10,7 +10,7 @@ class PaymentPage(BasePage):
     _EXPIRATION_MONTH_FIELD = (By.CSS_SELECTOR, "input[data-qa='expiry-month']")
     _EXPIRATION_YEAR_FIELD = (By.CSS_SELECTOR, "input[data-qa='expiry-year']")
     
-    _CONFIRM_ORDER_BUTTON = (By.CSS_SELECTOR, "input[data-qa='pay-button']")
+    _CONFIRM_ORDER_BUTTON = (By.CSS_SELECTOR, "button[data-qa='pay-button']")
     
     def fill_name(self, name):
         self.type(self._NAME_FIELD, name)

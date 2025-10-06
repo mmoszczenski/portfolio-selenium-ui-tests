@@ -54,6 +54,7 @@ class TestCheckoutPositive:
         
         home_page.go_to_products_page()
         
+        products_page.remove_ads_banner_if_visible()
         products_page.add_to_cart_by_id(product_id)
         products_page.click_view_cart_btn()
         
