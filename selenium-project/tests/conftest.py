@@ -10,6 +10,7 @@ from pages.cart_page import CartPage
 from pages.product_details_page import ProductDetailsPage
 from pages.checkout_page import CheckoutPage
 from pages.payment_page import PaymentPage
+from pages.order_placed_page import OrderPlacedPage
 
 @pytest.fixture
 def driver():
@@ -29,5 +30,6 @@ def pages(driver):
         "cart": CartPage(driver),
         "product_details": ProductDetailsPage(driver),
         "checkout": CheckoutPage(driver),
-        "payment_page": PaymentPage(driver)
+        "payment_page": PaymentPage(driver),
+        "order_placed_page": OrderPlacedPage(driver)
     }

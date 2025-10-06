@@ -6,6 +6,7 @@ from pages.login_page import LoginPage
 from pages.account_created_page import AccountCreatedPage
 from pages.checkout_page import CheckoutPage
 from pages.payment_page import PaymentPage
+from pages.order_placed_page import OrderPlacedPage
 from test_data.product_data import PRODUCTS
 from utils.user_factory import make_user
 from utils.card_payment_factory import make_payment_card
@@ -23,9 +24,9 @@ class TestCheckoutPositive:
         account_created_page: AccountCreatedPage = pages["account_created_page"]
         checkout: CheckoutPage = pages["checkout"]
         payment_page: PaymentPage = pages["payment_page"]
+        order_placed_page: OrderPlacedPage = pages["order_placed_page"]
         
         user = make_user()
-        
         payment_card = make_payment_card()
         
         product_id = 1
@@ -59,7 +60,6 @@ class TestCheckoutPositive:
         cart_page.click_proceed_to_checkout_button()
         
         #assercja czy wyświetlił się checkout
-        
         assert checkout.is_checkout_page_displayd()
         
         #assercja czy adresy zgadzają się z tym co podczas rejestracji
@@ -67,11 +67,9 @@ class TestCheckoutPositive:
         #assercja czy zgadza się total oraz ilość produktów
         
         #kliknięcie na place order
-        
         checkout.click_place_order_button()
         
         #wypełnienie danych karty i kliknięcie potwierdzenia
-        
         payment_page.provide_payment_form_data(
             
             name = payment_card.name,
@@ -79,9 +77,13 @@ class TestCheckoutPositive:
             cvc_number = payment_card.cvc_number,
             month = payment_card.expiration_month,
             year = payment_card.expiration_year
-            
         )
         
         #asercja czy wyświetlił się page z "you order was placed and confirmed"
+        
+        order_placed_page.is_order_placed_page_displayed()
+        order_placed_page.click_continue_button()
+        
+        assert home_page.is_on_homepage(), "Displayed page is not HomePage"
         
         #OPTIONAL - ściągnięcie faktury i weryfikacja czy dane się zgadzają
