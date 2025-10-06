@@ -72,7 +72,6 @@ class TestCheckoutPositive:
         
         #wypełnienie danych karty i kliknięcie potwierdzenia
         payment_page.provide_payment_form_data(
-            
             name = payment_card.name,
             card_number = payment_card.card_number,
             cvc_number = payment_card.cvc_number,
