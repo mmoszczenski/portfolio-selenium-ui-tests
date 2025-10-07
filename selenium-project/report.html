@@ -439,10 +439,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 07-Oct-2025 at 20:30:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 07-Oct-2025 at 21:13:01 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>18 tests ran in 226.11 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">17 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>18 tests ran in 805.41 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">16 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -457,16 +457,27 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">tests/test_cart.py::TestCartNegative::test_add_negative_quantity_item</td>
-          <td class="col-duration">11.32</td>
+          <td class="col-duration">10.24</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">self = &lt;tests.test_cart.TestCartNegative object at 0x000002255D999590&gt;<br/>pages = {&#x27;account_created_page&#x27;: &lt;pages.account_created_page.AccountCreatedPage object at 0x000002255DA5AD70&gt;, &#x27;cart&#x27;: &lt;pages....ct at 0x000002255DA5B360&gt;, &#x27;contact_form&#x27;: &lt;pages.contact_form_page.ContactFormPage object at 0x000002255DA5AEA0&gt;, ...}<br/><br/>    def test_add_negative_quantity_item(self, pages):<br/>    <br/>        home_page: HomePage = pages[&quot;home&quot;]<br/>        product_details: ProductDetailsPage = pages [&quot;product_details&quot;]<br/>        products_page: ProductsPage = pages[&quot;products_page&quot;]<br/>    <br/>        product_id = 1<br/>        product = PRODUCTS[product_id]<br/>    <br/>        home_page.open_homepage()<br/>        home_page.go_to_products_page()<br/>    <br/>        products_page.go_to_product_detail_page(product_id)<br/>    <br/>        product_details.change_quantity(-5)<br/>        product_details.add_product_to_cart()<br/>    <br/>&gt;       assert not product_details.is_success_modal_displayed(), &quot;Success modal is displayed despite negative product quantity&quot;<br/><span class="error">E       AssertionError: Success modal is displayed despite negative product quantity</span><br/><span class="error">E       assert not True</span><br/><span class="error">E        +  where True = is_success_modal_displayed()</span><br/><span class="error">E        +    where is_success_modal_displayed = &lt;pages.product_details_page.ProductDetailsPage object at 0x000002255DA5B230&gt;.is_success_modal_displayed</span><br/><br/>tests\test_cart.py:123: AssertionError<br/></div></td></tr></tbody>
+            <div class="log">self = &lt;tests.test_cart.TestCartNegative object at 0x000001D55D6C9450&gt;<br/>pages = {&#x27;account_created_page&#x27;: &lt;pages.account_created_page.AccountCreatedPage object at 0x000001D55D72ED70&gt;, &#x27;cart&#x27;: &lt;pages....ct at 0x000001D55D72F360&gt;, &#x27;contact_form&#x27;: &lt;pages.contact_form_page.ContactFormPage object at 0x000001D55D72EEA0&gt;, ...}<br/><br/>    def test_add_negative_quantity_item(self, pages):<br/>    <br/>        home_page: HomePage = pages[&quot;home&quot;]<br/>        product_details: ProductDetailsPage = pages [&quot;product_details&quot;]<br/>        products_page: ProductsPage = pages[&quot;products_page&quot;]<br/>    <br/>        product_id = 1<br/>        product = PRODUCTS[product_id]<br/>    <br/>        home_page.open_homepage()<br/>        home_page.go_to_products_page()<br/>    <br/>        products_page.go_to_product_detail_page(product_id)<br/>    <br/>        product_details.change_quantity(-5)<br/>        product_details.add_product_to_cart()<br/>    <br/>&gt;       assert not product_details.is_success_modal_displayed(), &quot;Success modal is displayed despite negative product quantity&quot;<br/><span class="error">E       AssertionError: Success modal is displayed despite negative product quantity</span><br/><span class="error">E       assert not True</span><br/><span class="error">E        +  where True = is_success_modal_displayed()</span><br/><span class="error">E        +    where is_success_modal_displayed = &lt;pages.product_details_page.ProductDetailsPage object at 0x000001D55D72F230&gt;.is_success_modal_displayed</span><br/><br/>tests\test_cart.py:123: AssertionError<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">tests/test_register.py::TestRegisterNegative::test_register_with_taken_email</td>
+          <td class="col-duration">611.69</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;urllib3.connectionpool.HTTPConnectionPool object at 0x000001D55DBDCC50&gt;, conn = &lt;urllib3.connection.HTTPConnection object at 0x000001D55DB92690&gt;, method = &#x27;POST&#x27;, url = &#x27;/session/a2d17dc3e81a8f4d83b92952096f5d9d/element&#x27;<br/>body = &#x27;{&quot;using&quot;: &quot;css selector&quot;, &quot;value&quot;: &quot;input[data-qa=\&#x27;password\&#x27;]&quot;}&#x27;<br/>headers = HTTPHeaderDict({&#x27;Accept&#x27;: &#x27;application/json&#x27;, &#x27;Content-Type&#x27;: &#x27;application/json;charset=UTF-8&#x27;, &#x27;User-Agent&#x27;: &#x27;selenium/4.35.0 (python windows)&#x27;, &#x27;Connection&#x27;: &#x27;keep-alive&#x27;})<br/>retries = Retry(total=3, connect=None, read=None, redirect=None, status=None), timeout = Timeout(connect=120, read=120, total=None), chunked = False, response_conn = None, preload_content = True, decode_content = True<br/>enforce_content_length = True<br/><br/>    def _make_request(<br/>        self,<br/>        conn: BaseHTTPConnection,<br/>        method: str,<br/>        url: str,<br/>        body: _TYPE_BODY | None = None,<br/>        headers: typing.Mapping[str, str] | None = None,<br/>        retries: Retry | None = None,<br/>        timeout: _TYPE_TIMEOUT = _DEFAULT_TIMEOUT,<br/>        chunked: bool = False,<br/>        response_conn: BaseHTTPConnection | None = None,<br/>        preload_content: bool = True,<br/>        decode_content: bool = True,<br/>        enforce_content_length: bool = True,<br/>    ) -&gt; BaseHTTPResponse:<br/>        &quot;&quot;&quot;<br/>        Perform a request on a given urllib connection object taken from our<br/>        pool.<br/>    <br/>        :param conn:<br/>            a connection from one of our connection pools<br/>    <br/>        :param method:<br/>            HTTP request method (such as GET, POST, PUT, etc.)<br/>    <br/>        :param url:<br/>            The URL to perform the request on.<br/>    <br/>        :param body:<br/>            Data to send in the request body, either :class:`str`, :class:`bytes`,<br/>            an iterable of :class:`str`/:class:`bytes`, or a file-like object.<br/>    <br/>        :param headers:<br/>            Dictionary of custom headers to send, such as User-Agent,<br/>            If-None-Match, etc. If None, pool headers are used. If provided,<br/>            these headers completely replace any pool-specific headers.<br/>    <br/>        :param retries:<br/>            Configure the number of retries to allow before raising a<br/>            :class:`~urllib3.exceptions.MaxRetryError` exception.<br/>    <br/>            Pass ``None`` to retry until you receive a response. Pass a<br/>            :class:`~urllib3.util.retry.Retry` object for fine-grained control<br/>            over different types of retries.<br/>            Pass an integer number to retry connection errors that many times,<br/>            but no other types of errors. Pass zero to never retry.<br/>    <br/>            If ``False``, then retries are disabled and any exception is raised<br/>            immediately. Also, instead of raising a MaxRetryError on redirects,<br/>            the redirect response will be returned.<br/>    <br/>        :type retries: :class:`~urllib3.util.retry.Retry`, False, or an int.<br/>    <br/>        :param timeout:<br/>            If specified, overrides the default timeout for this one<br/>            request. It may be a float (in seconds) or an instance of<br/>            :class:`urllib3.util.Timeout`.<br/>    <br/>        :param chunked:<br/>            If True, urllib3 will send the body using chunked transfer<br/>            encoding. Otherwise, urllib3 will send the body using the standard<br/>            content-length form. Defaults to False.<br/>    <br/>        :param response_conn:<br/>            Set this to ``None`` if you will handle releasing the connection or<br/>            set the connection to have the response release it.<br/>    <br/>        :param preload_content:<br/>          If True, the response&#x27;s body will be preloaded during construction.<br/>    <br/>        :param decode_content:<br/>            If True, will attempt to decode the body based on the<br/>            &#x27;content-encoding&#x27; header.<br/>    <br/>        :param enforce_content_length:<br/>            Enforce content length checking. Body returned by server must match<br/>            value of Content-Length header, if present. Otherwise, raise error.<br/>        &quot;&quot;&quot;<br/>        self.num_requests += 1<br/>    <br/>        timeout_obj = self._get_timeout(timeout)<br/>        timeout_obj.start_connect()<br/>        conn.timeout = Timeout.resolve_default_timeout(timeout_obj.connect_timeout)<br/>    <br/>        try:<br/>            # Trigger any extra validation we need to do.<br/>            try:<br/>                self._validate_conn(conn)<br/>            except (SocketTimeout, BaseSSLError) as e:<br/>                self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)<br/>                raise<br/>    <br/>        # _validate_conn() starts the connection to an HTTPS proxy<br/>        # so we need to wrap errors with &#x27;ProxyError&#x27; here too.<br/>        except (<br/>            OSError,<br/>            NewConnectionError,<br/>            TimeoutError,<br/>            BaseSSLError,<br/>            CertificateError,<br/>            SSLError,<br/>        ) as e:<br/>            new_e: Exception = e<br/>            if isinstance(e, (BaseSSLError, CertificateError)):<br/>                new_e = SSLError(e)<br/>            # If the connection didn&#x27;t successfully connect to it&#x27;s proxy<br/>            # then there<br/>            if isinstance(<br/>                new_e, (OSError, NewConnectionError, TimeoutError, SSLError)<br/>            ) and (conn and conn.proxy and not conn.has_connected_to_proxy):<br/>                new_e = _wrap_proxy_error(new_e, conn.proxy.scheme)<br/>            raise new_e<br/>    <br/>        # conn.request() calls http.client.*.request, not the method in<br/>        # urllib3.request. It also calls makefile (recv) on the socket.<br/>        try:<br/>            conn.request(<br/>                method,<br/>                url,<br/>                body=body,<br/>                headers=headers,<br/>                chunked=chunked,<br/>                preload_content=preload_content,<br/>                decode_content=decode_content,<br/>                enforce_content_length=enforce_content_length,<br/>            )<br/>    <br/>        # We are swallowing BrokenPipeError (errno.EPIPE) since the server is<br/>        # legitimately able to close the connection after sending a valid response.<br/>        # With this behaviour, the received response is still readable.<br/>        except BrokenPipeError:<br/>            pass<br/>        except OSError as e:<br/>            # MacOS/Linux<br/>            # EPROTOTYPE and ECONNRESET are needed on macOS<br/>            # https://erickt.github.io/blog/2014/11/19/adventures-in-debugging-a-potential-osx-kernel-bug/<br/>            # Condition changed later to emit ECONNRESET instead of only EPROTOTYPE.<br/>            if e.errno != errno.EPROTOTYPE and e.errno != errno.ECONNRESET:<br/>                raise<br/>    <br/>        # Reset the timeout for the recv() on the socket<br/>        read_timeout = timeout_obj.read_timeout<br/>    <br/>        if not conn.is_closed:<br/>            # In Python 3 socket.py will catch EAGAIN and return None when you<br/>            # try and read into the file pointer created by http.client, which<br/>            # instead raises a BadStatusLine exception. Instead of catching<br/>            # the exception and assuming all BadStatusLine exceptions are read<br/>            # timeouts, check for a zero timeout before making the request.<br/>            if read_timeout == 0:<br/>                raise ReadTimeoutError(<br/>                    self, url, f&quot;Read timed out. (read timeout={read_timeout})&quot;<br/>                )<br/>            conn.timeout = read_timeout<br/>    <br/>        # Receive the response from the server<br/>        try:<br/>&gt;           response = conn.getresponse()<br/>                       ^^^^^^^^^^^^^^^^^^<br/><br/>venv\Lib\site-packages\urllib3\connectionpool.py:534: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>venv\Lib\site-packages\urllib3\connection.py:565: in getresponse<br/>    httplib_response = super().getresponse()<br/>                       ^^^^^^^^^^^^^^^^^^^^^<br/>..\..\..\AppData\Local\Programs\Python\Python313\Lib\http\client.py:1428: in getresponse<br/>    response.begin()<br/>..\..\..\AppData\Local\Programs\Python\Python313\Lib\http\client.py:331: in begin<br/>    version, status, reason = self._read_status()<br/>                              ^^^^^^^^^^^^^^^^^^^<br/>..\..\..\AppData\Local\Programs\Python\Python313\Lib\http\client.py:292: in _read_status<br/>    line = str(self.fp.readline(_MAXLINE + 1), &quot;iso-8859-1&quot;)<br/>               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;socket.SocketIO object at 0x000001D55D78EE60&gt;, b = &lt;memory at 0x000001D55DBDD780&gt;<br/><br/>    def readinto(self, b):<br/>        &quot;&quot;&quot;Read up to len(b) bytes into the writable buffer *b* and return<br/>        the number of bytes read.  If the socket is non-blocking and no bytes<br/>        are available, None is returned.<br/>    <br/>        If *b* is non-empty, a 0 return value indicates that the connection<br/>        was shutdown at the other end.<br/>        &quot;&quot;&quot;<br/>        self._checkClosed()<br/>        self._checkReadable()<br/>        if self._timeout_occurred:<br/>            raise OSError(&quot;cannot read from timed out object&quot;)<br/>        try:<br/>&gt;           return self._sock.recv_into(b)<br/>                   ^^^^^^^^^^^^^^^^^^^^^^^<br/><span class="error">E           TimeoutError: timed out</span><br/><br/>..\..\..\AppData\Local\Programs\Python\Python313\Lib\socket.py:719: TimeoutError<br/><br/>The above exception was the direct cause of the following exception:<br/><br/>self = &lt;tests.test_register.TestRegisterNegative object at 0x000001D55D72CE90&gt;<br/>pages = {&#x27;account_created_page&#x27;: &lt;pages.account_created_page.AccountCreatedPage object at 0x000001D55DBDC890&gt;, &#x27;cart&#x27;: &lt;pages....ct at 0x000001D55DBDD3D0&gt;, &#x27;contact_form&#x27;: &lt;pages.contact_form_page.ContactFormPage object at 0x000001D55DBDC950&gt;, ...}<br/><br/>    def test_register_with_taken_email(self, pages):<br/>    <br/>        user = make_user()<br/>        email = user.email<br/>    <br/>        home_page: HomePage = pages[&quot;home&quot;]<br/>        login_page: LoginPage = pages[&quot;login&quot;]<br/>        sign_up_step2_page: SignUpStep2 = pages[&quot;sign_up_step2&quot;]<br/>        account_created_page: AccountCreatedPage = pages[&quot;account_created_page&quot;]<br/>    <br/>        home_page.open_homepage()<br/>        home_page.go_to_login_page()<br/>    <br/>        login_page.sign_up(user.username, user.email)<br/>    <br/>&gt;       sign_up_step2_page.fill_account_information_form(<br/>            password = user.password,<br/>            country = user.country,<br/>            first_name = user.first_name,<br/>            last_name = user.last_name,<br/>            address = user.address,<br/>            state = user.state,<br/>            city = user.city,<br/>            zipcode = user.zipcode,<br/>            mobile_number = user.mobile_number<br/>        )<br/><br/>tests\test_register.py:135: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>pages\sign_up_step_2.py:113: in fill_account_information_form<br/>    self.fill_password(password)<br/>pages\sign_up_step_2.py:74: in fill_password<br/>    self.type(self._PASSWORD_FIELD_INPUT, text)<br/>pages\base_page.py:23: in type<br/>    element = self.find(locator)<br/>              ^^^^^^^^^^^^^^^^^^<br/>pages\base_page.py:17: in find<br/>    return WebDriverWait(self.driver, self.timeout).until(EC.presence_of_element_located(locator))<br/>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\selenium\webdriver\support\wait.py:129: in until<br/>    value = method(self._driver)<br/>            ^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\selenium\webdriver\support\expected_conditions.py:104: in _predicate<br/>    return driver.find_element(*locator)<br/>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:926: in find_element<br/>    return self.execute(Command.FIND_ELEMENT, {&quot;using&quot;: by, &quot;value&quot;: value})[&quot;value&quot;]<br/>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:455: in execute<br/>    response = cast(RemoteConnection, self.command_executor).execute(driver_command, params)<br/>               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py:406: in execute<br/>    return self._request(command_info[0], url, body=data)<br/>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py:430: in _request<br/>    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)<br/>               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\urllib3\_request_methods.py:143: in request<br/>    return self.request_encode_body(<br/>venv\Lib\site-packages\urllib3\_request_methods.py:278: in request_encode_body<br/>    return self.urlopen(method, url, **extra_kw)<br/>           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\urllib3\poolmanager.py:459: in urlopen<br/>    response = conn.urlopen(method, u.request_uri, **kw)<br/>               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\urllib3\connectionpool.py:841: in urlopen<br/>    retries = retries.increment(<br/>venv\Lib\site-packages\urllib3\util\retry.py:474: in increment<br/>    raise reraise(type(error), error, _stacktrace)<br/>          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^<br/>venv\Lib\site-packages\urllib3\util\util.py:39: in reraise<br/>    raise value<br/>venv\Lib\site-packages\urllib3\connectionpool.py:787: in urlopen<br/>    response = self._make_request(<br/>venv\Lib\site-packages\urllib3\connectionpool.py:536: in _make_request<br/>    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;urllib3.connectionpool.HTTPConnectionPool object at 0x000001D55DBDCC50&gt;, err = TimeoutError(&#x27;timed out&#x27;), url = &#x27;/session/a2d17dc3e81a8f4d83b92952096f5d9d/element&#x27;, timeout_value = 120<br/><br/>    def _raise_timeout(<br/>        self,<br/>        err: BaseSSLError | OSError | SocketTimeout,<br/>        url: str,<br/>        timeout_value: _TYPE_TIMEOUT | None,<br/>    ) -&gt; None:<br/>        &quot;&quot;&quot;Is the error actually a timeout? Will raise a ReadTimeout or pass&quot;&quot;&quot;<br/>    <br/>        if isinstance(err, SocketTimeout):<br/>&gt;           raise ReadTimeoutError(<br/>                self, url, f&quot;Read timed out. (read timeout={timeout_value})&quot;<br/>            ) from err<br/><span class="error">E           urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host=&#x27;localhost&#x27;, port=60465): Read timed out. (read timeout=120)</span><br/><br/>venv\Lib\site-packages\urllib3\connectionpool.py:367: ReadTimeoutError<br/> -----------------------------Captured log teardown------------------------------ <br/>WARNING  urllib3.connectionpool:connectionpool.py:868 Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;ReadTimeoutError(&quot;HTTPConnectionPool(host=&#x27;localhost&#x27;, port=60465): Read timed out. (read timeout=120)&quot;)&#x27;: /session/a2d17dc3e81a8f4d83b92952096f5d9d
+WARNING  urllib3.connectionpool:connectionpool.py:868 Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;ReadTimeoutError(&quot;HTTPConnectionPool(host=&#x27;localhost&#x27;, port=60465): Read timed out. (read timeout=120)&quot;)&#x27;: /session/a2d17dc3e81a8f4d83b92952096f5d9d
+WARNING  urllib3.connectionpool:connectionpool.py:868 Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by &#x27;ReadTimeoutError(&quot;HTTPConnectionPool(host=&#x27;localhost&#x27;, port=60465): Read timed out. (read timeout=120)&quot;)&#x27;: /session/a2d17dc3e81a8f4d83b92952096f5d9d<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_cart.py::TestCartPositive::test_add_single_item_to_cart</td>
-          <td class="col-duration">10.59</td>
+          <td class="col-duration">9.42</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -475,7 +486,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_cart.py::TestCartPositive::test_add_multiple_items_to_cart</td>
-          <td class="col-duration">11.02</td>
+          <td class="col-duration">10.55</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -484,7 +495,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_cart.py::TestCartPositive::test_remove_item_from_cart</td>
-          <td class="col-duration">13.69</td>
+          <td class="col-duration">11.89</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -502,7 +513,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_checkout.py::TestCheckoutPositive::test_basic_checkout_happy_path</td>
-          <td class="col-duration">27.34</td>
+          <td class="col-duration">22.46</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -511,7 +522,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_contact_form.py::TestContactFormPositive::test_submit_contact_form_with_valid_data</td>
-          <td class="col-duration">8.45</td>
+          <td class="col-duration">8.46</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -520,7 +531,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_contact_form.py::TestContactFormNegative::test_submit_contact_form_with_empty_fields</td>
-          <td class="col-duration">8.54</td>
+          <td class="col-duration">8.02</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -529,7 +540,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_login.py::TestLoginPositive::test_login_with_valid_credentials</td>
-          <td class="col-duration">19.35</td>
+          <td class="col-duration">17.97</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -538,7 +549,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_login.py::TestLoginNegative::test_login_with_invalid_password</td>
-          <td class="col-duration">17.95</td>
+          <td class="col-duration">15.44</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -547,7 +558,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_login.py::TestLoginNegative::test_login_with_non_existing_email</td>
-          <td class="col-duration">9.30</td>
+          <td class="col-duration">9.17</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -556,7 +567,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_login.py::TestLoginNegative::test_submit_empty_form</td>
-          <td class="col-duration">7.48</td>
+          <td class="col-duration">7.21</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -565,7 +576,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_login.py::TestLoginNegative::test_login_without_password</td>
-          <td class="col-duration">17.41</td>
+          <td class="col-duration">17.83</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -574,7 +585,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_register.py::TestRegisterPositive::test_register_with_valid_data_minimal</td>
-          <td class="col-duration">12.81</td>
+          <td class="col-duration">12.74</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -583,7 +594,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_register.py::TestRegisterPositive::test_register_with_valid_data_all_fields</td>
-          <td class="col-duration">13.98</td>
+          <td class="col-duration">13.14</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -592,7 +603,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_register.py::TestRegisterNegative::test_register_with_invalid_email</td>
-          <td class="col-duration">7.97</td>
+          <td class="col-duration">8.04</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -601,16 +612,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_register.py::TestRegisterNegative::test_register_with_empty_fields</td>
-          <td class="col-duration">9.91</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">tests/test_register.py::TestRegisterNegative::test_register_with_taken_email</td>
-          <td class="col-duration">18.37</td>
+          <td class="col-duration">10.03</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">

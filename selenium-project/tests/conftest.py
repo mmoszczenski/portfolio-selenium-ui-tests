@@ -12,9 +12,14 @@ from pages.checkout_page import CheckoutPage
 from pages.payment_page import PaymentPage
 from pages.order_placed_page import OrderPlacedPage
 
+def pytest_addoption(parser):
+    parser.addoption("--headless", action="store_true", help="Run browser in headless mode")
+
+
 @pytest.fixture
-def driver():
-    driver = create_driver()
+def driver(request):
+    headless = request.config.getoption("--headless")
+    driver = create_driver(headless=headless)
     yield driver
     driver.quit()
     
