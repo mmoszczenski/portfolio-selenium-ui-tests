@@ -7,9 +7,9 @@ fake = Faker()
 class PaymentCard:
     name: str
     card_number: str
-    cvc_number: int
-    expiration_month: int
-    expiration_year: int
+    cvc_number: str
+    expiration_month: str
+    expiration_year: str
     
     
 def make_payment_card(**overrides) -> PaymentCard:

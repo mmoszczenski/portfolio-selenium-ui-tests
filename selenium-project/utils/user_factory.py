@@ -11,9 +11,9 @@ class User:
     email: str
     title: str | None = None 
     password: str | None = None
-    day: str | None = None
+    day: int | None = None
     month: str | None = None
-    year: str | None = None
+    year: int | None = None
     first_name: str | None = None
     last_name: str | None = None
     company: str | None = None
