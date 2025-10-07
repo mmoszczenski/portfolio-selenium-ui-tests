@@ -61,7 +61,7 @@ class TestCheckoutPositive:
         cart_page.click_proceed_to_checkout_button()
         
         #assercja czy wyświetlił się checkout
-        assert checkout.is_checkout_page_displayd()
+        assert checkout.is_checkout_page_displayed()
         
         #assercja czy adresy zgadzają się z tym co podczas rejestracji
         
