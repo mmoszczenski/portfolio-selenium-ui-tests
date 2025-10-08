@@ -84,8 +84,10 @@ class TestCartPositive:
         products_page.add_to_cart_by_id(product_ids[1])
         products_page.click_view_cart_btn()
         
+        cart_page.remove_ads_banner_if_visible()
         cart_page.remove_product(product_ids[1])
-        cart_page.reload_cart_after_item_removal()
+        cart_page.reload_page()
+        cart_page.wait_for_product_removal(product_ids[1])
         
         actual_total = cart_page.product_total(product_ids[0])
 
@@ -95,10 +97,6 @@ class TestCartPositive:
     
     def test_add_to_cart_from_various_pages(self):
         pass
-
-
-
-
 
 
 class TestCartNegative:

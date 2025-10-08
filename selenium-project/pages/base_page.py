@@ -69,22 +69,8 @@ class BasePage():
             "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
             element
         )
-
-    def wait_for_element(self, locator, timeout=10, condition="presence"):
-
-        wait = WebDriverWait(self.driver, timeout)
-
-        conditions = {
-            "presence": EC.presence_of_element_located(locator),
-            "visible": EC.visibility_of_element_located(locator),
-            "clickable": EC.element_to_be_clickable(locator)
-            }
-        
-        return wait.until(conditions[condition])
     
 
-    def reload_page(self, wait_for_locator=None):
+    def reload_page(self):
         self.driver.refresh()
 
-        if wait_for_locator:
-            self.wait_for_element(wait_for_locator)
