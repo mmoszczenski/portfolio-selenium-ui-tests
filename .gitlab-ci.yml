@@ -9,6 +9,7 @@ test:
   image: python:3.11
   before_script:
     - python -m pip install --upgrade pip
+    - cd selenium-project
     - pip install -r requirements.txt
   script:
     - cd selenium-project
