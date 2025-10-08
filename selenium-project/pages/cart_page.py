@@ -44,3 +44,6 @@ class CartPage(BasePage):
     
     def click_proceed_to_checkout_button(self):
         self.click(self._PROCEED_TO_CHECKOUT_BUTTON)
+
+    def reload_cart_after_item_removal(self):
+        super().reload_page(wait_for_locator=self._CART_ROWS)
