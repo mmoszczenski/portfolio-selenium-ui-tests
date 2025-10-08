@@ -6,7 +6,7 @@ variables:
 
 test:
   stage: test
-  image: python:3.11
+  image: mcr.microsoft.com/playwright/python
   before_script:
     - python -m pip install --upgrade pip
     - cd selenium-project
