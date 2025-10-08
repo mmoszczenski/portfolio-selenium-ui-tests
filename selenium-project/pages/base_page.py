@@ -70,7 +70,6 @@ class BasePage():
             element
         )
     
-
     def reload_page(self):
         self.driver.refresh()
 

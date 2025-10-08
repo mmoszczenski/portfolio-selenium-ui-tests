@@ -1,7 +1,7 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-
+from selenium.webdriver.support import expected_conditions as EC
 
 class CartPage(BasePage):
     
@@ -38,7 +38,7 @@ class CartPage(BasePage):
         row = self.product_row(product_id)
         delete_btn = row.find_element(By.CSS_SELECTOR, f"a.cart_quantity_delete[data-product-id='{product_id}']")
         self.scroll_to(delete_btn)
-        self.click(delete_btn)
+        delete_btn.click()
         
     def products_count(self) -> int:
         rows = self.find_all(self._CART_ROWS)
@@ -46,14 +46,8 @@ class CartPage(BasePage):
     
     def click_proceed_to_checkout_button(self):
         self.click(self._PROCEED_TO_CHECKOUT_BUTTON)
-        
-        
-    def wait_for_product_removal(self, product_id, timeout=10):
-        def product_gone(driver):
-            rows = self.find_all(self._CART_ROWS)
-            for row in rows:
-                if int(row.get_attribute("data-product-id")) == product_id:
-                    return False
-            return True
 
-        WebDriverWait(self.driver, timeout).until(product_gone)
+    def wait_for_cart_items_count_to_be(self, expected_count, timeout=10):
+        WebDriverWait(self.driver, timeout).until(
+            lambda d: len(self.find_all(self._CART_ROWS)) == expected_count
+    )
