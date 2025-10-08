@@ -47,19 +47,17 @@ def pytest_runtest_makereport(item, call):
     outcome = yield
     rep = outcome.get_result()
 
-    # Jeśli test się nie powiódł
-    if rep.failed:
-        driver = item.funcargs.get("driver")  # fixture driver
+    if rep.when == "call" and rep.failed:
+        driver = item.funcargs.get("driver", None)
         if driver:
-            screenshots_dir = "screenshots"
+            screenshots_dir = os.path.abspath("screenshots")
             os.makedirs(screenshots_dir, exist_ok=True)
-            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-            file_path = os.path.join(screenshots_dir, f"{item.name}_{timestamp}.png")
+
+            file_path = os.path.join(screenshots_dir, f"{item.name}.png")
             driver.save_screenshot(file_path)
-            print(f"\nScreenshot saved: {file_path}")
-
-
-            if hasattr(rep, "extra"):
-                rep.extra.append(pytest_html.extras.image(file_path))
-            else:
-                rep.extra = [pytest_html.extras.image(file_path)]
+            
+            pytest_html = item.config.pluginmanager.getplugin("html")
+            if pytest_html:
+                extra = getattr(rep, "extra", [])
+                extra.append(pytest_html.extras.image(file_path))
+                rep.extra = extra
