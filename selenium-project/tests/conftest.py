@@ -15,7 +15,6 @@ from pages.order_placed_page import OrderPlacedPage
 def pytest_addoption(parser):
     parser.addoption("--headless", action="store_true", help="Run browser in headless mode")
 
-
 @pytest.fixture
 def driver(request):
     headless = request.config.getoption("--headless")
