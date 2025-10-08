@@ -11,6 +11,7 @@ test:
     - python -m pip install --upgrade pip
     - pip install -r requirements.txt
   script:
+    - cd selenium-project
     - pytest --tb=short -ra
   only:
-    - branches  
+    - main
