@@ -12,6 +12,6 @@ test:
     - pip install -r requirements.txt
   script:
     - cd selenium-project
-    - pytest --tb=short -ra
+    - pytest --tb=short -ra --headless
   only:
     - main
