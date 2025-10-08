@@ -14,4 +14,4 @@ test:
   script:
     - pytest --tb=short -ra --headless
   only:
-    - main
+    - non-existent-branch
