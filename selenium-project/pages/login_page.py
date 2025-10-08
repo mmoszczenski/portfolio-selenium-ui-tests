@@ -38,24 +38,24 @@ class LoginPage(BasePage):
         self.fill_login_form(email, password)
         self.click_login_button()
 
-    def is_email_valid(self):
+    def is_email_valid(self) -> bool:
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
         return self.is_valid(email_input)
     
-    def is_email_error_type_mismatch(self):
+    def is_email_error_type_mismatch(self) -> bool:
         email_input = self.find(self._SIGN_UP_EMAIL_INPUT_FIELD)
         return self.get_validity_property(email_input, "typeMismatch")
     
-    def is_email_taken_error_displayed(self):
+    def is_email_taken_error_displayed(self) -> bool:
         return self.is_visible(self._EMAIL_TAKEN_ERROR_MESSAGE)
 
-    def is_login_validation_error_message_displayed(self):
+    def is_login_validation_error_message_displayed(self) -> bool:
         return self.is_visible(self._INCORRECT_EMAIL_OR_PASSWORD_MESSAGE)
     
-    def is_password_error_type_value_missing(self):
+    def is_password_error_type_value_missing(self) -> bool:
         password_input = self.find(self._LOGIN_PASSWORD_INPUT)
         return self.get_validity_property(password_input, "valueMissing")    
     
-    def is_email_error_type_value_missing(self):
+    def is_email_error_type_value_missing(self) -> bool:
         email_input = self.find(self._LOGIN_EMAIL_INPUT)
         return self.get_validity_property(email_input, "valueMissing")    

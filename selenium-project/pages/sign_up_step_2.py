@@ -70,34 +70,34 @@ class SignUpStep2(BasePage):
     def mark_special_offers_checkbox(self):
         self.click(self._SPECIAL_OFFERS_CHECKBOX)
 
-    def fill_password(self, text):
+    def fill_password(self, text: str):
         self.type(self._PASSWORD_FIELD_INPUT, text)
 
-    def fill_first_name(self, text):
+    def fill_first_name(self, text: str):
         self.type(self._FIRST_NAME_INPUT, text)
 
-    def fill_last_name(self, text):
+    def fill_last_name(self, text: str):
         self.type(self._LAST_NAME_INPUT, text)
         
-    def fill_company(self, text):
+    def fill_company(self, text: str):
         self.type(self._COMPANY_INPUT, text)
 
-    def fill_address(self, text):
+    def fill_address(self, text: str):
         self.type(self._ADDRESS_INPUT, text)
         
-    def fill_address2(self, text):
+    def fill_address2(self, text: str):
         self.type(self._ADDRESS2_INPUT, text)
 
-    def fill_state(self, text):
+    def fill_state(self, text: str):
         self.type(self._STATE_INPUT, text)
 
-    def fill_city(self, text):
+    def fill_city(self, text: str):
         self.type(self._CITY_INPUT, text)
 
-    def fill_zipcode(self, text):
+    def fill_zipcode(self, text: str):
         self.type(self._ZIPCODE_INPUT, text)
 
-    def fill_mobile_number(self, text):
+    def fill_mobile_number(self, text: str):
         self.type(self._MOBILE_NUMBER_INPUT, text)
 
     def click_create_account_button(self):

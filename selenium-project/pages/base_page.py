@@ -45,7 +45,7 @@ class BasePage():
         script = f"return arguments[0].validity.{property_name};"
         return self.execute_js(script, element)
 
-    def is_valid(self, element):
+    def is_valid(self, element) -> bool:
         return self.get_validity_property(element, "valid")
     
     def remove_ads_banner_if_visible(self):
