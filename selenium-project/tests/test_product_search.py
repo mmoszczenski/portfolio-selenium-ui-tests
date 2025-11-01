@@ -35,19 +35,19 @@ class TestProductSearchPositive:
         assert products_page.contains_product_with_text(category), f"Results do not match {category} category"
         
         
-    class TestProductSearchNegative:
+class TestProductSearchNegative:
         
-        def test_search_no_results(self, pages):
+    def test_search_no_results(self, pages):
             
-            home_page: HomePage = pages["home"]
-            products_page: ProductsPage = pages["products_page"]
+        home_page: HomePage = pages["home"]
+        products_page: ProductsPage = pages["products_page"]
             
-            search_phrase = "nonexistentproduct"
+        search_phrase = "nonexistentproduct"
             
-            home_page.open_homepage()
-            home_page.go_to_products_page()
+        home_page.open_homepage()
+        home_page.go_to_products_page()
             
-            products_page.use_search(search_phrase)
-            home_page.remove_ads_banner_if_visible()
+        products_page.use_search(search_phrase)
+        home_page.remove_ads_banner_if_visible()
             
-            assert not products_page.search_has_results(wait=False), "Results were found"
+        assert not products_page.search_has_results(wait=False), "Results were found"
