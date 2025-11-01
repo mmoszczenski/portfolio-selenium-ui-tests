@@ -63,7 +63,3 @@ selenium-project/
 - ✅ Contact form submission
 
 **Purpose**: Portfolio project demonstrating Selenium test automation best practices
-
-```
-
-```
