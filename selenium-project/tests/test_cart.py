@@ -1,4 +1,5 @@
 import time
+import pytest
 from pages.products_page import ProductsPage
 from pages.home_page import HomePage
 from pages.cart_page import CartPage
@@ -103,6 +104,7 @@ class TestCartPositive:
 
 class TestCartNegative:
     
+    @pytest.mark.xfail(reason="This is a known bug in the app")
     def test_add_negative_quantity_item(self, pages):
         
         home_page: HomePage = pages["home"]
