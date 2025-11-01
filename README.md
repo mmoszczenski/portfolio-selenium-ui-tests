@@ -1,6 +1,6 @@
 # Selenium UI Automation Test Suite
 
-A comprehensive UI automation test suite for [AutomationExercise.com](https://automationexercise.com/) built with Selenium, Python, and pytest.
+A comprehensive UI automation test suite for [AutomationExercise.com](https://automationexercise.com/) application, built with Selenium, Python, and pytest.
 
 ## Features
 
