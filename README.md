@@ -1,47 +1,46 @@
 # Selenium UI Automation Test Suite
 
-A comprehensive UI automation test suite for [AutomationExercise.com](https://automationexercise.com/) built with Selenium WebDriver, Python, and pytest.
+A comprehensive UI automation test suite for [AutomationExercise.com](https://automationexercise.com/) built with Selenium, Python, and pytest.
 
 ## Features
 
 - **Page Object Model (POM)** architecture
 - **Test data factories** using Faker for dynamic data generation
-- **Comprehensive coverage**: Registration, Login, Shopping Cart, Checkout, Product Search, Contact Forms
-- **CI/CD integration** with GitLab CI
-- **HTML reports** with automatic screenshot capture on failures
+- **Comprehensive coverage**: Registration, Login, Shopping Cart, Checkout, Product Search, Contact Form
+- **HTML report** with automatic screenshot capture on failures
 
 ## Technologies
 
 - Python 3.x
 - Selenium WebDriver 4.35.0
 - pytest 8.4.1
-- Faker (test data generation)
+- Faker
 - webdriver-manager
 
 ## Quick Start
 
 ### Installation
 
-cd selenium-project
-pip install -r requirements.txt
+> cd selenium-project
+> pip install -r requirements.txt
 
 ### Run Tests
 
 # Run all tests
 
-pytest
+> pytest
 
 # Run in headless mode
 
-pytest --headless
+> pytest --headless
 
 # Run specific test file
 
-pytest tests/test_register.py
+> pytest tests/test_register.py
 
 ### View Reports
 
-HTML reports are generated in `reports/report.html` after test execution.
+HTML report is generated in `reports/report.html` after test execution.
 
 ## Project Structure
 
@@ -50,7 +49,7 @@ selenium-project/
 ├── tests/ # Test files (register, login, cart, checkout, etc.)
 ├── utils/ # Test data factories and utilities
 ├── test_data/ # Product data definitions
-└── reports/ # HTML test reports
+└── reports/ # HTML test report
 
 ## Test Coverage
 
