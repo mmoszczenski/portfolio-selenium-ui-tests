@@ -91,7 +91,6 @@ class TestCartPositive:
         assert expected_total == actual_total
         assert cart_page.products_count() == 1, "Product count is incorrect"
     
-
 class TestCartNegative:
     
     @pytest.mark.xfail(reason="This is a known bug in the app")

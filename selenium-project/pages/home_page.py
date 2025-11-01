@@ -5,7 +5,7 @@ class HomePage(BasePage):
     
     URL = "https://automationexercise.com/"
     
-    _ACCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, "button[aria-label='Zgadzam się']")
+    _ACCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, "button.fc-cta-consent")
     _LOGOUT_BUTTON = (By.CSS_SELECTOR, "a[href='/logout']")
     
     _LOGIN_BUTTON = (By.CSS_SELECTOR, "a[href='/login']" )
