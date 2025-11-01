@@ -38,7 +38,7 @@ class ProductsPage(BasePage):
         self.remove_ads_banner_if_visible()
         self.click(self.view_product_button(product_id))
         
-    def use_search(self, text):
+    def use_search(self, text: str):
         self.type(self._SEARCH_INPUT, text)
         self.click(self._SUBMIT_SEARCH_BUTTON)
     

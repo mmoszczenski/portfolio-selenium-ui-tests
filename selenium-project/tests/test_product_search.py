@@ -30,8 +30,7 @@ class TestProductSearchPositive:
         
         products_page.expand_men_section()
         products_page.click_jeans_category()
-        products_page.get_products_name()
-        
+
         assert products_page.contains_product_with_text(category), f"Results do not match {category} category"
         
         
