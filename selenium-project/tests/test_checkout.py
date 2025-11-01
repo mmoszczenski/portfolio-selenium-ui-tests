@@ -15,7 +15,6 @@ class TestCheckoutPositive:
     
     def test_basic_checkout_happy_path(self, pages):
         
-        #Arrange 
         products_page: ProductsPage = pages["products_page"] 
         home_page: HomePage = pages["home"]
         cart_page: CartPage = pages["cart"]
@@ -32,7 +31,6 @@ class TestCheckoutPositive:
         product_id = 1
         product = PRODUCTS[product_id]
         
-        #Act
         home_page.open_homepage()
         home_page.go_to_login_page()
         
@@ -60,17 +58,10 @@ class TestCheckoutPositive:
         
         cart_page.click_proceed_to_checkout_button()
         
-        #assercja czy wyświetlił się checkout
         assert checkout.is_checkout_page_displayed()
         
-        #assercja czy adresy zgadzają się z tym co podczas rejestracji
-        
-        #assercja czy zgadza się total oraz ilość produktów
-        
-        #kliknięcie na place order
         checkout.click_place_order_button()
         
-        #wypełnienie danych karty i kliknięcie potwierdzenia
         payment_page.provide_payment_form_data(
             name = payment_card.name,
             card_number = payment_card.card_number,
@@ -79,11 +70,8 @@ class TestCheckoutPositive:
             year = payment_card.expiration_year
         )
         
-        #asercja czy wyświetlił się page z "you order was placed and confirmed"
-        
-        order_placed_page.is_order_placed_page_displayed()
+        assert order_placed_page.is_order_placed_page_displayed()
         order_placed_page.click_continue_button()
         
         assert home_page.is_on_homepage(), "Displayed page is not HomePage"
         
-        #OPTIONAL - ściągnięcie faktury i weryfikacja czy dane się zgadzają
