@@ -1,11 +1,16 @@
 from pages.home_page import HomePage
-from pages.login_page import LoginPage
-from pages.sign_up_step_2 import SignUpStep2
-from pages.account_created_page import AccountCreatedPage
-from utils.user_factory import make_user
+from pages.products_page import ProductsPage
 
 
-class TestProductSearch():
+class TestProductSearch:
     
-    def test_correct_product_search():
-        pass
+    def test_correct_product_search(self, pages):
+        
+        home_page: HomePage = pages["home"]
+        products_page: ProductsPage = pages["products_page"] 
+    
+    
+        home_page.open_homepage()
+        home_page.go_to_products_page()
+        
+        products_page.use_search_input("Blue top")

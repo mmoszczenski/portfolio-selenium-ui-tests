@@ -9,7 +9,9 @@ class ProductsPage(BasePage):
     _CONTINUE_SHOPPING_BUTTON = (By.CSS_SELECTOR, "button[data-dismiss='modal']")
     _VIEW_CART_BUTTON = (By.CSS_SELECTOR, "a[href='/view_cart']")
     _MODAL = (By.CLASS_NAME, "modal-content")
+    
     _SEARCH_INPUT = (By.ID, "search-input")
+    _SUBMIT_SEARCH_BUTTON = (By.ID, "submit_search")
     
     def add_to_cart_by_id(self, product_id: int):
         selector = f"{self._ADD_TO_CART_BUTTON}[data-product-id='{product_id}']"
@@ -31,4 +33,7 @@ class ProductsPage(BasePage):
         self.remove_ads_banner_if_visible()
         self.click(self.view_product_button(product_id))
         
+    def use_search(self, text):
+        self.type(self._SEARCH_INPUT, text)
+        self.click(self._SUBMIT_SEARCH_BUTTON)
     
