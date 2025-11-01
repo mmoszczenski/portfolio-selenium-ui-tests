@@ -21,23 +21,22 @@ A comprehensive UI automation test suite for [AutomationExercise.com](https://au
 
 ### Installation
 
-> cd selenium-project
->
-> pip install -r requirements.txt
+    cd selenium-project
+    pip install -r requirements.txt
 
 ### Run Tests
 
 # Run all tests
 
-> pytest
+    pytest
 
 # Run in headless mode
 
-> pytest --headless
+    pytest --headless
 
 # Run specific test file
 
-> pytest tests/test_register.py
+    pytest tests/test_register.py
 
 ### View Reports
 
