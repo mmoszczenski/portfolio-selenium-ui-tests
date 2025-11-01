@@ -12,7 +12,6 @@ class HomePage(BasePage):
     _CONTACT_FORM_BUTTON = (By.CSS_SELECTOR, "a[href='/contact_us']")
     _PRODUCTS_PAGE_BUTTON = (By.CSS_SELECTOR, "a[href='/products']")
     
-            
     def open_homepage(self):
         self.open(self.URL)
         self.accept_cookies()
