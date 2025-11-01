@@ -93,14 +93,6 @@ class TestCartPositive:
         assert expected_total == actual_total
         assert cart_page.products_count() == 1, "Product count is incorrect"
     
-    
-    def test_add_to_cart_from_various_pages(self):
-        pass
-
-
-
-
-
 
 class TestCartNegative:
     
