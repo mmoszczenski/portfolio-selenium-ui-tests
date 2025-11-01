@@ -7,7 +7,7 @@ class TestLoginPositive():
 
     def test_login_with_valid_credentials(self, pages):
         
-        user= make_user()
+        user = make_user()
         email = user.email
         home_page: HomePage = pages["home"]
         login_page: LoginPage = pages["login"]
