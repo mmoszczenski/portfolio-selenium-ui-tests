@@ -22,6 +22,7 @@ A comprehensive UI automation test suite for [AutomationExercise.com](https://au
 ### Installation
 
 > cd selenium-project
+>
 > pip install -r requirements.txt
 
 ### Run Tests
