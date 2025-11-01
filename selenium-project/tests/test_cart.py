@@ -1,11 +1,9 @@
-import time
 import pytest
 from pages.products_page import ProductsPage
 from pages.home_page import HomePage
 from pages.cart_page import CartPage
 from pages.product_details_page import ProductDetailsPage
 from test_data.product_data import PRODUCTS
-
 class TestCartPositive:
     
     def test_add_single_item_to_cart(self, pages):

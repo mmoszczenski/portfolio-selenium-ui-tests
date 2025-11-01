@@ -2,7 +2,6 @@ from pages.home_page import HomePage
 from pages.contact_form_page import ContactFormPage
 from utils.contact_form_factory import make_contact_form_data
 
-
 class TestContactFormPositive():
 
     def test_submit_contact_form_with_valid_data(self, pages): 
@@ -25,7 +24,6 @@ class TestContactFormPositive():
         contact_form.confirm_alert(accept=True)
         
         assert contact_form.is_contact_form_submitted(), "Success message not displayed"
-        
         
 
 class TestContactFormNegative():
