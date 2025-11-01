@@ -8,6 +8,6 @@ class CheckoutPage(BasePage):
     def is_checkout_page_displayed(self) -> bool:
         return self.is_visible(self._PLACE_ORDER_BUTTON)
     
-    def click_place_order_button(self):
+    def click_place_order_button(self) -> None:
         self.click(self._PLACE_ORDER_BUTTON)
         

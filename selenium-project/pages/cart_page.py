@@ -1,6 +1,7 @@
 from pages.base_page import BasePage
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.remote.webelement import WebElement
 
 class CartPage(BasePage):
     
@@ -10,7 +11,7 @@ class CartPage(BasePage):
     def is_cart_page_displayed(self) -> bool:
         return self.is_visible(self._PROCEED_TO_CHECKOUT_BUTTON)
     
-    def product_row(self, product_id: int):
+    def product_row(self, product_id: int) -> WebElement:
         selector = (By.ID, f"product-{product_id}")
         return self.find(selector)
     
@@ -33,7 +34,7 @@ class CartPage(BasePage):
         total_text = row.find_element(By.CSS_SELECTOR, ".cart_total_price").text
         return float(total_text.replace("Rs.", "").strip())
 
-    def remove_product(self, product_id: int):
+    def remove_product(self, product_id: int) -> None:
         row = self.product_row(product_id)
         delete_btn = row.find_element(By.CSS_SELECTOR, f"a.cart_quantity_delete[data-product-id='{product_id}']")
         self.scroll_to(delete_btn)
@@ -43,11 +44,11 @@ class CartPage(BasePage):
         rows = self.find_all(self._CART_ROWS)
         return len(rows)
     
-    def click_proceed_to_checkout_button(self):
+    def click_proceed_to_checkout_button(self) -> None:
         self.click(self._PROCEED_TO_CHECKOUT_BUTTON)
 
-    def wait_for_cart_items_count_to_be(self, expected_count: int):
+    def wait_for_cart_items_count_to_be(self, expected_count: int) -> None:
         WebDriverWait(self.driver, self.timeout).until(
             lambda d: len(self.find_all(self._CART_ROWS)) == expected_count
-    )
+        )
         

@@ -11,31 +11,30 @@ class ContactFormPage(BasePage):
     _UPLOAD_BUTTON = (By.CSS_SELECTOR, "input[type='file']")
     
     _SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".status.alert.alert-success")
-    _CONFIRM_ALERT_WINDOW = ()
     
-    def fill_name(self, text):
+    def fill_name(self, text: str) -> None:
         self.type(self._NAME_INPUT_FIELD, text)
         
-    def fill_email(self, text):
+    def fill_email(self, text: str) -> None:
         self.type(self._EMAIL_INPUT_FIELD, text)
     
-    def fill_subject(self, text):
+    def fill_subject(self, text: str) -> None:
         self.type(self._SUBJECT_INPUT_FIELD, text)
         
-    def fill_message(self, text):
+    def fill_message(self, text: str) -> None:
         self.type(self._MESSAGE_INPUT_FIELD, text)
         
-    def upload_file(self, file):
+    def upload_file(self, file: str) -> None:
         file_input = self.find(self._UPLOAD_BUTTON)
         file_input.send_keys(str(file))
 
-    def click_submit_button(self):
+    def click_submit_button(self) -> None:
         self.click(self._SUBMIT_BUTTON)
         
     def is_contact_form_submitted(self) -> bool:
         return self.is_visible(self._SUCCESS_MESSAGE)
     
-    def fill_contact_form(self, name, email, subject, message, file):
+    def fill_contact_form(self, name: str, email: str, subject: str, message: str, file: str) -> None:
         self.fill_name(name)
         self.fill_email(email)
         self.fill_subject(subject)

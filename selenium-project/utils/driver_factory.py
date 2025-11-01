@@ -1,8 +1,9 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.webdriver import WebDriver
 
-def create_driver(headless: bool = False):
+def create_driver(headless: bool = False) -> WebDriver:
     options = Options()
     options.add_argument("--start-maximized")
     # options.add_argument("--incognito")

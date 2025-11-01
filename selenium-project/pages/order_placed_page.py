@@ -10,6 +10,6 @@ class OrderPlacedPage(BasePage):
     def is_order_placed_page_displayed(self) -> bool:
         return self.is_visible(self._CONFIRMATION_MESSAGE)
         
-    def click_continue_button(self):
+    def click_continue_button(self) -> None:
         self.click(self._CONTINUE_BUTTON)
         

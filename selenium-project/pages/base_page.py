@@ -3,75 +3,77 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.remote.webelement import WebElement
+from typing import Tuple, Any
 
 class BasePage():
     
-    def __init__(self, driver: WebDriver, timeout = 10):
+    def __init__(self, driver: WebDriver, timeout: int = 10):
         self.driver = driver
         self.timeout = timeout
         
-    def open(self, url):
+    def open(self, url: str) -> None:
         self.driver.get(url)    
         
-    def find(self, locator):
+    def find(self, locator: Tuple[str, str]) -> WebElement:
         return WebDriverWait(self.driver, self.timeout).until(EC.presence_of_element_located(locator))
     
-    def find_all(self, locator):
+    def find_all(self, locator: Tuple[str, str]) -> list[WebElement]:
         return WebDriverWait(self.driver, self.timeout).until(EC.presence_of_all_elements_located(locator))
     
-    def find_all_now(self, locator):
+    def find_all_now(self, locator: Tuple[str, str]) -> list[WebElement]:
         return self.driver.find_elements(*locator)
     
-    def type(self, locator, text):
+    def type(self, locator: Tuple[str, str], text: str) -> None:
         element = self.find(locator)
         element.clear()
         element.send_keys(text)
         
-    def get_text(self, locator):
+    def get_text(self, locator: Tuple[str, str]) -> str:
         return self.find(locator).text
-    
-    def click(self, locator):
+        
+    def click(self, locator: Tuple[str, str]) -> None:
         element = WebDriverWait(self.driver, self.timeout).until(EC.element_to_be_clickable(locator))
         element.click()
         
-    def is_visible(self, locator) -> bool:
+    def is_visible(self, locator: Tuple[str, str]) -> bool:
         try:
             WebDriverWait(self.driver, self.timeout).until(EC.visibility_of_element_located(locator))
             return True
         except TimeoutException:
             return False
         
-    def execute_js(self, script: str, *args):
+    def execute_js(self, script: str, *args) -> Any:
         return self.driver.execute_script(script, *args)
     
-    def get_validity_property(self, element, property_name: str):
+    def get_validity_property(self, element: WebElement, property_name: str) -> bool:
         script = f"return arguments[0].validity.{property_name};"
         return self.execute_js(script, element)
 
-    def is_valid(self, element) -> bool:
+    def is_valid(self, element: WebElement) -> bool:
         return self.get_validity_property(element, "valid")
     
-    def remove_ads_banner_if_visible(self):
+    def remove_ads_banner_if_visible(self) -> None:
         try:
             self.execute_js(f"document.querySelectorAll('ins.adsbygoogle').forEach(ad => ad.remove());")
         except Exception as e:
             print(f"Failed to remove banners: {e}")
             
-    def confirm_alert(self, accept: bool = True):
+    def confirm_alert(self, accept: bool = True) -> None:
         alert = WebDriverWait(self.driver, self.timeout).until(EC.alert_is_present())
         if accept:
             alert.accept()
         else:
             alert.dismiss()
             
-    def hover_over(self, element):
+    def hover_over(self, element: WebElement) -> None:
         ActionChains(self.driver).move_to_element(element).perform()
         
-    def scroll_to(self, element):
+    def scroll_to(self, element: WebElement) -> None:
         self.driver.execute_script(
             "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", 
             element
         )
     
-    def reload_page(self):
+    def reload_page(self) -> None:
         self.driver.refresh()

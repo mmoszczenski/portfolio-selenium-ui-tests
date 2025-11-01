@@ -11,25 +11,25 @@ class PaymentPage(BasePage):
     
     _CONFIRM_ORDER_BUTTON = (By.CSS_SELECTOR, "button[data-qa='pay-button']")
     
-    def fill_name(self, name: str):
+    def fill_name(self, name: str) -> None:
         self.type(self._NAME_FIELD, name)
         
-    def fill_card(self, card_number: int):
+    def fill_card(self, card_number: str) -> None:
         self.type(self._CARD_NUMBER_FIELD, card_number)
         
-    def fill_cvc(self, cvc_number: int):
+    def fill_cvc(self, cvc_number: str) -> None:
         self.type(self._CVC_FIELD, cvc_number)
         
-    def fill_expiration_month(self, month):
+    def fill_expiration_month(self, month: str) -> None:
         self.type(self._EXPIRATION_MONTH_FIELD, month)
         
-    def fill_expiration_year(self, year):
+    def fill_expiration_year(self, year: str) -> None:
         self.type(self._EXPIRATION_YEAR_FIELD, year)
         
-    def click_confirm_button(self):
+    def click_confirm_button(self) -> None:
         self.click(self._CONFIRM_ORDER_BUTTON)
         
-    def provide_payment_form_data(self, name, card_number, cvc_number, month, year):
+    def provide_payment_form_data(self, name: str, card_number: str, cvc_number: str, month: str, year: str) -> None:
         self.fill_name(name)
         self.fill_card(card_number)
         self.fill_cvc(cvc_number)

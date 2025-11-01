@@ -33,7 +33,7 @@ def make_user(**overrides) -> User:
         email = generate_random_email(),
         title = fake.random_element(elements=("Mr", "Mrs")),
         password = fake.password(),
-        day = fake.random_int(min= 1, max=30),
+        day = fake.random_int(min=1, max=30),
         month = fake.month_name(),
         year = fake.random_int(min=1950, max=2010),
         first_name = fake.first_name(),
@@ -45,7 +45,7 @@ def make_user(**overrides) -> User:
         state = fake.state(),
         city = fake.city(),
         zipcode = fake.zipcode(),
-        mobile_number= fake.phone_number(),
+        mobile_number = fake.phone_number(),
     )
     return replace(base, **overrides)
 
