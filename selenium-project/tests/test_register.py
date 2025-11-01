@@ -88,8 +88,8 @@ class TestRegisterNegative():
 
         login_page.sign_up(user.username, user.email)
 
-        assert login_page.is_email_valid() is False
-        assert login_page.is_email_error_type_mismatch() is True
+        assert not login_page.is_email_valid(), "Validation error is not triggered"
+        assert login_page.is_email_error_type_mismatch(), "Error type mismatch is not correct"
          
     def test_register_with_empty_fields(self, pages):
         
