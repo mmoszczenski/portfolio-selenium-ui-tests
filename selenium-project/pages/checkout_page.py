@@ -10,3 +10,4 @@ class CheckoutPage(BasePage):
     
     def click_place_order_button(self):
         self.click(self._PLACE_ORDER_BUTTON)
+        

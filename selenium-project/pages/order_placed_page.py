@@ -12,3 +12,4 @@ class OrderPlacedPage(BasePage):
         
     def click_continue_button(self):
         self.click(self._CONTINUE_BUTTON)
+        

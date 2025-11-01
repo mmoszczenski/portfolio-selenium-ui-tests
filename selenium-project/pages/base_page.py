@@ -75,4 +75,3 @@ class BasePage():
     
     def reload_page(self):
         self.driver.refresh()
-

@@ -45,3 +45,4 @@ class ContactFormPage(BasePage):
     def is_email_error_type_value_missing(self) -> bool:
             email_input = self.find(self._EMAIL_INPUT_FIELD)
             return self.get_validity_property(email_input, "valueMissing")    
+        

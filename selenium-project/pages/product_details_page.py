@@ -24,3 +24,4 @@ class ProductDetailsPage(BasePage):
         self.find(self._MODAL)
         self.click(self._VIEW_CART_BUTTON)
         self.reload_page()
+        

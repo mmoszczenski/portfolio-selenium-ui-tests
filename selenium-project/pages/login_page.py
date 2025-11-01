@@ -16,25 +16,25 @@ class LoginPage(BasePage):
     def is_on_login_page(self) -> bool:
         return self.is_visible(self._HEADER)
 
-    def fill_sign_up_form(self, username, email):
+    def fill_sign_up_form(self, username: str, email: str):
         self.type(self._SIGN_UP_USERNAME_INPUT_FIELD, username)
         self.type(self._SIGN_UP_EMAIL_INPUT_FIELD, email)
         
     def click_sign_up_button(self):
         self.click(self._SIGN_UP_BUTTON)
         
-    def sign_up(self, username, email):
+    def sign_up(self, username: str, email: str):
         self.fill_sign_up_form(username, email)
         self.click_sign_up_button()
 
-    def fill_login_form(self, email, password):
+    def fill_login_form(self, email: str, password: str):
         self.type(self._LOGIN_EMAIL_INPUT, email)
         self.type(self._LOGIN_PASSWORD_INPUT, password)
 
     def click_login_button(self):
         self.click(self._LOGIN_BUTTON)
 
-    def login(self, email, password):
+    def login(self, email: str, password: str):
         self.fill_login_form(email, password)
         self.click_login_button()
 

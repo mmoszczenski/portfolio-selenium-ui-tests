@@ -816,7 +816,7 @@
         "kind": 6,
         "importPath": "selenium-project.pages.payment_page",
         "description": "selenium-project.pages.payment_page",
-        "peekOfCode": "class PaymentPage(BasePage):\n    _NAME_FIELD = (By.CSS_SELECTOR, \"input[data-qa='name-on-card']\")\n    _CARD_NUMBER_FIELD = (By.CSS_SELECTOR, \"input[data-qa='card-number']\")\n    _CVC_FIELD = (By.CSS_SELECTOR, \"input[data-qa='cvc']\")\n    _EXPIRATION_MONTH_FIELD = (By.CSS_SELECTOR, \"input[data-qa='expiry-month']\")\n    _EXPIRATION_YEAR_FIELD = (By.CSS_SELECTOR, \"input[data-qa='expiry-year']\")\n    _CONFIRM_ORDER_BUTTON = (By.CSS_SELECTOR, \"button[data-qa='pay-button']\")\n    def fill_name(self, name):\n        self.type(self._NAME_FIELD, name)\n    def fill_card(self, card_number):",
+        "peekOfCode": "class PaymentPage(BasePage):\n    _NAME_FIELD = (By.CSS_SELECTOR, \"input[data-qa='name-on-card']\")\n    _CARD_NUMBER_FIELD = (By.CSS_SELECTOR, \"input[data-qa='card-number']\")\n    _CVC_FIELD = (By.CSS_SELECTOR, \"input[data-qa='cvc']\")\n    _EXPIRATION_MONTH_FIELD = (By.CSS_SELECTOR, \"input[data-qa='expiry-month']\")\n    _EXPIRATION_YEAR_FIELD = (By.CSS_SELECTOR, \"input[data-qa='expiry-year']\")\n    _CONFIRM_ORDER_BUTTON = (By.CSS_SELECTOR, \"button[data-qa='pay-button']\")\n    def fill_name(self, name: str):\n        self.type(self._NAME_FIELD, name)\n    def fill_card(self, card_number: int):",
         "detail": "selenium-project.pages.payment_page",
         "documentation": {}
     },

@@ -63,4 +63,3 @@ class ProductsPage(BasePage):
     def click_jeans_category(self):
         self.click(self._JEANS_LINK)
         
-        

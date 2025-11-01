@@ -50,3 +50,4 @@ class CartPage(BasePage):
         WebDriverWait(self.driver, self.timeout).until(
             lambda d: len(self.find_all(self._CART_ROWS)) == expected_count
     )
+        
