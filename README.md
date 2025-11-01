@@ -44,7 +44,8 @@ HTML report is generated in `reports/report.html` after test execution.
 
 ## Project Structure
 
-```selenium-project/
+```
+selenium-project/
 ├── pages/ # Page Object Model classes
 ├── tests/ # Test files (register, login, cart, checkout, etc.)
 ├── utils/ # Test data factories and utilities
