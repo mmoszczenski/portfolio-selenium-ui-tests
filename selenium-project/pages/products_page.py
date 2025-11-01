@@ -15,6 +15,9 @@ class ProductsPage(BasePage):
     
     _PRODUCT_NAMES = (By.CSS_SELECTOR, ".single-products")
     
+    _MEN_TOGGLE = (By.XPATH, '//a[@href="#Men"]')
+    _JEANS_LINK = (By.CSS_SELECTOR, 'a[href="/category_products/6"]')
+    
     def add_to_cart_by_id(self, product_id: int):
         selector = f"{self._ADD_TO_CART_BUTTON}[data-product-id='{product_id}']"
         add_button = self.find((By.CSS_SELECTOR, selector))
@@ -46,5 +49,12 @@ class ProductsPage(BasePage):
     def contains_product_with_text(self, text):
         names = self.get_products_name()
         return any(text.lower() in name.lower() for name in names)
+    
+    def expand_men_section(self):
+        self.click(self._MEN_TOGGLE)
+        self.is_visible(self._JEANS_LINK)
+        
+    def click_jeans_category(self):
+        self.click(self._JEANS_LINK)
         
         

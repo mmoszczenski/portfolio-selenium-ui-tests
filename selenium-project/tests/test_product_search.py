@@ -1,8 +1,7 @@
 from pages.home_page import HomePage
 from pages.products_page import ProductsPage
 
-
-class TestProductSearch:
+class TestProductSearchPositive:
     
     def test_correct_product_search(self, pages):
         
@@ -19,3 +18,18 @@ class TestProductSearch:
         
         assert products_page.contains_product_with_text(search_phrase), "No result with given search phrase were found"
         
+    def test_category_menu_filtering(self, pages):
+        
+        home_page: HomePage = pages["home"]
+        products_page: ProductsPage = pages["products_page"]
+        
+        category = "Jeans"
+        
+        home_page.open_homepage()
+        home_page.go_to_products_page()
+        
+        products_page.expand_men_section()
+        products_page.click_jeans_category()
+        products_page.get_products_name()
+        
+        assert products_page.contains_product_with_text(category), f"Results do not match {category} category"
