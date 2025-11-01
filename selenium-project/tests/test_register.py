@@ -150,9 +150,4 @@ class TestRegisterNegative():
         login_page.sign_up(user.username, email)    
 
         assert login_page.is_email_taken_error_displayed()
-
-
-       
-
-        
     
