@@ -19,6 +19,9 @@ class BasePage():
     def find_all(self, locator):
         return WebDriverWait(self.driver, self.timeout).until(EC.presence_of_all_elements_located(locator))
     
+    def find_all_now(self, locator):
+        return self.driver.find_elements(*locator)
+    
     def type(self, locator, text):
         element = self.find(locator)
         element.clear()

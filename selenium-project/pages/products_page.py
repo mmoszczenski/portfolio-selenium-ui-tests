@@ -42,13 +42,19 @@ class ProductsPage(BasePage):
         self.type(self._SEARCH_INPUT, text)
         self.click(self._SUBMIT_SEARCH_BUTTON)
     
-    def get_products_name(self):
-        products = self.find_all(self._PRODUCT_NAMES)
+    def get_products_name(self, wait=True):
+        if wait:
+            products = self.find_all(self._PRODUCT_NAMES)
+        else:
+            products = self.find_all_now(self._PRODUCT_NAMES)
         return [product.text.strip() for product in products]
     
     def contains_product_with_text(self, text):
         names = self.get_products_name()
         return any(text.lower() in name.lower() for name in names)
+        
+    def search_has_results(self, wait=True) -> bool:
+        return len(self.get_products_name(wait=wait)) > 0
     
     def expand_men_section(self):
         self.click(self._MEN_TOGGLE)
