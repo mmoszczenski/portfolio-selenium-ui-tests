@@ -50,6 +50,7 @@ HTML report is generated in `reports/report.html` after test execution.
 ├── utils/ # Test data factories and utilities
 ├── test_data/ # Product data definitions
 └── reports/ # HTML test report
+```
 
 ## Test Coverage
 
@@ -61,4 +62,7 @@ HTML report is generated in `reports/report.html` after test execution.
 - ✅ Contact form submission
 
 **Purpose**: Portfolio project demonstrating Selenium test automation best practices
+
+```
+
 ```
