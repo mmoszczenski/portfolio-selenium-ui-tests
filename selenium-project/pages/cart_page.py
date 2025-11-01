@@ -46,7 +46,7 @@ class CartPage(BasePage):
     def click_proceed_to_checkout_button(self):
         self.click(self._PROCEED_TO_CHECKOUT_BUTTON)
 
-    def wait_for_cart_items_count_to_be(self, expected_count):
+    def wait_for_cart_items_count_to_be(self, expected_count: int):
         WebDriverWait(self.driver, self.timeout).until(
             lambda d: len(self.find_all(self._CART_ROWS)) == expected_count
     )
