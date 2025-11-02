@@ -1,0 +1,1150 @@
+[
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "importPath": "pages.base_page",
+        "description": "pages.base_page",
+        "isExtraImport": true,
+        "detail": "pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "By",
+        "importPath": "selenium.webdriver.common.by",
+        "description": "selenium.webdriver.common.by",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.by",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriverWait",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "Select",
+        "importPath": "selenium.webdriver.support.ui",
+        "description": "selenium.webdriver.support.ui",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support.ui",
+        "documentation": {}
+    },
+    {
+        "label": "expected_conditions",
+        "importPath": "selenium.webdriver.support",
+        "description": "selenium.webdriver.support",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.support",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriver",
+        "importPath": "selenium.webdriver.chrome.webdriver",
+        "description": "selenium.webdriver.chrome.webdriver",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.webdriver",
+        "documentation": {}
+    },
+    {
+        "label": "WebDriver",
+        "importPath": "selenium.webdriver.chrome.webdriver",
+        "description": "selenium.webdriver.chrome.webdriver",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.webdriver",
+        "documentation": {}
+    },
+    {
+        "label": "TimeoutException",
+        "importPath": "selenium.common.exceptions",
+        "description": "selenium.common.exceptions",
+        "isExtraImport": true,
+        "detail": "selenium.common.exceptions",
+        "documentation": {}
+    },
+    {
+        "label": "ActionChains",
+        "importPath": "selenium.webdriver.common.action_chains",
+        "description": "selenium.webdriver.common.action_chains",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.common.action_chains",
+        "documentation": {}
+    },
+    {
+        "label": "WebElement",
+        "importPath": "selenium.webdriver.remote.webelement",
+        "description": "selenium.webdriver.remote.webelement",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.remote.webelement",
+        "documentation": {}
+    },
+    {
+        "label": "WebElement",
+        "importPath": "selenium.webdriver.remote.webelement",
+        "description": "selenium.webdriver.remote.webelement",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.remote.webelement",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Tuple",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "pytest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest",
+        "description": "pytest",
+        "detail": "pytest",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_html",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pytest_html",
+        "description": "pytest_html",
+        "detail": "pytest_html",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "create_driver",
+        "importPath": "utils.driver_factory",
+        "description": "utils.driver_factory",
+        "isExtraImport": true,
+        "detail": "utils.driver_factory",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "importPath": "pages.home_page",
+        "description": "pages.home_page",
+        "isExtraImport": true,
+        "detail": "pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "importPath": "pages.login_page",
+        "description": "pages.login_page",
+        "isExtraImport": true,
+        "detail": "pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "importPath": "pages.sign_up_step_2",
+        "description": "pages.sign_up_step_2",
+        "isExtraImport": true,
+        "detail": "pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "importPath": "pages.sign_up_step_2",
+        "description": "pages.sign_up_step_2",
+        "isExtraImport": true,
+        "detail": "pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "importPath": "pages.sign_up_step_2",
+        "description": "pages.sign_up_step_2",
+        "isExtraImport": true,
+        "detail": "pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "importPath": "pages.sign_up_step_2",
+        "description": "pages.sign_up_step_2",
+        "isExtraImport": true,
+        "detail": "pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "importPath": "pages.account_created_page",
+        "description": "pages.account_created_page",
+        "isExtraImport": true,
+        "detail": "pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "importPath": "pages.account_created_page",
+        "description": "pages.account_created_page",
+        "isExtraImport": true,
+        "detail": "pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "importPath": "pages.account_created_page",
+        "description": "pages.account_created_page",
+        "isExtraImport": true,
+        "detail": "pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "importPath": "pages.account_created_page",
+        "description": "pages.account_created_page",
+        "isExtraImport": true,
+        "detail": "pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "ContactFormPage",
+        "importPath": "pages.contact_form_page",
+        "description": "pages.contact_form_page",
+        "isExtraImport": true,
+        "detail": "pages.contact_form_page",
+        "documentation": {}
+    },
+    {
+        "label": "ContactFormPage",
+        "importPath": "pages.contact_form_page",
+        "description": "pages.contact_form_page",
+        "isExtraImport": true,
+        "detail": "pages.contact_form_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductsPage",
+        "importPath": "pages.products_page",
+        "description": "pages.products_page",
+        "isExtraImport": true,
+        "detail": "pages.products_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductsPage",
+        "importPath": "pages.products_page",
+        "description": "pages.products_page",
+        "isExtraImport": true,
+        "detail": "pages.products_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductsPage",
+        "importPath": "pages.products_page",
+        "description": "pages.products_page",
+        "isExtraImport": true,
+        "detail": "pages.products_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductsPage",
+        "importPath": "pages.products_page",
+        "description": "pages.products_page",
+        "isExtraImport": true,
+        "detail": "pages.products_page",
+        "documentation": {}
+    },
+    {
+        "label": "CartPage",
+        "importPath": "pages.cart_page",
+        "description": "pages.cart_page",
+        "isExtraImport": true,
+        "detail": "pages.cart_page",
+        "documentation": {}
+    },
+    {
+        "label": "CartPage",
+        "importPath": "pages.cart_page",
+        "description": "pages.cart_page",
+        "isExtraImport": true,
+        "detail": "pages.cart_page",
+        "documentation": {}
+    },
+    {
+        "label": "CartPage",
+        "importPath": "pages.cart_page",
+        "description": "pages.cart_page",
+        "isExtraImport": true,
+        "detail": "pages.cart_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductDetailsPage",
+        "importPath": "pages.product_details_page",
+        "description": "pages.product_details_page",
+        "isExtraImport": true,
+        "detail": "pages.product_details_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductDetailsPage",
+        "importPath": "pages.product_details_page",
+        "description": "pages.product_details_page",
+        "isExtraImport": true,
+        "detail": "pages.product_details_page",
+        "documentation": {}
+    },
+    {
+        "label": "CheckoutPage",
+        "importPath": "pages.checkout_page",
+        "description": "pages.checkout_page",
+        "isExtraImport": true,
+        "detail": "pages.checkout_page",
+        "documentation": {}
+    },
+    {
+        "label": "CheckoutPage",
+        "importPath": "pages.checkout_page",
+        "description": "pages.checkout_page",
+        "isExtraImport": true,
+        "detail": "pages.checkout_page",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentPage",
+        "importPath": "pages.payment_page",
+        "description": "pages.payment_page",
+        "isExtraImport": true,
+        "detail": "pages.payment_page",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentPage",
+        "importPath": "pages.payment_page",
+        "description": "pages.payment_page",
+        "isExtraImport": true,
+        "detail": "pages.payment_page",
+        "documentation": {}
+    },
+    {
+        "label": "OrderPlacedPage",
+        "importPath": "pages.order_placed_page",
+        "description": "pages.order_placed_page",
+        "isExtraImport": true,
+        "detail": "pages.order_placed_page",
+        "documentation": {}
+    },
+    {
+        "label": "OrderPlacedPage",
+        "importPath": "pages.order_placed_page",
+        "description": "pages.order_placed_page",
+        "isExtraImport": true,
+        "detail": "pages.order_placed_page",
+        "documentation": {}
+    },
+    {
+        "label": "PRODUCTS",
+        "importPath": "test_data.product_data",
+        "description": "test_data.product_data",
+        "isExtraImport": true,
+        "detail": "test_data.product_data",
+        "documentation": {}
+    },
+    {
+        "label": "PRODUCTS",
+        "importPath": "test_data.product_data",
+        "description": "test_data.product_data",
+        "isExtraImport": true,
+        "detail": "test_data.product_data",
+        "documentation": {}
+    },
+    {
+        "label": "make_user",
+        "importPath": "utils.user_factory",
+        "description": "utils.user_factory",
+        "isExtraImport": true,
+        "detail": "utils.user_factory",
+        "documentation": {}
+    },
+    {
+        "label": "make_user",
+        "importPath": "utils.user_factory",
+        "description": "utils.user_factory",
+        "isExtraImport": true,
+        "detail": "utils.user_factory",
+        "documentation": {}
+    },
+    {
+        "label": "make_user",
+        "importPath": "utils.user_factory",
+        "description": "utils.user_factory",
+        "isExtraImport": true,
+        "detail": "utils.user_factory",
+        "documentation": {}
+    },
+    {
+        "label": "make_payment_card",
+        "importPath": "utils.card_payment_factory",
+        "description": "utils.card_payment_factory",
+        "isExtraImport": true,
+        "detail": "utils.card_payment_factory",
+        "documentation": {}
+    },
+    {
+        "label": "make_contact_form_data",
+        "importPath": "utils.contact_form_factory",
+        "description": "utils.contact_form_factory",
+        "isExtraImport": true,
+        "detail": "utils.contact_form_factory",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "replace",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "replace",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "dataclass",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "replace",
+        "importPath": "dataclasses",
+        "description": "dataclasses",
+        "isExtraImport": true,
+        "detail": "dataclasses",
+        "documentation": {}
+    },
+    {
+        "label": "Faker",
+        "importPath": "faker",
+        "description": "faker",
+        "isExtraImport": true,
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
+        "label": "Faker",
+        "importPath": "faker",
+        "description": "faker",
+        "isExtraImport": true,
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
+        "label": "Faker",
+        "importPath": "faker",
+        "description": "faker",
+        "isExtraImport": true,
+        "detail": "faker",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "webdriver",
+        "importPath": "selenium",
+        "description": "selenium",
+        "isExtraImport": true,
+        "detail": "selenium",
+        "documentation": {}
+    },
+    {
+        "label": "Service",
+        "importPath": "selenium.webdriver.chrome.service",
+        "description": "selenium.webdriver.chrome.service",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.service",
+        "documentation": {}
+    },
+    {
+        "label": "Options",
+        "importPath": "selenium.webdriver.chrome.options",
+        "description": "selenium.webdriver.chrome.options",
+        "isExtraImport": true,
+        "detail": "selenium.webdriver.chrome.options",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_email",
+        "importPath": "utils.helpers",
+        "description": "utils.helpers",
+        "isExtraImport": true,
+        "detail": "utils.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "AccountCreatedPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.account_created_page",
+        "description": "selenium-project.pages.account_created_page",
+        "peekOfCode": "class AccountCreatedPage(BasePage):\n    _CONTINUE_BUTTON = (By.CSS_SELECTOR, \"a[data-qa='continue-button']\")\n    def click_continue_button(self) -> None:\n        self.click(self._CONTINUE_BUTTON)",
+        "detail": "selenium-project.pages.account_created_page",
+        "documentation": {}
+    },
+    {
+        "label": "BasePage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.base_page",
+        "description": "selenium-project.pages.base_page",
+        "peekOfCode": "class BasePage():\n    def __init__(self, driver: WebDriver, timeout: int = 10):\n        self.driver = driver\n        self.timeout = timeout\n    def open(self, url: str) -> None:\n        self.driver.get(url)    \n    def find(self, locator: Tuple[str, str]) -> WebElement:\n        return WebDriverWait(self.driver, self.timeout).until(EC.presence_of_element_located(locator))\n    def find_all(self, locator: Tuple[str, str]) -> list[WebElement]:\n        return WebDriverWait(self.driver, self.timeout).until(EC.presence_of_all_elements_located(locator))",
+        "detail": "selenium-project.pages.base_page",
+        "documentation": {}
+    },
+    {
+        "label": "CartPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.cart_page",
+        "description": "selenium-project.pages.cart_page",
+        "peekOfCode": "class CartPage(BasePage):\n    _PROCEED_TO_CHECKOUT_BUTTON = (By.CSS_SELECTOR, \".check_out\")\n    _CART_ROWS = (By.CSS_SELECTOR, \"#cart_info_table tbody tr\")\n    def is_cart_page_displayed(self) -> bool:\n        return self.is_visible(self._PROCEED_TO_CHECKOUT_BUTTON)\n    def product_row(self, product_id: int) -> WebElement:\n        selector = (By.ID, f\"product-{product_id}\")\n        return self.find(selector)\n    def product_name(self, product_id: int) -> str:\n        row = self.product_row(product_id)",
+        "detail": "selenium-project.pages.cart_page",
+        "documentation": {}
+    },
+    {
+        "label": "CheckoutPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.checkout_page",
+        "description": "selenium-project.pages.checkout_page",
+        "peekOfCode": "class CheckoutPage(BasePage):\n    _PLACE_ORDER_BUTTON = (By.CSS_SELECTOR, \".check_out\")\n    def is_checkout_page_displayed(self) -> bool:\n        return self.is_visible(self._PLACE_ORDER_BUTTON)\n    def click_place_order_button(self) -> None:\n        self.click(self._PLACE_ORDER_BUTTON)",
+        "detail": "selenium-project.pages.checkout_page",
+        "documentation": {}
+    },
+    {
+        "label": "ContactFormPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.contact_form_page",
+        "description": "selenium-project.pages.contact_form_page",
+        "peekOfCode": "class ContactFormPage(BasePage):\n    _NAME_INPUT_FIELD = (By.CSS_SELECTOR, \"input[data-qa='name']\")\n    _EMAIL_INPUT_FIELD = (By.CSS_SELECTOR, \"input[data-qa='email']\")\n    _SUBJECT_INPUT_FIELD = (By.CSS_SELECTOR, \"input[data-qa='subject']\")\n    _MESSAGE_INPUT_FIELD = (By.CSS_SELECTOR, \"textarea[data-qa='message']\")\n    _SUBMIT_BUTTON = (By.CSS_SELECTOR, \"input[data-qa='submit-button']\")\n    _UPLOAD_BUTTON = (By.CSS_SELECTOR, \"input[type='file']\")\n    _SUCCESS_MESSAGE = (By.CSS_SELECTOR, \".status.alert.alert-success\")\n    def fill_name(self, text: str) -> None:\n        self.type(self._NAME_INPUT_FIELD, text)",
+        "detail": "selenium-project.pages.contact_form_page",
+        "documentation": {}
+    },
+    {
+        "label": "HomePage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.home_page",
+        "description": "selenium-project.pages.home_page",
+        "peekOfCode": "class HomePage(BasePage):\n    URL = \"https://automationexercise.com/\"\n    _ACCEPT_COOKIES_BUTTON = (By.CSS_SELECTOR, \"button.fc-cta-consent\")\n    _LOGOUT_BUTTON = (By.CSS_SELECTOR, \"a[href='/logout']\")\n    _LOGIN_BUTTON = (By.CSS_SELECTOR, \"a[href='/login']\")\n    _CONTACT_FORM_BUTTON = (By.CSS_SELECTOR, \"a[href='/contact_us']\")\n    _PRODUCTS_PAGE_BUTTON = (By.CSS_SELECTOR, \"a[href='/products']\")\n    def open_homepage(self) -> None:\n        self.open(self.URL)\n        self.accept_cookies()",
+        "detail": "selenium-project.pages.home_page",
+        "documentation": {}
+    },
+    {
+        "label": "LoginPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.login_page",
+        "description": "selenium-project.pages.login_page",
+        "peekOfCode": "class LoginPage(BasePage):\n    _HEADER = (By.XPATH, \"//h2[text()='New User Signup!']\")\n    _SIGN_UP_USERNAME_INPUT_FIELD = (By.CSS_SELECTOR, \"input[data-qa='signup-name']\")\n    _SIGN_UP_EMAIL_INPUT_FIELD = (By.CSS_SELECTOR, \"input[data-qa='signup-email']\")\n    _SIGN_UP_BUTTON = (By.CSS_SELECTOR, \"button[data-qa='signup-button']\")\n    _LOGIN_EMAIL_INPUT = (By.CSS_SELECTOR, \"input[data-qa='login-email']\")\n    _LOGIN_PASSWORD_INPUT = (By.CSS_SELECTOR, \"input[data-qa='login-password']\")\n    _LOGIN_BUTTON = (By.CSS_SELECTOR, \"button[data-qa='login-button']\")\n    _EMAIL_TAKEN_ERROR_MESSAGE = (By.XPATH, \"//form[@action='/signup']//p\")\n    _INCORRECT_EMAIL_OR_PASSWORD_MESSAGE = (By.XPATH, \"//form[@action='/login']//p\")",
+        "detail": "selenium-project.pages.login_page",
+        "documentation": {}
+    },
+    {
+        "label": "OrderPlacedPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.order_placed_page",
+        "description": "selenium-project.pages.order_placed_page",
+        "peekOfCode": "class OrderPlacedPage(BasePage):\n    _CONFIRMATION_MESSAGE = (By.CSS_SELECTOR, \"h2[data-qa='order-placed']\")\n    _CONTINUE_BUTTON = (By.CSS_SELECTOR, \"a[data-qa='continue-button']\")\n    def is_order_placed_page_displayed(self) -> bool:\n        return self.is_visible(self._CONFIRMATION_MESSAGE)\n    def click_continue_button(self) -> None:\n        self.click(self._CONTINUE_BUTTON)",
+        "detail": "selenium-project.pages.order_placed_page",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.payment_page",
+        "description": "selenium-project.pages.payment_page",
+        "peekOfCode": "class PaymentPage(BasePage):\n    _NAME_FIELD = (By.CSS_SELECTOR, \"input[data-qa='name-on-card']\")\n    _CARD_NUMBER_FIELD = (By.CSS_SELECTOR, \"input[data-qa='card-number']\")\n    _CVC_FIELD = (By.CSS_SELECTOR, \"input[data-qa='cvc']\")\n    _EXPIRATION_MONTH_FIELD = (By.CSS_SELECTOR, \"input[data-qa='expiry-month']\")\n    _EXPIRATION_YEAR_FIELD = (By.CSS_SELECTOR, \"input[data-qa='expiry-year']\")\n    _CONFIRM_ORDER_BUTTON = (By.CSS_SELECTOR, \"button[data-qa='pay-button']\")\n    def fill_name(self, name: str) -> None:\n        self.type(self._NAME_FIELD, name)\n    def fill_card(self, card_number: str) -> None:",
+        "detail": "selenium-project.pages.payment_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductsPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.products_page",
+        "description": "selenium-project.pages.products_page",
+        "peekOfCode": "class ProductsPage(BasePage):\n    _ADD_TO_CART_BUTTON = \"a.add-to-cart\"\n    _VIEW_PRODUCT_BUTTON = (By.CSS_SELECTOR, \".choose a[href^='/product_details/']\")\n    _CONTINUE_SHOPPING_BUTTON = (By.CSS_SELECTOR, \"button[data-dismiss='modal']\")\n    _VIEW_CART_BUTTON = (By.CSS_SELECTOR, \"a[href='/view_cart']\")\n    _MODAL = (By.CLASS_NAME, \"modal-content\")\n    _SEARCH_INPUT = (By.ID, \"search_product\")\n    _SUBMIT_SEARCH_BUTTON = (By.ID, \"submit_search\")\n    _PRODUCT_NAMES = (By.CSS_SELECTOR, \".single-products\")\n    _MEN_TOGGLE = (By.XPATH, '//a[@href=\"#Men\"]')",
+        "detail": "selenium-project.pages.products_page",
+        "documentation": {}
+    },
+    {
+        "label": "ProductDetailsPage",
+        "kind": 6,
+        "importPath": "selenium-project.pages.product_details_page",
+        "description": "selenium-project.pages.product_details_page",
+        "peekOfCode": "class ProductDetailsPage(BasePage):\n    _QUANTITY_FIELD = (By.ID, \"quantity\")\n    _ADD_TO_CART_BUTTON = (By.CSS_SELECTOR, \"button.btn.cart\")\n    _MODAL = (By.CLASS_NAME, \"modal-content\")\n    _VIEW_CART_BUTTON = (By.CSS_SELECTOR, \"a[href='/view_cart']\")\n    def change_quantity(self, quantity: int) -> None:\n        quantity_input = self.find(self._QUANTITY_FIELD)\n        quantity_input.clear()\n        quantity_input.send_keys(quantity)\n    def add_product_to_cart(self) -> None:",
+        "detail": "selenium-project.pages.product_details_page",
+        "documentation": {}
+    },
+    {
+        "label": "SignUpStep2",
+        "kind": 6,
+        "importPath": "selenium-project.pages.sign_up_step_2",
+        "description": "selenium-project.pages.sign_up_step_2",
+        "peekOfCode": "class SignUpStep2(BasePage):\n    #Headers\n    _PAGE_HEADER = (By.XPATH, \"//div[contains(@class,'login-form')]//h2[b[text()='Enter Account Information']]\")\n    _ACCOUNT_CREATED_HEADER = (By.CSS_SELECTOR, \"h2[data-qa='account-created']\")\n    #Input Fields\n    _PASSWORD_FIELD_INPUT = (By.CSS_SELECTOR, \"input[data-qa='password']\")\n    _FIRST_NAME_INPUT = (By.CSS_SELECTOR, \"input[data-qa='first_name']\")\n    _LAST_NAME_INPUT = (By.CSS_SELECTOR, \"input[data-qa='last_name']\")\n    _COMPANY_INPUT = (By.CSS_SELECTOR, \"input[data-qa='company']\")\n    _ADDRESS_INPUT = (By.CSS_SELECTOR, \"input[data-qa='address']\")",
+        "detail": "selenium-project.pages.sign_up_step_2",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_addoption",
+        "kind": 2,
+        "importPath": "selenium-project.tests.conftest",
+        "description": "selenium-project.tests.conftest",
+        "peekOfCode": "def pytest_addoption(parser):\n    parser.addoption(\"--headless\", action=\"store_true\", help=\"Run browser in headless mode\")\n@pytest.fixture\ndef driver(request):\n    headless = request.config.getoption(\"--headless\")\n    driver = create_driver(headless=headless)\n    yield driver\n    driver.quit()\n@pytest.fixture\ndef pages(driver):",
+        "detail": "selenium-project.tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "driver",
+        "kind": 2,
+        "importPath": "selenium-project.tests.conftest",
+        "description": "selenium-project.tests.conftest",
+        "peekOfCode": "def driver(request):\n    headless = request.config.getoption(\"--headless\")\n    driver = create_driver(headless=headless)\n    yield driver\n    driver.quit()\n@pytest.fixture\ndef pages(driver):\n    return {\n        \"home\": HomePage(driver),\n        \"login\": LoginPage(driver),",
+        "detail": "selenium-project.tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "pages",
+        "kind": 2,
+        "importPath": "selenium-project.tests.conftest",
+        "description": "selenium-project.tests.conftest",
+        "peekOfCode": "def pages(driver):\n    return {\n        \"home\": HomePage(driver),\n        \"login\": LoginPage(driver),\n        \"sign_up_step2\": SignUpStep2(driver),\n        \"account_created_page\": AccountCreatedPage(driver),\n        \"contact_form\": ContactFormPage(driver),\n        \"products_page\": ProductsPage(driver),\n        \"cart\": CartPage(driver),\n        \"product_details\": ProductDetailsPage(driver),",
+        "detail": "selenium-project.tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "pytest_runtest_makereport",
+        "kind": 2,
+        "importPath": "selenium-project.tests.conftest",
+        "description": "selenium-project.tests.conftest",
+        "peekOfCode": "def pytest_runtest_makereport(item, call):\n    outcome = yield\n    rep = outcome.get_result()\n    if rep.when == \"call\" and rep.failed:\n        driver = item.funcargs.get(\"driver\", None)\n        if driver:\n            screenshots_dir = os.path.abspath(\"screenshots\")\n            os.makedirs(screenshots_dir, exist_ok=True)\n            file_path = os.path.join(screenshots_dir, f\"{item.name}.png\")\n            driver.save_screenshot(file_path)",
+        "detail": "selenium-project.tests.conftest",
+        "documentation": {}
+    },
+    {
+        "label": "TestCartPositive",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_cart",
+        "description": "selenium-project.tests.test_cart",
+        "peekOfCode": "class TestCartPositive:\n    def test_add_single_item_to_cart(self, pages):\n        products_page: ProductsPage = pages[\"products_page\"] \n        home_page: HomePage = pages[\"home\"]\n        cart_page: CartPage = pages[\"cart\"]\n        product_id = 1\n        product = PRODUCTS[product_id]\n        expected_name = product[\"name\"]\n        expected_total = product[\"price\"]       \n        home_page.open_homepage()",
+        "detail": "selenium-project.tests.test_cart",
+        "documentation": {}
+    },
+    {
+        "label": "TestCartNegative",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_cart",
+        "description": "selenium-project.tests.test_cart",
+        "peekOfCode": "class TestCartNegative:\n    @pytest.mark.xfail(reason=\"This is a known bug in the app\")\n    def test_add_negative_quantity_item(self, pages):\n        home_page: HomePage = pages[\"home\"]\n        product_details: ProductDetailsPage = pages [\"product_details\"]\n        products_page: ProductsPage = pages[\"products_page\"] \n        product_id = 1\n        product = PRODUCTS[product_id]\n        home_page.open_homepage()\n        home_page.go_to_products_page()",
+        "detail": "selenium-project.tests.test_cart",
+        "documentation": {}
+    },
+    {
+        "label": "TestCheckoutPositive",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_checkout",
+        "description": "selenium-project.tests.test_checkout",
+        "peekOfCode": "class TestCheckoutPositive:\n    def test_basic_checkout_happy_path(self, pages):\n        products_page: ProductsPage = pages[\"products_page\"] \n        home_page: HomePage = pages[\"home\"]\n        cart_page: CartPage = pages[\"cart\"]\n        login_page: LoginPage = pages[\"login\"]\n        sign_up_step2_page: SignUpStep2 = pages[\"sign_up_step2\"]\n        account_created_page: AccountCreatedPage = pages[\"account_created_page\"]\n        checkout: CheckoutPage = pages[\"checkout\"]\n        payment_page: PaymentPage = pages[\"payment_page\"]",
+        "detail": "selenium-project.tests.test_checkout",
+        "documentation": {}
+    },
+    {
+        "label": "TestContactFormPositive",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_contact_form",
+        "description": "selenium-project.tests.test_contact_form",
+        "peekOfCode": "class TestContactFormPositive():\n    def test_submit_contact_form_with_valid_data(self, pages): \n        home_page: HomePage = pages[\"home\"]\n        contact_form: ContactFormPage = pages[\"contact_form\"]\n        contact_form_data = make_contact_form_data()\n        home_page.open_homepage()\n        home_page.go_to_contact_form_page()\n        contact_form.fill_contact_form(\n            name = contact_form_data.name,\n            email = contact_form_data.email,",
+        "detail": "selenium-project.tests.test_contact_form",
+        "documentation": {}
+    },
+    {
+        "label": "TestContactFormNegative",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_contact_form",
+        "description": "selenium-project.tests.test_contact_form",
+        "peekOfCode": "class TestContactFormNegative():\n    def test_submit_contact_form_with_empty_fields(self, pages):\n        home_page: HomePage = pages[\"home\"]\n        contact_form: ContactFormPage = pages[\"contact_form\"]\n        home_page.open_homepage()\n        home_page.go_to_contact_form_page()\n        contact_form.click_submit_button()\n        assert contact_form.is_email_error_type_value_missing(), \"Validation error not displayed\"",
+        "detail": "selenium-project.tests.test_contact_form",
+        "documentation": {}
+    },
+    {
+        "label": "TestLoginPositive",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_login",
+        "description": "selenium-project.tests.test_login",
+        "peekOfCode": "class TestLoginPositive():\n    def test_login_with_valid_credentials(self, pages):\n        user = make_user()\n        email = user.email\n        home_page: HomePage = pages[\"home\"]\n        login_page: LoginPage = pages[\"login\"]\n        sign_up_step2_page: SignUpStep2 = pages[\"sign_up_step2\"]\n        account_created_page: AccountCreatedPage = pages[\"account_created_page\"]\n        home_page.open_homepage()\n        home_page.go_to_login_page()",
+        "detail": "selenium-project.tests.test_login",
+        "documentation": {}
+    },
+    {
+        "label": "TestLoginNegative",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_login",
+        "description": "selenium-project.tests.test_login",
+        "peekOfCode": "class TestLoginNegative():\n    def test_login_with_invalid_password(self, pages):\n        user = make_user()\n        home_page: HomePage = pages[\"home\"]\n        login_page: LoginPage = pages[\"login\"]\n        sign_up_step2_page: SignUpStep2 = pages[\"sign_up_step2\"]\n        account_created_page: AccountCreatedPage = pages[\"account_created_page\"]\n        home_page.open_homepage()\n        home_page.go_to_login_page()\n        login_page.sign_up(user.username, user.email)",
+        "detail": "selenium-project.tests.test_login",
+        "documentation": {}
+    },
+    {
+        "label": "TestProductSearchPositive",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_product_search",
+        "description": "selenium-project.tests.test_product_search",
+        "peekOfCode": "class TestProductSearchPositive:\n    def test_correct_product_search(self, pages):\n        home_page: HomePage = pages[\"home\"]\n        products_page: ProductsPage = pages[\"products_page\"] \n        search_phrase = \"Blue top\"\n        home_page.open_homepage()\n        home_page.go_to_products_page()\n        products_page.use_search(search_phrase)\n        home_page.remove_ads_banner_if_visible()\n        assert products_page.contains_product_with_text(search_phrase), \"No result with given search phrase were found\"",
+        "detail": "selenium-project.tests.test_product_search",
+        "documentation": {}
+    },
+    {
+        "label": "TestProductSearchNegative",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_product_search",
+        "description": "selenium-project.tests.test_product_search",
+        "peekOfCode": "class TestProductSearchNegative:\n    def test_search_no_results(self, pages):\n        home_page: HomePage = pages[\"home\"]\n        products_page: ProductsPage = pages[\"products_page\"]\n        search_phrase = \"nonexistentproduct\"\n        home_page.open_homepage()\n        home_page.go_to_products_page()\n        products_page.use_search(search_phrase)\n        home_page.remove_ads_banner_if_visible()\n        assert not products_page.search_has_results(wait=False), \"Results were found\"",
+        "detail": "selenium-project.tests.test_product_search",
+        "documentation": {}
+    },
+    {
+        "label": "TestRegisterPositive",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_register",
+        "description": "selenium-project.tests.test_register",
+        "peekOfCode": "class TestRegisterPositive():\n    def test_register_with_valid_data_minimal(self, pages):\n        user = make_user()\n        home_page: HomePage = pages[\"home\"]\n        login_page: LoginPage = pages[\"login\"]\n        sign_up_step2_page: SignUpStep2 = pages[\"sign_up_step2\"]\n        home_page.open_homepage()\n        assert home_page.is_on_homepage()\n        home_page.go_to_login_page()\n        assert login_page.is_on_login_page()",
+        "detail": "selenium-project.tests.test_register",
+        "documentation": {}
+    },
+    {
+        "label": "TestRegisterNegative",
+        "kind": 6,
+        "importPath": "selenium-project.tests.test_register",
+        "description": "selenium-project.tests.test_register",
+        "peekOfCode": "class TestRegisterNegative():\n    def test_register_with_invalid_email(self, pages):\n        user = make_user(email = \"invalidemail.com\")\n        home_page: HomePage = pages[\"home\"]\n        login_page: LoginPage = pages[\"login\"]\n        home_page.open_homepage()\n        home_page.go_to_login_page()\n        login_page.sign_up(user.username, user.email)\n        assert not login_page.is_email_valid(), \"Validation error is not triggered\"\n        assert login_page.is_email_error_type_mismatch(), \"Error type mismatch is not correct\"",
+        "detail": "selenium-project.tests.test_register",
+        "documentation": {}
+    },
+    {
+        "label": "PRODUCTS",
+        "kind": 5,
+        "importPath": "selenium-project.test_data.product_data",
+        "description": "selenium-project.test_data.product_data",
+        "peekOfCode": "PRODUCTS = {\n    1: {\"name\": \"Blue Top\", \"price\": 500},\n    2: {\"name\": \"Men Tshirt\", \"price\": 400}, \n    3: {\"name\": \"Sleeveless Dress\", \"price\": 1000}, \n    4: {\"name\": \"Stylish Dress\", \"price\": 1500}, \n    5: {\"name\": \"Winter Top\", \"price\": 600},\n    6: {\"name\": \"Summer White Top\", \"price\": 400},\n    7: {\"name\": \"Madame Top For Women\", \"price\": 1000}, \n    8: {\"name\": \"Fancy Green Top\", \"price\": 700},\n    11: {\"name\": \"Sleeves Printed Top - White\", \"price\": 499},",
+        "detail": "selenium-project.test_data.product_data",
+        "documentation": {}
+    },
+    {
+        "label": "PaymentCard",
+        "kind": 6,
+        "importPath": "selenium-project.utils.card_payment_factory",
+        "description": "selenium-project.utils.card_payment_factory",
+        "peekOfCode": "class PaymentCard:\n    name: str\n    card_number: str\n    cvc_number: str\n    expiration_month: str\n    expiration_year: str\ndef make_payment_card(**overrides) -> PaymentCard:\n    base = PaymentCard(\n        name = fake.first_name(),\n        card_number = fake.credit_card_number(),",
+        "detail": "selenium-project.utils.card_payment_factory",
+        "documentation": {}
+    },
+    {
+        "label": "make_payment_card",
+        "kind": 2,
+        "importPath": "selenium-project.utils.card_payment_factory",
+        "description": "selenium-project.utils.card_payment_factory",
+        "peekOfCode": "def make_payment_card(**overrides) -> PaymentCard:\n    base = PaymentCard(\n        name = fake.first_name(),\n        card_number = fake.credit_card_number(),\n        cvc_number = fake.credit_card_security_code(),\n        expiration_month = fake.credit_card_expire(date_format = '%m'),\n        expiration_year = fake.credit_card_expire(date_format = '%Y')\n    )\n    return replace(base, **overrides)",
+        "detail": "selenium-project.utils.card_payment_factory",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "kind": 5,
+        "importPath": "selenium-project.utils.card_payment_factory",
+        "description": "selenium-project.utils.card_payment_factory",
+        "peekOfCode": "fake = Faker()\n@dataclass(frozen=True)\nclass PaymentCard:\n    name: str\n    card_number: str\n    cvc_number: str\n    expiration_month: str\n    expiration_year: str\ndef make_payment_card(**overrides) -> PaymentCard:\n    base = PaymentCard(",
+        "detail": "selenium-project.utils.card_payment_factory",
+        "documentation": {}
+    },
+    {
+        "label": "ContactForm",
+        "kind": 6,
+        "importPath": "selenium-project.utils.contact_form_factory",
+        "description": "selenium-project.utils.contact_form_factory",
+        "peekOfCode": "class ContactForm:\n    name: str\n    email: str\n    subject: str\n    message: str\n    attachment: Path | None = None\ndef make_contact_form_data(**overrides) -> ContactForm:\n    base = ContactForm(\n        name = fake.name(),\n        email = fake.email(),",
+        "detail": "selenium-project.utils.contact_form_factory",
+        "documentation": {}
+    },
+    {
+        "label": "make_contact_form_data",
+        "kind": 2,
+        "importPath": "selenium-project.utils.contact_form_factory",
+        "description": "selenium-project.utils.contact_form_factory",
+        "peekOfCode": "def make_contact_form_data(**overrides) -> ContactForm:\n    base = ContactForm(\n        name = fake.name(),\n        email = fake.email(),\n        subject = fake.text(max_nb_chars=30),\n        message = fake.text(),\n        attachment=PROJECT_ROOT / \"assets\" / \"samplefile.jpg\"\n    )\n    return replace(base, **overrides)",
+        "detail": "selenium-project.utils.contact_form_factory",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "kind": 5,
+        "importPath": "selenium-project.utils.contact_form_factory",
+        "description": "selenium-project.utils.contact_form_factory",
+        "peekOfCode": "fake = Faker()\nPROJECT_ROOT = Path(__file__).resolve().parent.parent\n@dataclass(frozen=True)\nclass ContactForm:\n    name: str\n    email: str\n    subject: str\n    message: str\n    attachment: Path | None = None\ndef make_contact_form_data(**overrides) -> ContactForm:",
+        "detail": "selenium-project.utils.contact_form_factory",
+        "documentation": {}
+    },
+    {
+        "label": "PROJECT_ROOT",
+        "kind": 5,
+        "importPath": "selenium-project.utils.contact_form_factory",
+        "description": "selenium-project.utils.contact_form_factory",
+        "peekOfCode": "PROJECT_ROOT = Path(__file__).resolve().parent.parent\n@dataclass(frozen=True)\nclass ContactForm:\n    name: str\n    email: str\n    subject: str\n    message: str\n    attachment: Path | None = None\ndef make_contact_form_data(**overrides) -> ContactForm:\n    base = ContactForm(",
+        "detail": "selenium-project.utils.contact_form_factory",
+        "documentation": {}
+    },
+    {
+        "label": "create_driver",
+        "kind": 2,
+        "importPath": "selenium-project.utils.driver_factory",
+        "description": "selenium-project.utils.driver_factory",
+        "peekOfCode": "def create_driver(headless: bool = False) -> WebDriver:\n    options = Options()\n    options.add_argument(\"--start-maximized\")\n    # options.add_argument(\"--incognito\")\n    if headless:\n        options.add_argument(\"--headless=new\")\n        options.add_argument(\"--window-size=1920,1080\")\n        options.add_argument(\"--disable-gpu\")\n    service = ChromeService()\n    driver = webdriver.Chrome(service=service, options=options)",
+        "detail": "selenium-project.utils.driver_factory",
+        "documentation": {}
+    },
+    {
+        "label": "generate_random_email",
+        "kind": 2,
+        "importPath": "selenium-project.utils.helpers",
+        "description": "selenium-project.utils.helpers",
+        "peekOfCode": "def generate_random_email(domain: str = \"example.com\") -> str:\n    return f\"user_{uuid.uuid4().hex[:12]}@{domain}\"",
+        "detail": "selenium-project.utils.helpers",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "kind": 6,
+        "importPath": "selenium-project.utils.user_factory",
+        "description": "selenium-project.utils.user_factory",
+        "peekOfCode": "class User:\n    username: str\n    email: str\n    title: str | None = None \n    password: str | None = None\n    day: int | None = None\n    month: str | None = None\n    year: int | None = None\n    first_name: str | None = None\n    last_name: str | None = None",
+        "detail": "selenium-project.utils.user_factory",
+        "documentation": {}
+    },
+    {
+        "label": "make_user",
+        "kind": 2,
+        "importPath": "selenium-project.utils.user_factory",
+        "description": "selenium-project.utils.user_factory",
+        "peekOfCode": "def make_user(**overrides) -> User:\n    base = User(\n        username = fake.user_name(),\n        email = generate_random_email(),\n        title = fake.random_element(elements=(\"Mr\", \"Mrs\")),\n        password = fake.password(),\n        day = fake.random_int(min=1, max=30),\n        month = fake.month_name(),\n        year = fake.random_int(min=1950, max=2010),\n        first_name = fake.first_name(),",
+        "detail": "selenium-project.utils.user_factory",
+        "documentation": {}
+    },
+    {
+        "label": "fake",
+        "kind": 5,
+        "importPath": "selenium-project.utils.user_factory",
+        "description": "selenium-project.utils.user_factory",
+        "peekOfCode": "fake = Faker()\n@dataclass(frozen=True)\nclass User:\n    username: str\n    email: str\n    title: str | None = None \n    password: str | None = None\n    day: int | None = None\n    month: str | None = None\n    year: int | None = None",
+        "detail": "selenium-project.utils.user_factory",
+        "documentation": {}
+    }
+]

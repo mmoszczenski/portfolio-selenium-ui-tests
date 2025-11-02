@@ -1,6 +1,7 @@
-# Selenium UI Automation Test Suite
+# Selenium UI Automation Test Framework
 
-A comprehensive UI automation test suite for [AutomationExercise.com](https://automationexercise.com/) application, built with Selenium, Python, and pytest.
+A compact UI automation test framework for [AutomationExercise.com](https://automationexercise.com/) built with Selenium, Python, and pytest.
+The project demonstrates best practices in UI test development, including the use of the Page Object Model (POM) architecture for maintainable and scalable test code.
 
 ## Features
 
@@ -57,9 +58,7 @@ selenium-project/
 
 - ✅ User registration (positive & negative cases)
 - ✅ User login (positive & negative cases)
-- ✅ Shopping cart operations
+- ✅ Shopping cart flows
 - ✅ Complete checkout flow
 - ✅ Product search and filtering
 - ✅ Contact form submission
-
-**Purpose**: Portfolio project demonstrating Selenium test automation best practices
